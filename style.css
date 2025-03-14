@@ -35,12 +35,15 @@ body {
 }
 
 /* Page content */
+p{
+  float:right;
+}
 .content {
   padding: 16px;
 }
 /* image on home page */
 img{
-  width: 100mm;
-  height: 100mm;
+  width: 3in;
+  height: 3in;
   border-radius:50%;
 }
