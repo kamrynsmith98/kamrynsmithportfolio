@@ -38,9 +38,9 @@ body {
 .content {
   padding: 16px;
 }
-/* images and videos max out at full width */
-img,
-video {
-  height: auto;
-  max-width: 100%;
+/* image on home page */
+img{
+  width: 100mm;
+  height: 100mm;
+  border-radius:50%;
 }
