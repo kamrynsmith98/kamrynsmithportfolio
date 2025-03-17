@@ -29,6 +29,7 @@ body {
 a:hover {
   text-decoration: underline;
 }
+
 #navbar a {
   float: right;
   display: block;
@@ -43,6 +44,10 @@ a:hover {
   color:white;
   
 }
+#navbar :hover{
+text-decoration: underline;
+
+    }
 /* Intro Home Page content */
 .container {
  display: grid;
@@ -53,24 +58,32 @@ a:hover {
  font-family: "Cormorant";font-size: 38px;
 background-color:#c2d6d6;
 }
-#navbar :hover{
-        text-decoration: underline;
-
-    }
 
 
-p{
-font-size:20px;
-  width: 50%;
-  margin:auto;
- 
+
+.aboutme{
+ background-color:#c2d6d6;
+ display: grid;
+ padding:20px;
+ align-items:left; 
+ grid-template-columns: 2fr 2fr 2fr;
+
 }
-
 /* image on home page */
 img{
   display:flex;
-  padding:10px;
-  width: 2.8in;
-  height: 2.8in;
+  padding:2px;
+  width: 3.8in;
+  height: 3.8in;
   border-radius:50%;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #c2d6d6;
+  color: white;
+  text-align: center;
 }
