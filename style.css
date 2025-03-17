@@ -33,20 +33,24 @@ body {
   padding: 14px;
   text-decoration: none;
 }
-
-/* Page content */
-p{
-  display:block;
-  padding:20px;
-  margin:100px;
- 
+/* Intro Home Page content */
+.container {
+ display: grid;
+ align-items: center; 
+ grid-template-columns: 1fr 1fr 1fr;
+ column-gap: 5px;
 }
-.content {
-  padding: 16px;
+p{
+  display:table;
+  width: 50%;
+  margin:auto;
+ 
 }
 /* image on home page */
 img{
-  width: 3in;
-  height: 3in;
+  display:flex;
+  padding:10px;
+  width: 2.8in;
+  height: 2.in;
   border-radius:50%;
 }
