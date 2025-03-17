@@ -36,21 +36,26 @@ body {
 /* Intro Home Page content */
 .container {
  display: grid;
- align-items: center; 
+ align-items:left; 
  grid-template-columns: 1fr 1fr 1fr;
  column-gap: 5px;
+ font-family: "Cormorant";font-size: 48px;
+  background-color:#c2d6d6;
+
 }
+
 p{
   display:table;
   width: 50%;
   margin:auto;
  
 }
+
 /* image on home page */
 img{
   display:flex;
   padding:10px;
   width: 2.8in;
-  height: 2.in;
+  height: 2.8in;
   border-radius:50%;
 }
