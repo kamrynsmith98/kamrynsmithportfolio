@@ -22,6 +22,7 @@ body {
   top: 0;
   overflow: hidden;
   background-color: #333333;
+  
 }
 
 /* Navbar links */
@@ -33,16 +34,22 @@ body {
   padding: 14px;
   text-decoration: none;
 }
+#navbar ul{
+  font-size:28px;
+  color:white;
+  
+}
 /* Intro Home Page content */
 .container {
  display: grid;
+ padding:20px;
  align-items:left; 
- grid-template-columns: 1fr 1fr 1fr;
- column-gap: 5px;
+ grid-template-columns: 2fr 2fr 2fr;
+ column-gap: 3px;
  font-family: "Cormorant";font-size: 48px;
-  background-color:#c2d6d6;
-
+background-color:#c2d6d6;
 }
+
 
 p{
   display:table;
