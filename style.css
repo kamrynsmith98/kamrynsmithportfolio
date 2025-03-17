@@ -28,6 +28,7 @@ body {
 /* Navbar links */
 a:hover {
   text-decoration: underline;
+  
 }
 
 #navbar a {
@@ -60,18 +61,18 @@ background-color:#c2d6d6;
 border-style:dotted;
 border-radius: 5px;
 border-style:groove;
-}
-.intro{
+color: white;
+text-shadow: 2px 2px 4px #000000;
 
-
 }
+
 
 
 .aboutme{
  background-color:#c2d6d6;
  display: grid;
   word-wrap: break-word;
-text-align: justify;
+ text-align: justify;
  padding:20px;
  align-items:left; 
  grid-template-columns: 2fr 2fr 2fr;
