@@ -57,13 +57,21 @@ text-decoration: underline;
  column-gap: 3px;
  font-family: "Cormorant";font-size: 38px;
 background-color:#c2d6d6;
+border-style:dotted;
+border-radius: 5px;
+border-style:groove;
 }
+.intro{
 
+
+}
 
 
 .aboutme{
  background-color:#c2d6d6;
  display: grid;
+  word-wrap: break-word;
+text-align: justify;
  padding:20px;
  align-items:left; 
  grid-template-columns: 2fr 2fr 2fr;
@@ -79,10 +87,9 @@ img{
 }
 
 .footer {
-  position: fixed
   left: 0;
+  font-size:19px;
   bottom: 0;
-  width: 100%;
   background-color: #c2d6d6;
   color: white;
   text-align: center;
