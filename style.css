@@ -13,7 +13,7 @@ html {
 /* adjust typography defaults */
 body {
   margin: 1rem;
-  font-family: sans-serif;
+   font-family: "Cormorant";font-size: 24px;
   line-height: 1.5;
 }
 /* Style the navbar */
@@ -21,11 +21,14 @@ body {
   position: sticky;
   top: 0;
   overflow: hidden;
-  background-color: #333333;
+  background-color: #3f5a5a;
   
 }
 
 /* Navbar links */
+a:hover {
+  text-decoration: underline;
+}
 #navbar a {
   float: right;
   display: block;
@@ -34,6 +37,7 @@ body {
   padding: 14px;
   text-decoration: none;
 }
+
 #navbar ul{
   font-size:28px;
   color:white;
@@ -46,13 +50,17 @@ body {
  align-items:left; 
  grid-template-columns: 2fr 2fr 2fr;
  column-gap: 3px;
- font-family: "Cormorant";font-size: 48px;
+ font-family: "Cormorant";font-size: 38px;
 background-color:#c2d6d6;
 }
+#navbar :hover{
+        text-decoration: underline;
+
+    }
 
 
 p{
-  display:table;
+font-size:20px;
   width: 50%;
   margin:auto;
  
