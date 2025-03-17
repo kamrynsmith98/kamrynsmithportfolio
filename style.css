@@ -36,7 +36,10 @@ body {
 
 /* Page content */
 p{
-  float:right;
+  display:block;
+  padding:20px;
+  margin:100px;
+ 
 }
 .content {
   padding: 16px;
