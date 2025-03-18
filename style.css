@@ -74,9 +74,13 @@ color: white;
     margin:10px;
 
 }
- h6, h5{
-   font-family: "Cormorant";font-size: 22px;
+ h6{
+   margin-bottom:30px;
+   font-style: oblique 40deg;
+   font-family: "Cormorant";font-size: 18px;
    padding:10px;
+   color:#3a5a70;
+
 }
 img{
   align-content: flex-start;
