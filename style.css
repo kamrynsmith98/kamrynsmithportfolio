@@ -56,7 +56,6 @@ text-decoration: underline;
  align-items:left; 
  grid-template-columns: 2fr 2fr 2fr;
  column-gap: 3px;
- font-family: "Cormorant";font-size: 38px;
 background-color:#c2d6d6;
 border-style:dotted;
 border-radius: 5px;
@@ -65,8 +64,16 @@ color: white;
 text-shadow: 2px 2px 4px #000000;
 
 }
+.container h1{
+   font-family: "Cormorant";font-size: 58px;
+}
 
+hr{
+  color:#3f5a5a;
+  background-color:#3f5a5a;
+  width:10px;
 
+}
 
 .aboutme{
  background-color:#c2d6d6;
@@ -79,12 +86,10 @@ text-shadow: 2px 2px 4px #000000;
 
 }
 /* image on home page */
-img{
-  display:flex;
-  padding:2px;
-  width: 3.8in;
-  height: 3.8in;
-  border-radius:50%;
+.image{
+  float: left;
+  
+  display: fixed; /* Hide columns by default */
 }
 
 .footer {
