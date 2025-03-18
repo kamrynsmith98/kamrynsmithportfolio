@@ -54,6 +54,7 @@ text-decoration: underline;
 
 /* Intro Home Page content */
 .container {
+  
   display: flex;
   flex-wrap: wrap;
  align-items:left; 
@@ -67,35 +68,38 @@ color: white;
 }
 .container h1{
   
-   font-family: "Cormorant";font-size: 65px;
+   font-family: "Cormorant";font-size: 75px;
     color:#fff18b;
+   top:10%;
     margin:10px;
-border-inline: revert-layer;
-writing-mode: horizontal-tb;
-direction: rtl;
+
 }
-.container h6{
+ h6, h5{
    font-family: "Cormorant";font-size: 22px;
-  padding:40px;
+   padding:10px;
 }
 img{
-  padding:20px;
+  align-content: flex-start;
+  padding:-40px;
   border-radius: 50px;
 
 
 }
 /* ABOUT ME */
 .columns {
+  
   max-width:60%;
   max-height:40%;
   display:flex;
 }
 
 .card {
-
+    max-width:60%;
+  max-height:40%;
+  display:flex;
+align-content: flex-start;
   max-width: 400px;
   margin: auto;
-  justify-content: center;
   padding: 12px 18px;
   text-align: center;
 }
