@@ -59,7 +59,7 @@ text-decoration: underline;
  align-items:left; 
  grid-template-columns: 2fr 2fr 2fr;
  column-gap: 3px;
-background-color:#c2d6d6;
+background-color:#bad3cf;
 border-style:dotted;
 border-radius: 5px;
 border-style:groove;
@@ -68,12 +68,21 @@ color: white;
 .container h1{
   
    font-family: "Cormorant";font-size: 65px;
-    color:green;
+    color:#fff18b;
     margin:10px;
+border-inline: revert-layer;
+writing-mode: horizontal-tb;
+direction: rtl;
 }
 .container h6{
    font-family: "Cormorant";font-size: 22px;
   padding:40px;
+}
+img{
+  padding:20px;
+  border-radius: 50px;
+
+
 }
 /* ABOUT ME */
 .columns {
@@ -83,11 +92,11 @@ color: white;
 }
 
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
+
+  max-width: 400px;
   margin: auto;
   justify-content: center;
-    padding: 12px 18px;
+  padding: 12px 18px;
   text-align: center;
 }
 
@@ -97,36 +106,8 @@ color: white;
 }
 
 
-button {
-  border: none;
-  outline: 0;
-  display: block;
-  padding: 8px;
-  color: white;
-  background-color: white;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
-}
 
 
-button:hover,{
-  opacity: 0.7;
-}
-
-hr{
-  color:#3f5a5a;
-  background-color:#3f5a5a;
-  width:10px;
-
-}
-/* image on home page */
-.image{
-  float: left;
-  
-  display: fixed; /* Hide columns by default */
-}
 
 .footer {
  background-color: #F1F1F1;
