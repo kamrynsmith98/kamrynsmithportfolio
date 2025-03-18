@@ -17,8 +17,9 @@ body {
   line-height: 1.5;
 }
 /* Style the navbar */
+/*
 #navbar {
-  position: sticky;
+  position: center;
   top: 0;
   overflow: hidden;
   background-color: #3f5a5a;
@@ -26,11 +27,12 @@ body {
 }
 
 /* Navbar links */
+/*
 a:hover {
   text-decoration: underline;
   
-}
-
+} 
+/*
 #navbar a {
   float: right;
   display: block;
@@ -48,7 +50,8 @@ a:hover {
 #navbar :hover{
 text-decoration: underline;
 
-    }
+    } */
+
 /* Intro Home Page content */
 .container {
   display: flex;
@@ -64,12 +67,19 @@ color: white;
 }
 .container h1{
   
-   font-family: "Cormorant";font-size: 52px;
-    color:grey;
-   display:left;
+   font-family: "Cormorant";font-size: 65px;
+    color:green;
+    margin:10px;
 }
 .container h6{
    font-family: "Cormorant";font-size: 22px;
+  padding:40px;
+}
+/* ABOUT ME */
+.columns {
+  max-width:60%;
+  max-height:40%;
+  display:flex;
 }
 
 .card {
@@ -86,11 +96,7 @@ color: white;
   font-size: 18px;
 }
 
-.columns {
-  max-width:50%;
-  max-height:40%;
-  display:flex;
-}
+
 button {
   border: none;
   outline: 0;
