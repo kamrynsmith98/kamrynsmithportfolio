@@ -51,7 +51,8 @@ text-decoration: underline;
     }
 /* Intro Home Page content */
 .container {
- display: grid;
+  display: flex;
+  flex-wrap: wrap;
  padding:20px;
  align-items:left; 
  grid-template-columns: 2fr 2fr 2fr;
@@ -61,11 +62,43 @@ border-style:dotted;
 border-radius: 5px;
 border-style:groove;
 color: white;
-text-shadow: 2px 2px 4px #000000;
+
 
 }
 .container h1{
-   font-family: "Cormorant";font-size: 58px;
+   font-family: "Cormorant";font-size: 62px;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  justify-content: center;
+    padding: 12px 18px;
+  text-align: center;
+}
+
+.title {
+  color: white;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: block;
+  padding: 8px;
+  color: white;
+  background-color: white;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+
+
+button:hover,{
+  opacity: 0.7;
 }
 
 hr{
@@ -75,14 +108,13 @@ hr{
 
 }
 
-.aboutme{
+.columns{
  background-color:#c2d6d6;
- display: grid;
-  word-wrap: break-word;
- text-align: justify;
- padding:20px;
- align-items:left; 
- grid-template-columns: 2fr 2fr 2fr;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 4px;
+  align-items: center;
+  justify-items: center;
 
 }
 /* image on home page */
