@@ -5,16 +5,14 @@
     padding: 0;
 }
 
-/* Body Styling */
 body {
     font-family: "Cormorant", serif;
     font-size: 20px;
     line-height: 1.6;
-    margin: 1rem;
     background-color: #f8f8f8;
 }
 
-/* Navigation Bar */
+/* NAVIGATION BAR */
 #navbar {
     display: flex;
     justify-content: space-between;
@@ -26,23 +24,23 @@ body {
     z-index: 1000;
 }
 
-#navbar ul {
-    list-style-type: none;
+.nav-links {
+    list-style: none;
     display: flex;
 }
 
-#navbar ul li {
+.nav-links li {
     margin: 0 15px;
 }
 
-#navbar a {
-    color: #fff;
+.nav-links a {
+    color: white;
     text-decoration: none;
     font-size: 18px;
     transition: color 0.3s;
 }
 
-#navbar a:hover {
+.nav-links a:hover {
     text-decoration: underline;
     color: #ffd700;
 }
@@ -53,46 +51,56 @@ body {
     color: white;
 }
 
-/* Main Content Container */
+/* HAMBURGER MENU */
+.hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
+
+/* MAIN CONTAINER */
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #bad3cf;
-    padding: 100px;
+    background-color: #9CAFAA;
+    padding: 90px;
     border-radius: 5px;
     border: 2px solid #3f5a5a;
     color: white;
     text-align: center;
 }
 
-
+/* IMAGE */
 img {
-
-   max-width: 250px;
-    border-radius: 50%;
+    max-width: 250px;
+    border-radius: 50px 20px;
     margin-bottom: 15px;
 }
 
-/* Headline */
+/* HEADLINE */
 .container h1 {
-    font-size: 40px;
-    color: #fff18b;
+    font-size: 60px;
+    color: #FBF3D5;
     margin-top: 10px;
+    
 }
 
-/* Two-Column Text */
+/* TWO-COLUMN TEXT */
 .text-columns {
-    font-size: 22px;
-    column-count: 2;
-    column-gap: 20px;
-    column-rule: 1px solid blue;
-    text-align: center;
-    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    max-width: 900px;
+    text-align: justify;
 }
 
+.text-columns p {
+    flex: 1;
+    font-size:22px;
+}
 
-/* Footer */
+/* FOOTER */
 .footer {
     background-color: #3f5a5a;
     color: white;
@@ -101,26 +109,38 @@ img {
     margin-top: 30px;
 }
 
-/* Responsive Design */
+/* RESPONSIVE DESIGN */
 @media screen and (max-width: 768px) {
     .text-columns {
-        column-count: 1; /* Switch to single column on small screens */
+        flex-direction: column;
+    }
+
+    .container h1 {
+        font-size: 32px;
+    }
+
+    /* MOBILE NAVIGATION */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #3f5a5a;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 60px;
+        text-align: center;
+    }
+
+    .nav-links li {
+        padding: 15px;
+    }
+
+    .hamburger {
+        display: block;
     }
     
-    .container h1 {
-        font-size: 32px; /* Adjust for smaller screens */
-    }
-
-    #navbar ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #navbar ul li {
-        margin: 10px 0;
-    }
-
-     img {
-        max-width: 150px; /* Smaller image on small screens */
+    /* SMALLER IMAGE */
+    img {
+        max-width: 150px;
     }
 }
