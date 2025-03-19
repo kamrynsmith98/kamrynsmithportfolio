@@ -1,132 +1,64 @@
-/* a minimalist set of CSS resets */
-
-/* default to border-box */
-html {
-  box-sizing: border-box;
-  font-size: 16px;
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-/* adjust typography defaults */
+/* Body Styling */
 body {
-  margin: 1rem;
-   font-family: "Cormorant";font-size: 24px;
-  line-height: 1.5;
+    font-family: "Cormorant", serif;
+    font-size: 20px;
+    line-height: 1.6;
+    margin: 1rem;
+    background-color: #f8f8f8;
 }
-/* Style the navbar */
-/*
+
+/* Navigation Bar */
 #navbar {
-  position: center;
-  top: 0;
-  overflow: hidden;
-  background-color: #3f5a5a;
-  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3f5a5a;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-/* Navbar links */
-/*
-a:hover {
-  text-decoration: underline;
-  
-} 
-/*
+#navbar ul {
+    list-style-type: none;
+    display: flex;
+}
+
+#navbar ul li {
+    margin: 0 15px;
+}
+
 #navbar a {
-  float: right;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px;
-  text-decoration: none;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
 }
 
-#navbar ul{
-  font-size:28px;
-  color:white;
-  
+#navbar a:hover {
+    text-decoration: underline;
+    color: #ffd700;
 }
-#navbar :hover{
-text-decoration: underline;
 
-    } */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
 
-/* Intro Home Page content */
+/* Main Content Container */
 .container {
-  
-  display: flex;
-  flex-wrap: wrap;
- align-items:left; 
- grid-template-columns: 2fr 2fr 2fr;
- column-gap: 3px;
-background-color:#bad3cf;
-border-style:dotted;
-border-radius: 5px;
-border-style:groove;
-color: white;
-}
-.container h1{
-  
-   font-family: "Cormorant";font-size: 75px;
-    color:#fff18b;
-   top:10%;
-    margin:10px;
-
-}
- h6{
-   margin-bottom:30px;
-   font-style: oblique 40deg;
-   font-family: "Cormorant";font-size: 18px;
-   padding:10px;
-   color:#3a5a70;
-
-}
-img{
-  align-content: flex-start;
-  padding:-40px;
-  border-radius: 50px;
-
-
-}
-/* ABOUT ME */
-.columns {
-  
-  max-width:60%;
-  max-height:40%;
-  display:flex;
-}
-
-.card {
-    max-width:60%;
-  max-height:40%;
-  display:flex;
-align-content: flex-start;
-  max-width: 400px;
-  margin: auto;
-  padding: 12px 18px;
-  text-align: center;
-}
-
-.title {
-  color: white;
-  font-size: 18px;
-}
-
-
-
-
-
-.footer {
- background-color: #F1F1F1;
-  text-align: center;
-  padding: 10px;
-
-}
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #bad3cf;
+    padding: 40px;
+    border-radius: 5px;
+    border: 
