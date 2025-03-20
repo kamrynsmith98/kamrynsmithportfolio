@@ -83,8 +83,29 @@ img {
 .container1 {
     display: flex;
     justify-content: center;
+    background-color: #9CAFAA;
     align-items: center;
     padding: 200px;
+  
+}
+
+.heading-container {
+    display: flex;
+    justify-content: center; /* Centers text horizontally */
+    align-items: center; /* Centers text vertically if needed */
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f4f4f4; /* Light gray background (optional) */
+    border-radius: 10px; /* Rounded corners */
+    margin: 20px auto; /* Centers the container */
+    max-width: 800px; /* Adjust width as needed */
+}
+
+.heading-container h1 {
+    font-size: 3rem; /* Large text */
+    font-family: 'Cormorant', serif; /* Matches your font */
+    font-weight: bold;
+    color: black; /* Dark text */
 }
 
 .skills-container {
@@ -92,6 +113,7 @@ img {
     gap: 40px; /* Space between columns */
     max-width: 1200px; /* Ensures it doesn't stretch too wide */
     width: 100%;
+   background-color:#fcffe9;
     justify-content: space-between;
     flex-wrap: wrap; /* Makes it responsive */
 }
@@ -107,14 +129,11 @@ img {
 
 .skills-column h3 {
     font-size: 1.7em;
-    background-color:
+   
     margin-bottom: 10px;
 }
 
-ol {
-    padding-left: 20px;
-    list-style-position: inside;
-}
+
 
 
 
