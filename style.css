@@ -85,7 +85,7 @@ img {
     justify-content: center;
     background-color: #9CAFAA;
     align-items: center;
-    padding: 200px;
+    padding: 100px;
   
 }
 
@@ -104,8 +104,13 @@ img {
 .heading-container h1 {
     font-size: 3rem; /* Large text */
     font-family: 'Cormorant', serif; /* Matches your font */
-    font-weight: bold;
+    font-weight: medium;
     color: black; /* Dark text */
+    border-style: ridge;
+    padding:40px;
+    background-color:#e1f5fe;
+    border-radius:50%;
+
 }
 
 .skills-container {
@@ -113,15 +118,16 @@ img {
     gap: 40px; /* Space between columns */
     max-width: 1200px; /* Ensures it doesn't stretch too wide */
     width: 100%;
-   background-color:#fcffe9;
+   background-color:#e9fcff;
     justify-content: space-between;
     flex-wrap: wrap; /* Makes it responsive */
+    border-radius:1em;
 }
 
 .skills-column {
     background: #f4f4f4;
     padding: 20px;
-    border-radius: 12px;
+    border-radius: 22px;
     flex: 1; /* Allows columns to grow */
     min-width: 250px; /* Prevents them from shrinking too much */
     text-align: center;
@@ -129,7 +135,7 @@ img {
 
 .skills-column h3 {
     font-size: 1.7em;
-   
+   border-style: groove;
     margin-bottom: 10px;
 }
 
