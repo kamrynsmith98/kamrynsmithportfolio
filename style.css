@@ -237,6 +237,7 @@ img {
     padding: var(--sectionPadding);
     overflow: hidden;
     position: relative;
+      background-color:#9CAFAA;
   }
   #gallery-404 .cs-container {
     width: 100%;
@@ -244,6 +245,7 @@ img {
     max-width: 34.375rem;
     margin: auto;
     display: flex;
+    background-color:#9CAFAA;
     flex-direction: column;
     align-items: center;
     /* 48px - 64px */
@@ -254,6 +256,7 @@ img {
     /* set text align to left if content needs to be left aligned */
     text-align: center;
     width: 100%;
+      background-color:#9CAFAA;
     display: flex;
     flex-direction: column;
     /* centers content horizontally, set to flex-start to left align */
