@@ -92,7 +92,7 @@ a:hover {
 /* Initial menu state (hidden) */
 .menu-links {
   position: absolute;
-  top: 60px; /* This ensures the menu appears below the hamburger icon */
+  top: 50px; /* This ensures the menu appears below the hamburger icon */
   right: 0;
   background-color: grey;
   width: 100%;

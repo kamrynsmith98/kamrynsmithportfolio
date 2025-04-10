@@ -5,3 +5,5 @@ function toggleMenu() {
   menu.classList.toggle("open");  // Show/hide the menu
   icon.classList.toggle("open");  // Animate the hamburger icon
 }
+
+
