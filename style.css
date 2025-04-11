@@ -207,7 +207,11 @@ section{
 .section__text {
   max-width: 400px; /* Ensures text doesn't stretch too wide */
   color:#E5E1DA;
+    text-align: center; /* Centers the text */
+    display: block; /* Ensures it takes up full width */
+    width: 100%; /* Optional, ensures full width */
 }
+
 
 .section__text p {
   font-weight: 600;
