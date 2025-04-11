@@ -226,12 +226,7 @@ section{
   color:#F1F0E8;
 }
 
-.btn-container {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin-top: 1rem;
-}
+
 
 #socials-container {
   display: flex;
@@ -279,7 +274,12 @@ section{
   border-radius: 2rem;
   
 }
-
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
 
 .btn-color-1, .btn-color-2{
   border:lightblue solid;
@@ -300,6 +300,3 @@ section{
   background:green solid;
 }
 
-.btn-containe{
-  gap:1rem;
-}
