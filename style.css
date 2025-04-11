@@ -7,7 +7,7 @@
 
 body {
   font-family: "Cormorant", serif;
-  background-color: #9cafaa;
+  background-color: #89A8B2;
 }
 
 html {
@@ -69,8 +69,19 @@ a:hover {
 }
 
 .hamburger-menu {
-  position: relative;
-  display: inline-block;
+  position: absolute;
+  top: 40px; /* Adjust this value to place the menu below the icon */
+  left: 0;
+  width: 100%;
+  background-color: white; /* Adjust as needed */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: none; /* Hidden by default */
+  z-index: 10;
+}
+
+/* Show menu when active */
+.hamburger-menu.active {
+  display: block;
 }
 
 .hamburger-icon {
@@ -92,7 +103,7 @@ a:hover {
 /* Initial menu state (hidden) */
 .menu-links {
   position: absolute;
-  top: 50px; /* This ensures the menu appears below the hamburger icon */
+  top: 30px; /* This ensures the menu appears below the hamburger icon */
   right: 0;
   background-color: grey;
   width: 100%;
@@ -195,7 +206,7 @@ section{
 
 .section__text {
   max-width: 400px; /* Ensures text doesn't stretch too wide */
-  color:#36433F;
+  color:#EFBC9B;
 }
 
 .section__text p {
@@ -206,13 +217,13 @@ section{
 .section__text__p1 {
   font-size: 1.75rem;
   margin-bottom: 1rem;
-    color:#36433F;
+    color:#F1F0E8;
 }
 
 .section__text__p2 {
-  font-size: 1rem;
+  font-size: 1.3rem;
   margin-bottom: 1rem;
-    color:#FFFFFF;
+  color:#EFBC9B;
 }
 
 .btn-container {
