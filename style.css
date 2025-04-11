@@ -43,12 +43,12 @@ nav {
 }
 
 a {
-  color: grey;
+  color: #F6F8F7;
   text-decoration: none;
 }
 
 a:hover {
-  color: grey;
+  color: #838484;
   text-decoration: underline;
   text-underline-offset: 1rem;
   text-decoration-color: lightyellow;
@@ -195,20 +195,24 @@ section{
 
 .section__text {
   max-width: 400px; /* Ensures text doesn't stretch too wide */
+  color:#36433F;
 }
 
 .section__text p {
   font-weight: 600;
+  
 }
 
 .section__text__p1 {
   font-size: 1.75rem;
   margin-bottom: 1rem;
+    color:#36433F;
 }
 
 .section__text__p2 {
   font-size: 1rem;
   margin-bottom: 1rem;
+    color:#FFFFFF;
 }
 
 .btn-container {
@@ -262,18 +266,19 @@ section{
   padding: 1rem;
   width: 8rem;
   border-radius: 2rem;
+  
 }
 
 
 .btn-color-1, .btn-color-2{
   border:lightblue solid;
-  background:green;
+  background:#9ca1af;
 }
 
 .btn-color-1,
 .btn-color-2:hover{
-  background-color:green;
-  color:white;
+  background:#9ca1af;
+  color:black;
 }
 .btn-color-1:hover,
 .btn-color-2:hover{
