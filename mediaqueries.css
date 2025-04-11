@@ -3,6 +3,7 @@
     margin: 0 2rem; /* Reduce margins for better centering */
   }
 }
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .about-container {
@@ -11,8 +12,7 @@
   }
 
   .details-container {
-    width: 90%;
-    margin-bottom: 1rem;
+    max-width: 90%;
   }
 
   .icon.arrow {
