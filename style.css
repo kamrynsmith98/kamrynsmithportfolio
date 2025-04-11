@@ -189,6 +189,7 @@ section{
   object-fit: cover;
   border-radius: 50%;
 }
+
 #socials-container img{
   width:9%;
 }
@@ -266,6 +267,7 @@ section{
 .icons{
   cursor:pointer;
   height:2rem;
+  
 }
 
 /*BUTTONS*/
@@ -306,6 +308,7 @@ section{
 }
 
 /*ABOUT SECTION*/
+
 
 /* Section Text */
 #about .section__text__p1 {
