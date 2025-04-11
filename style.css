@@ -333,6 +333,7 @@ section{
 #about .section__pic-container {
   margin-bottom: 2rem;
 }
+
 #about {
   position: relative;
   padding: 4rem 2rem;
@@ -380,6 +381,7 @@ section{
   max-width: 300px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 
 .details-container:hover {
   transform: translateY(-5px);
