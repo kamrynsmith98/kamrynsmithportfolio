@@ -206,7 +206,7 @@ section{
 
 .section__text {
   max-width: 400px; /* Ensures text doesn't stretch too wide */
-  color:#EFBC9B;
+  color:#E5E1DA;
 }
 
 .section__text p {
@@ -223,7 +223,7 @@ section{
 .section__text__p2 {
   font-size: 1.3rem;
   margin-bottom: 1rem;
-  color:#EFBC9B;
+  color:#F1F0E8;
 }
 
 .btn-container {
@@ -283,12 +283,12 @@ section{
 
 .btn-color-1, .btn-color-2{
   border:lightblue solid;
-  background:#9ca1af;
+  background:#B3C8CF;
 }
 
 .btn-color-1,
 .btn-color-2:hover{
-  background:#9ca1af;
+  background:#B3C8CF;
   color:black;
 }
 .btn-color-1:hover,
