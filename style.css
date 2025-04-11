@@ -336,9 +336,9 @@ section{
 
 
   #about {
-    border-radius:10%;
+    border-radius:5%;
     position: relative;
-    padding: 4rem 2rem;
+    padding: 6rem 6rem;
     background: #B3C8CF;
     display: flex;
     flex-direction: column;
