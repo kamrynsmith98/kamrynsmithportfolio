@@ -21,10 +21,14 @@
   }
 }
 
-/* Responsive adjustments */
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .text-container {
     padding: 15px;
-    font-size: 14px;
+    max-width: 100%;
+  }
+
+  .text-container p {
+    font-size: 0.9rem;
+    text-align: left;
   }
 }

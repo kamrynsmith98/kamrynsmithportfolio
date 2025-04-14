@@ -494,13 +494,19 @@ section{
 }
 
 
-/* Text Container */
 .text-container {
-  padding: 20px;
-  font-size: 16px;
-  line-height: 1.5;
+  display: grid;
+  grid-template-columns: 1fr;
+  
+  gap: 16px; /* Adjusts space between paragraphs */
+  padding: 26px; /* Adds padding around the container */
 }
 
+.text-container p {
+  line-height: 1; /* Increases space between lines within paragraphs */
+  margin: 2;
+
+}
 /* Arrow Icon */
 .icon.arrow {
   position: absolute;
