@@ -20,37 +20,3 @@
     bottom: 1rem;
   }
 }
-@media screen and (max-width: 768px) {
-  .skills-wrapper {
-    padding: 2rem 1rem; /* Less padding on small screens */
-  }
-
-  .skills-columns {
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
-  }
-
-  .skills-section {
-    width: 100%;
-    max-width: 95%; /* Keeps some margin */
-    padding: 1.5rem;
-  }
-
-  .skills-subtitle {
-    font-size: 1.3rem;
-  }
-
-  .skill span {
-    font-size: 0.95rem;
-  }
-
-  .skill-bar {
-    height: 20px;
-  }
-
-  .skill-fill {
-    font-size: 0.75rem;
-    padding-right: 6px;
-  }
-}
