@@ -422,14 +422,15 @@ section{
 }
 /* Skills Container */
 .skills-wrapper {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto 4rem;
-  padding: 2rem;
-  background-color: #E5E1DA;
-  border-radius: 2rem;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  animation: fadeIn 1s ease-in;
+   border-radius:5%;
+    position: relative;
+    padding: 6rem 6rem;
+    background: #B3C8CF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: background-color 0.5s ease; /* Added transition */
 }
 
 /* Title */
@@ -440,19 +441,12 @@ section{
   margin-bottom: 2.5rem;
 }
 
-/* Three-Column Layout */
-.skills-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+
 
 .skills-columns {
   display: flex;
-  gap: 2rem;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 100%;
+  justify-content: space-between;
+  gap: 3rem;
 }
 
 /* Each Skill Section */
@@ -508,6 +502,7 @@ section{
 .skill:hover .skill-fill {
   filter: brightness(1.2);
 }
+
 
 /* Responsive Stacking on Small Screens */
 @media screen and (max-width: 768px) {

@@ -20,3 +20,34 @@
     bottom: 1rem;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .skills-section {
+    width: 100%;
+    padding: 0 1rem;
+    box-sizing: border-box;
+  }
+
+  .skills-columns {
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+  }
+
+  .skill {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .skill span {
+    word-wrap: break-word;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .skills-wrapper {
+    padding: 1.5rem;
+    max-width: 90%; /* fills most of the screen while leaving margin */
+  }
+}
