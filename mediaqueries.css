@@ -20,34 +20,37 @@
     bottom: 1rem;
   }
 }
-
 @media screen and (max-width: 768px) {
-  .skills-section {
-    width: 100%;
-    padding: 0 1rem;
-    box-sizing: border-box;
+  .skills-wrapper {
+    padding: 2rem 1rem; /* Less padding on small screens */
   }
 
   .skills-columns {
     flex-direction: column;
-    gap: 2rem;
-    width: 100%;
+    align-items: center;
+    gap: 1.5rem;
   }
 
-  .skill {
+  .skills-section {
     width: 100%;
-    max-width: 100%;
+    max-width: 95%; /* Keeps some margin */
+    padding: 1.5rem;
+  }
+
+  .skills-subtitle {
+    font-size: 1.3rem;
   }
 
   .skill span {
-    word-wrap: break-word;
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
-}
 
-@media screen and (max-width: 768px) {
-  .skills-wrapper {
-    padding: 1.5rem;
-    max-width: 90%; /* fills most of the screen while leaving margin */
+  .skill-bar {
+    height: 20px;
+  }
+
+  .skill-fill {
+    font-size: 0.75rem;
+    padding-right: 6px;
   }
 }
