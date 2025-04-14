@@ -20,3 +20,11 @@
     bottom: 1rem;
   }
 }
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .text-container {
+    padding: 15px;
+    font-size: 14px;
+  }
+}
