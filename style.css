@@ -8,6 +8,7 @@
 body {
   font-family: "Cormorant", serif;
   background-color: #89A8B2;
+  
 }
 
 html {
@@ -43,20 +44,22 @@ nav {
 }
 
 a {
-  color: #F6F8F7;
+  color: #fbffc1;
+  font-weight: bold;
   text-decoration: none;
 }
 
 a:hover {
-  color: #838484;
+  
   text-decoration: underline;
   text-underline-offset: 1rem;
-  text-decoration-color: lightyellow;
+  text-decoration-color: #c1dcff;
 }
 
 .logo {
-  font-size: 2rem;
-  color: white;
+  font-size: 2.3rem;
+  font-weight: bold;
+  color: #fbffc1;
 }
 
 .logo:hover {
