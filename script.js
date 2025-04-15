@@ -16,3 +16,17 @@ window.addEventListener('DOMContentLoaded', () => {
     skillFill.style.width = percent; // Set width based on data-percent attribute
   });
 });
+
+  const text = `I’m an Ad Tech Specialist with 3+ years of experience. I lead trafficking across Social, Digital Video, Digital Radio, META, and DTVE for Publix, one of the largest grocers in the Southeast.`;
+  let i = 0;
+
+  function typeWriter() {
+    if (i < text.length) {
+      document.getElementById("typewriter-text").innerHTML += text.charAt(i);
+      i++;
+      setTimeout(typeWriter, 25); // speed of typing (in ms)
+    }
+  }
+
+  window.addEventListener("load", typeWriter);
+
