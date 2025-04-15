@@ -3,7 +3,16 @@
     margin: 0 2rem; /* Reduce margins for better centering */
   }
 }
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  #desktop-nav {
+    display: none;
+  }
 
+  #hamburger-nav {
+    display: flex;
+  }
+}
 /* Responsive Design */
 @media (max-width: 768px) {
   .about-container {
