@@ -414,6 +414,24 @@ background-color:#8ea29a;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
+/*EXPERIENCE*/
+
+#experience {
+  position:relative;
+  
+}
+
+.experience-sub-title {
+  color:#fbffc1;
+  font-weight:600;
+  font-size:1.75rem;
+  margin-bottom:2rem;
+}
+.experience-details-container {
+  display:flex;
+  justify-content:center;
+  flex-direction:column;
+}
 .icon-container {
   margin-bottom: 1rem;
 }
