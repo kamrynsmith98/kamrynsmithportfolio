@@ -181,8 +181,15 @@ section{
   height: auto;
   padding: 4rem 0;
   margin:20px;
-background-color:#8ea29a;
+  background-color:#8ea29a;
   
+}
+.section__pic-container {
+  width: 375px; /* Adjusted size */
+  height: 375px;
+  margin: auto 0;
+  display: flex;
+ 
 }
 .section__pic-container img {
   width: 100%;
@@ -195,82 +202,47 @@ background-color:#8ea29a;
   width:10%;
 }
 
-.section__pic-container {
-  width: 375px; /* Adjusted size */
-  height: 375px;
-  border-radius: 50%; /* Makes it circular */
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-
 .section__text {
   max-width: 400px; /* Ensures text doesn't stretch too wide */
   color:#E5E1DA;
-    text-align: center; /* Centers the text */
-    display: block; /* Ensures it takes up full width */
-    width: 100%; /* Optional, ensures full width */
+  align-self:center;
+  text-align: center; /* Centers the text */
+  display: block; /* Ensures it takes up full width */
+  width: 100%; /* Optional, ensures full width */
 }
-
 
 .section__text p {
   font-weight: 600;
   
 }
 
-
 .section__text__p1 {
   font-size: 5rem;
   margin-top:2rem;
-    color:#ffffff
+  color:#ffffff;
+  text-align:center;
 }
-._title{
-  font-size: 4.25rem;
-  margin-bottom: 1rem;
-  color:#ffffff
-}
+
 .section__text__p2 {
   font-size: 2rem;
   margin-bottom: 2rem;
   color:#F1F0E8;
 }
 
+._title{
+  font-size: 4.25rem;
+  text-align:center;
+  color:#ffffff
+}
 .section__text h6{
   font-size:1.3rem;
 }
-/*TEXT BLOCK CONCLUDES*/
-
 #socials-container {
   display: flex;
   justify-content: center;
   margin-top: 1rem;
   gap: 1rem;
 }
-
-/* Responsive - Stack elements on smaller screens */
-@media screen and (max-width: 768px) {
-  #profile {
-    flex-direction: column; /* Stacks items */
-    text-align: center;
-  }
-
-  .section__text {
-    max-width: 100%; /* Allows text to take full width */
-  }
-}
-
-
-
-
-.title{
-  font-size:3rem;
-  text-align:center;
-}
-
-
 
 /*ICONS*/
 .icons{
@@ -282,6 +254,10 @@ background-color:#8ea29a;
   cursor:pointer;
   height:1rem;
 }
+/*ICONS*/
+
+/*TEXT BLOCK CONCLUDES*/
+
 
 
 /*BUTTONS*/

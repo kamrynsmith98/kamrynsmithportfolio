@@ -13,6 +13,19 @@
     display: flex;
   }
 }
+/* Responsive - Stack elements on smaller screens */
+@media screen and (max-width: 768px) {
+  #profile {
+    flex-direction: column; /* Stacks items */
+    text-align: center;
+  }
+
+  .section__text {
+    max-width: 100%; /* Allows text to take full width */
+  }
+}
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .about-container {
