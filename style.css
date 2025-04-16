@@ -107,7 +107,7 @@ a:hover {
   transition: all 0.3s ease-in-out;
 }
 
-/* Initial menu state (hidden) */
+
 .menu-links {
   position: absolute;
   top: 30px; /* This ensures the menu appears below the hamburger icon */
@@ -421,17 +421,7 @@ background-color:#8ea29a;
   
 }
 
-.experience-sub-title {
-  color:#fbffc1;
-  font-weight:600;
-  font-size:1.75rem;
-  margin-bottom:2rem;
-}
-.experience-details-container {
-  display:flex;
-  justify-content:center;
-  flex-direction:column;
-}
+
 .icon-container {
   margin-bottom: 1rem;
 }
