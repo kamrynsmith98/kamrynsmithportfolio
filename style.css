@@ -245,14 +245,18 @@ section{
 }
 
 /*ICONS*/
-.icons{
+.icon{
   cursor:pointer;
   height:2rem;
+  
   
 }
 .icon2{
   cursor:pointer;
   height:1rem;
+}
+.icon-container {
+  margin-bottom: 1rem;
 }
 /*ICONS*/
 
@@ -302,7 +306,10 @@ section{
  #about {
   position:relative;
   }
-.about-containers{
+#about .section__text__p1 {
+  font-size:2rem;
+}
+.about-container{
   gap: 2rem;
   margin-bottom:2rem;
   margin-top:2rem;
@@ -318,211 +325,18 @@ section{
 }
 .about-pic {
   border-radius:2rem;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 4px solid #3e4c59;
-  transition: transform 0.3s ease;
 }
+h1 {
+  font-size: 5rem;
+  margin-top:2rem;
+  color:black;
+  text-align:center;
+}
+
 
 .arrow{
   position:absolute;
   right:-5rem;
   bottom:2.5rem;
-}
-
-.about-pic:hover {
-  transform: scale(1.05);
-}
-
-
-/* Section Text */
-#about .section__text__p1 {
-  font-size:3rem;
-  color:#F1F0E8;
-  margin-bottom: 0.5rem;
-}
-
-#about .title {
-  font-size: 2.5rem;
-  color: #F1F0E8;
-  margin-bottom: 2rem;
-}
-
-/* Container */
-#about .section-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 1200px;
-  width: 100%;
-}
-
-/* Profile Picture */
-#about .section__pic-container {
-  margin-bottom: 2rem;
-}
-
-
- 
-
-  #about:hover {
-    background-color: #A0B9C9; /* New background color on hover */
-  }
-
-/* Details Containers */
-
-
-.about-container {
-  display: flex;
-  gap: 2rem;
-}
-
-.details-container {
-  background: #ffffff;
-  padding: 2rem;
-  border-radius: 1rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  background-color:#E5E1DA;
-  width: 350px;
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-
-
-.details-container:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
-/*EXPERIENCE*/
-
-#experience {
-  position:relative;
-  
-}
-
-
-.icon-container {
-  margin-bottom: 1rem;
-}
-
-.icon {
-  width: 50px;
-  height: 50px;
-  object-fit: contain;
-}
-
-.details-container h3 {
-  margin-bottom: 0.5rem;
-  color: #334e68;
-  font-size:18px;
-}
-
-.details-container p {
-  color: #627d98;
-  font-size:18px;
-}
-/
-.skills-wrapper {
-  padding: 30px;
-}
-
-.skills-title {
-  text-align: center;
-  font-size: 2.5rem;
-}
-
-.skills-section {
-  margin-bottom: 30px;
-}
-
-.skills-subtitle {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-}
-
-.skill {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-.skill span {
-  width: 150px;
-  font-size: 1.2rem;
-}
-
-.skill-bar {
-  position: relative;
-  width: 100%;
-  height: 10px;
-  background-color: #e0e0e0;
-  border-radius: 5px;
-}
-
-.skill-fill {
-  position: absolute;
-  width: 0;
-  height: 100%;
-  background-color: #4caf50; /* Green color for the filled part */
-  border-radius: 5px;
-  transition: width 1s ease-in-out; /* Smooth animation for filling */
-}
-/* Add color variations for each skill section */
-/* Add color variations for each skill section */
-.skills-section:nth-child(1) .skill-fill {
-  background-color: #4caf50; /* Green for Technical Skills */
-}
-
-.skills-section:nth-child(2) .skill-fill {
-  background-color: #2196f3; /* Blue for Ad Tech Tools */
-}
-
-.skills-section:nth-child(3) .skill-fill {
-  background-color: #9c27b0; /* Purple for Design Skills */
-}
-
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .skill {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .skill span {
-    margin-bottom: 5px;
-  }
-}
-
-
-.text-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  
-  gap: 16px; /* Adjusts space between paragraphs */
-  padding: 26px; /* Adds padding around the container */
-}
-
-.text-container p {
-  line-height: 1; /* Increases space between lines within paragraphs */
-  margin: 2;
-
-}
-/* Arrow Icon */
-.icon.arrow {
-  position: absolute;
-  bottom: 2rem;
-  right: 2rem;
-  width: 40px;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-
-.icon.arrow:hover {
-  transform: translateY(5px);
 }
 
