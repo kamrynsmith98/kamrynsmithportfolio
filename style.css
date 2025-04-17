@@ -191,7 +191,16 @@ section {
 #socials-container img {
   width: 10%;
 }
-
+.details-container  h5, p {
+  text-align: center;
+  color: #e5e1da;
+  font-size:18px;
+}
+.details-container h2  {
+  text-align: center;
+  color: #e5e1da;
+  font-size:28px;
+}
 .section__text {
   max-width: 400px; /* Ensures text doesn't stretch too wide */
   color: #e5e1da;
@@ -208,7 +217,7 @@ section {
 .section__text__p1 {
   font-size: 5rem;
   margin-top: 2rem;
-  color: #f1f0e8;
+  color: #fbffc1;
   text-align: center;
 }
 
@@ -296,8 +305,12 @@ section {
   padding: 2rem 0;
 }
 .details-container h3 {
-  text-align: center;
+  text-align: left;
+  font-size:40px;
+  color:#fbffc1;
 }
+
+
 #about .section__pic-container {
   flex: 1 1 300px;
   display: flex;
