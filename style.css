@@ -234,16 +234,18 @@ section {
 }
 
 /*ICONS*/
+
 .icon {
   cursor: pointer;
-  height: 2rem;
+ 
+  width: 4rem;
 }
 .icon2 {
   cursor: pointer;
-  height: 1rem;
+  height: 2rem;
 }
 .icon-container {
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 /*ICONS*/
 
@@ -293,7 +295,9 @@ section {
   justify-content: center;
   padding: 2rem 0;
 }
-
+.details-container h3, h5, {
+  text-align: center;
+}
 #about .section__pic-container {
   flex: 1 1 300px;
   display: flex;
