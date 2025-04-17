@@ -295,7 +295,7 @@ section {
   justify-content: center;
   padding: 2rem 0;
 }
-.details-container h3, h5, {
+.details-container h3 {
   text-align: center;
 }
 #about .section__pic-container {
