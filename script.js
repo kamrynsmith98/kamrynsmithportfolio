@@ -17,3 +17,10 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+
+  document.querySelectorAll(".toggle-header").forEach(button => {
+    button.addEventListener("click", () => {
+      const content = button.nextElementSibling;
+      content.classList.toggle("open");
+    });
+  });

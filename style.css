@@ -176,6 +176,11 @@ section {
   margin: 20px;
   background-color: #8ea29a;
 }
+.about-details-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
 .section__pic-container {
   width: 375px; /* Adjusted size */
   height: 375px;
@@ -245,7 +250,14 @@ section {
 }
 
 /*ICONS*/
+.icon {
+  transition: transform 0.3s, filter 0.3s;
+}
 
+.icon:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 5px #888);
+}
 .icon {
   cursor: pointer;
  
@@ -306,11 +318,11 @@ section {
   justify-content: center;
   padding: 2rem 0;
 }
-.details-container h3 {
-  text-align: left;
-  font-size:40px;
+.details-container h2,h3{
+  text-align: center;
+  font-size:46px;
   color:#fbffc1;
-    font-style: italic;
+  font-style: italic;
   font-weight: bold;
 }
 .details-container .icon {
@@ -368,6 +380,68 @@ h1 {
   color: black;
   text-align: center;
 }
+.toggle-header {
+  background-color: #f0f0f0;
+  border: none;
+  padding: 1rem;
+  font-size: 1.2rem;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+/* Toggle Section Styling */
+.details-toggle {
+  background-color: #95b1ba;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.toggle-header {
+  background-color: #8ea29a;
+  color: #fbffc1;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: "Cormorant", serif;
+  border: none;
+  padding: 1.2rem 2rem;
+  text-align: left;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-header:hover {
+  background-color: #b3c8cf;
+  color: black;
+}
+
+.toggle-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, padding 0.3s ease;
+  padding: 0 2rem;
+  background-color: #b3c8cf;
+}
+
+.toggle-content.open {
+  max-height: 2000px; /* enough room to grow */
+  padding: 1.5rem 2rem;
+}
+
+/* Icon Hover Styling */
+.details-toggle .icon {
+  transition: transform 0.3s, filter 0.3s;
+}
+
+.details-toggle .icon:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 5px #fbffc1);
+}
+
+
+
 
 .icon.arrow {
   position: fixed; /* Keeps it in place */
