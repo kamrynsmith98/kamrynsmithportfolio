@@ -195,11 +195,13 @@ section {
   text-align: center;
   color: #e5e1da;
   font-size:18px;
+  padding:5px;
 }
 .details-container h2  {
   text-align: center;
   color: #e5e1da;
   font-size:28px;
+  
 }
 .section__text {
   max-width: 400px; /* Ensures text doesn't stretch too wide */
@@ -308,6 +310,13 @@ section {
   text-align: left;
   font-size:40px;
   color:#fbffc1;
+    font-style: italic;
+  font-weight: bold;
+}
+.details-container .icon {
+  display: block;
+  margin: 0 auto;
+  width: 60px; /* adjust as needed */
 }
 
 
