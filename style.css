@@ -315,7 +315,7 @@ section {
 
 #about .details-container {
   flex: 1 1 250px;
-  background-color: var(--bg-secondary, #f9f9f9);
+  background-color: #89a8b2;
   padding: 1.5rem;
   border-radius: 1rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
@@ -343,9 +343,16 @@ h1 {
   text-align: center;
 }
 
-.arrow {
-  position: absolute;
-  right: -5rem;
-  bottom: 2.5rem;
+.icon.arrow {
+  position: fixed; /* Keeps it in place */
+  bottom: 2rem; /* Distance from the bottom of the screen */
+  right: 2rem;  /* Distance from the right edge */
+  width: 40px;
+  z-index: 1000;
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
+.icon.arrow:hover {
+  transform: translateY(5px);
+}
