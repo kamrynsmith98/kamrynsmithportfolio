@@ -24,3 +24,23 @@ window.addEventListener('DOMContentLoaded', () => {
       content.classList.toggle("open");
     });
   });
+document.querySelectorAll(".toggle-header").forEach(button => {
+  button.addEventListener("click", () => {
+    const content = button.nextElementSibling;
+    const allContent = document.querySelectorAll(".toggle-content");
+    const allHeaders = document.querySelectorAll(".toggle-header");
+
+    // Close other open sections
+    allContent.forEach(c => {
+      if (c !== content) c.classList.remove("open");
+    });
+
+    allHeaders.forEach(h => {
+      if (h !== button) h.classList.remove("open");
+    });
+
+    // Toggle current
+    content.classList.toggle("open");
+    button.classList.toggle("open");
+  });
+});

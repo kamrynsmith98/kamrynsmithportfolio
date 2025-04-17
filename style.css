@@ -380,34 +380,30 @@ h1 {
   color: black;
   text-align: center;
 }
-.toggle-header {
-  background-color: #f0f0f0;
-  border: none;
-  padding: 1rem;
-  font-size: 1.2rem;
-  width: 100%;
-  text-align: left;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-/* Toggle Section Styling */
+./* ========== ABOUT SECTION INTERACTIVITY ========== */
+
 .details-toggle {
   background-color: #95b1ba;
   border-radius: 1rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  margin-bottom: 1rem;
 }
 
+/* Toggle Header Button */
 .toggle-header {
   background-color: #8ea29a;
   color: #fbffc1;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: bold;
   font-family: "Cormorant", serif;
   border: none;
-  padding: 1.2rem 2rem;
+  padding: 1.5rem 2rem;
   text-align: left;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -417,31 +413,60 @@ h1 {
   color: black;
 }
 
+/* Hidden Content Area */
 .toggle-content {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.5s ease, padding 0.3s ease;
   padding: 0 2rem;
   background-color: #b3c8cf;
+  color: #333;
 }
 
+/* Show Content */
 .toggle-content.open {
-  max-height: 2000px; /* enough room to grow */
+  max-height: 2000px; /* Adjust based on content */
   padding: 1.5rem 2rem;
 }
 
-/* Icon Hover Styling */
-.details-toggle .icon {
-  transition: transform 0.3s, filter 0.3s;
+/* Arrow rotation */
+.arrow-icon {
+  transition: transform 0.3s ease;
+  font-size: 1.5rem;
+  color: #fbffc1;
 }
 
-.details-toggle .icon:hover {
-  transform: scale(1.1);
-  filter: drop-shadow(0 0 5px #fbffc1);
+.toggle-header.open .arrow-icon {
+  transform: rotate(180deg);
 }
 
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .toggle-header {
+    font-size: 1.3rem;
+    padding: 1.2rem;
+  }
 
+  .arrow-icon {
+    font-size: 1.2rem;
+  }
 
+  .toggle-content.open {
+    padding: 1rem 1.2rem;
+  }
+}
+
+/* Responsive Font Size */
+@media (max-width: 768px) {
+  .toggle-header {
+    font-size: 1.3rem;
+    padding: 1.2rem;
+  }
+
+  .arrow-icon {
+    font-size: 1.2rem;
+  }
+}
 
 .icon.arrow {
   position: fixed; /* Keeps it in place */
