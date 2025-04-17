@@ -337,6 +337,14 @@ section {
   display: flex;
   justify-content: center;
 }
+.details-container {
+  margin: 2rem auto;
+  max-width: 1200px;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
 #about .about-details-container {
   flex: 2 1 500px;
@@ -380,15 +388,12 @@ h1 {
   color: black;
   text-align: center;
 }
-./* ========== ABOUT SECTION INTERACTIVITY ========== */
+/* ========== ABOUT SECTION INTERACTIVITY ========== */
 
 .details-toggle {
-  background-color: #95b1ba;
-  border-radius: 1rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
   margin-bottom: 1rem;
 }
+
 
 /* Toggle Header Button */
 .toggle-header {
@@ -455,6 +460,7 @@ h1 {
     padding: 1rem 1.2rem;
   }
 }
+
 
 /* Responsive Font Size */
 @media (max-width: 768px) {

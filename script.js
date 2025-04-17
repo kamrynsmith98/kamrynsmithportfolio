@@ -24,23 +24,16 @@ window.addEventListener('DOMContentLoaded', () => {
       content.classList.toggle("open");
     });
   });
-document.querySelectorAll(".toggle-header").forEach(button => {
-  button.addEventListener("click", () => {
-    const content = button.nextElementSibling;
-    const allContent = document.querySelectorAll(".toggle-content");
-    const allHeaders = document.querySelectorAll(".toggle-header");
+document.querySelectorAll('.toggle-header').forEach(header => {
+  header.addEventListener('click', () => {
+    const toggleContainer = header.parentElement;
+    const content = toggleContainer.querySelector('.toggle-content');
+    const icon = header.querySelector('.arrow-icon');
 
-    // Close other open sections
-    allContent.forEach(c => {
-      if (c !== content) c.classList.remove("open");
-    });
+    // Toggle content visibility
+    content.classList.toggle('active');
 
-    allHeaders.forEach(h => {
-      if (h !== button) h.classList.remove("open");
-    });
-
-    // Toggle current
-    content.classList.toggle("open");
-    button.classList.toggle("open");
+    // Rotate icon
+    icon.classList.toggle('rotate');
   });
 });
