@@ -54,11 +54,26 @@
   }
 }
 
-@media (max-width: 480px) {
-  #about .details-container {
-    padding: 1rem;
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .details-container {
+    margin-bottom: 15px; /* Reduce space between containers */
+  }
+  .about__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center profile picture on mobile */
   }
 
+  .about-details-container {
+    padding: 0 10px; /* Add some padding around details section */
+  }
+
+  .details-toggle {
+    margin-bottom: 10px; /* Adjust the margin between toggles */
+  }
+}
   #about .details-container img.icon {
     width: 32px;
   }
@@ -67,7 +82,7 @@
     font-size: 0.95rem;
   }
   
-}
+
 @media (max-width: 768px) {
   .text-container {
     padding: 15px;
@@ -79,6 +94,7 @@
     text-align: left;
   }
 }
+
 @media screen and (min-width: 768px) {
   .about-details-container {
     grid-template-columns: repeat(2, 1fr);
@@ -96,12 +112,13 @@
     padding: 1.5rem;
     align-items: center;
   }}
- /* Image size and centering */
-  #about .about-pic {
-    width: 50%; /* Smaller image */
-    height: auto;
-    margin: 0 auto;
-    border-radius: 50%;
-    object-fit: cover;
+@media (max-width: 768px) {
+  #about .text-container p {
+    font-size: 0.9rem; /* Slightly smaller text on mobile */
+    line-height: 1.8; /* Adjust line height for mobile */
+    padding: 0 15px; /* Add some padding for better spacing */
   }
+}
+
+ /* Image size and centering */
 
