@@ -410,7 +410,7 @@ button.accordion-header {
 }
 
 .work-logo {
-  height: 1em;
+  height: 2em;
   max-height: 24px;
   width: auto;
   margin-left: 6px;
@@ -418,16 +418,15 @@ button.accordion-header {
   object-fit: contain;
 }
 img.work-logo {
-  height: 3em;
-  max-height: 24px;
+  height: 3em; /* increases size relative to text */
+  max-height: 50px; /* increases the maximum height to prevent it from being too large */
   width: auto;
   margin-left: 6px;
+  padding-top: 6px; /* adds padding to the top */
   vertical-align: middle;
   object-fit: contain;
-  display: block; /* makes sure the image is treated like a block element */
+  display: block; /* ensures image is treated as a block element */
 }
-
-
 
 .icon.arrow {
   position: fixed; /* Keeps it in place */
