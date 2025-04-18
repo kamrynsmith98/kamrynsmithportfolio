@@ -176,3 +176,14 @@
 
  /* Image size and centering */
 
+/* Responsive Font Size */
+@media (max-width: 768px) {
+  .toggle-header {
+    font-size: 1.3rem;
+    padding: 1.2rem;
+  }
+
+  .arrow-icon {
+    font-size: 1.2rem;
+  }
+}

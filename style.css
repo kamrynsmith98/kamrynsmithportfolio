@@ -304,6 +304,11 @@ button{
   color: #333;
   text-align: center;
 }
+.sub-role {
+  margin-left: 24px;
+  font-size: 0.95rem;
+  color: #666666;
+}
 
 .title {
   font-size: 2.5rem;
@@ -322,11 +327,31 @@ button{
   border-radius: 50%;
   margin-bottom: 20px;
 }
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 24px; /* Optional: reduce padding to tighten */
+  background-color: #fafafa;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+  font-size: 0.95rem; /* slightly smaller to fit better */
+  line-height: 1.5;
+}
+
+.accordion-content p {
+  text-align: left;
+  margin: 8px 0; /* reduce vertical spacing between items */
+  color: #555656;
+  font-size: 0.95rem;
+}
 
 .accordion-container {
   width: 100%;
   max-width: 700px;
   margin: 0 auto;
+}
+.accordion-item.active .accordion-content {
+  padding: 16px 24px; /* Add padding when expanded */
+  max-height: 500px; /* Adjust height based on your content length */
 }
 
 
@@ -352,7 +377,7 @@ button.accordion-header {
   padding: 18px 24px;
   text-align: center;
   letter-spacing:1px;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-weight: bold;
   cursor: pointer;
   border: none;
@@ -376,33 +401,7 @@ button.accordion-header {
   transform: rotate(-180deg);
 }
 
-.accordion-content {
-  max-height: 0;
-  overflow: hidden;
-  padding: 0 24px;
-  background-color: #fafafa;
-  transition: max-height 0.4s ease;
-}
 
-.accordion-content p {
-  text-align: left;
-  margin: 16px 0;
-  font-size: 1rem;
-  color: #555555;
-}
-
-
-/* Responsive Font Size */
-@media (max-width: 768px) {
-  .toggle-header {
-    font-size: 1.3rem;
-    padding: 1.2rem;
-  }
-
-  .arrow-icon {
-    font-size: 1.2rem;
-  }
-}
 
 .icon.arrow {
   position: fixed; /* Keeps it in place */
