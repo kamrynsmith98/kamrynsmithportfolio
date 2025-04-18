@@ -70,3 +70,9 @@ document.querySelectorAll(".accordion-header").forEach((header) => {
     }
   });
 });
+const buttons = document.querySelectorAll('.accordion-header');
+buttons.forEach(btn => {
+  if (btn.textContent.trim().startsWith('Education')) {
+    btn.style.backgroundColor = '#fff9c4'; // example style
+  }
+});

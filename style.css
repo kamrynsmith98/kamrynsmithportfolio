@@ -269,6 +269,9 @@ section {
   width: 8rem;
   border-radius: 2rem;
 }
+button{
+  font-weight:600;
+}
 .btn-container {
   display: flex;
   justify-content: center;
@@ -326,6 +329,7 @@ section {
   margin: 0 auto;
 }
 
+
 .accordion-item {
   background: #ffffff;
   border-radius: 12px;
@@ -338,19 +342,22 @@ section {
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
   transform: translateY(-2px);
 }
+button.accordion-header {
+  color:darkgrey;}
 
 .accordion-header {
   width: 100%;
   background: linear-gradient(to right, #e0f7fa, #e3f2fd);
   color: #333333;
   padding: 18px 24px;
-  text-align: left;
+  text-align: center;
+  letter-spacing:1px;
   font-size: 1.3rem;
-  font-weight: 500;
+  font-weight: bold;
   cursor: pointer;
   border: none;
   outline: none;
-  display: flex;
+  display:center;
   justify-content: space-between;
   align-items: center;
   transition: background 0.3s ease;
@@ -383,7 +390,6 @@ section {
   font-size: 1rem;
   color: #555555;
 }
-
 
 
 /* Responsive Font Size */
