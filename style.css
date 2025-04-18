@@ -309,6 +309,28 @@ section {
 .btn-color-1:hover {
   background: green solid;
 }
+.about__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 2rem;
+}
+/* Profile Picture Container */
+.section__pic-container {
+  width: 200px; /* Adjust width as needed */
+  height: 200px; /* Maintain aspect ratio for the circle */
+  border-radius: 50%; /* Makes the container circular */
+  overflow: hidden; /* Ensures the image fits nicely inside */
+  border: 5px solid #ffffff; /* Optional: border to make the image stand out */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: subtle shadow for depth */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f8f8; /* Light background for the container */
+}
+
 
 #about .about__wrapper {
   display: flex;
@@ -318,6 +340,7 @@ section {
   justify-content: center;
   padding: 2rem 0;
 }
+
 .details-container h2,h3{
   text-align: center;
   font-size:46px;
@@ -352,7 +375,11 @@ section {
   overflow: hidden;
   position: relative;
 }
-
+  .about-pic {
+    width: 40%;
+  height: 40%;
+  object-fit: cover;
+  }
 #about .about-details-container {
   flex: 2 1 500px;
   display: flex;
@@ -368,11 +395,10 @@ section {
 
 #about .details-container {
   flex: 1 1 250px;
-  padding: 0; /* no visual styling until expanded */
-  background-color: transparent;
-  box-shadow: none;
-  border-radius: 0;
-  transition: all 0.3s ease;
+  background-color: #95b1ba;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 #about .details-container img.icon {
@@ -421,23 +447,23 @@ h1 {
   transition: background-color 0.3s ease;
 }
 
-
-  .toggle-header {
-    padding: 1rem;
-    font-size: 1.2rem;
-  }
-
- 
+.toggle-header:hover {
+  background-color: #b3c8cf;
+  color: black;
+}
 
 .toggle-content {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.5s ease, padding 0.3s ease;
   padding: 0 2rem;
+  background-color: #b3c8cf;
+  color: #333;
 }
 
+/* When open, allow scroll without expanding layout */
 .toggle-content.open {
-  max-height: 200px; /* limit height */
+  max-height: 400px; /* set based on your largest content */
   overflow-y: auto;
   padding: 1.5rem 2rem;
 }
