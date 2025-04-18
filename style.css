@@ -17,7 +17,12 @@ html {
 p {
   color: black;
 }
-
+span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
 /* Transition */
 a,
 .btn {
@@ -48,7 +53,10 @@ a {
   font-weight: bold;
   text-decoration: none;
 }
-
+li {
+  list-style-type: none; /* Removes the bullet point */
+  padding-left: 0; /* Optional: Remove any default padding from the left */
+}
 a:hover {
   text-decoration: underline;
   text-underline-offset: 1rem;
@@ -399,6 +407,24 @@ button.accordion-header {
 
 .accordion-item.active .accordion-header::after {
   transform: rotate(-180deg);
+}
+
+.work-logo {
+  height: 1em;
+  max-height: 24px;
+  width: auto;
+  margin-left: 6px;
+  vertical-align: middle;
+  object-fit: contain;
+}
+img.work-logo {
+  height: 3em;
+  max-height: 24px;
+  width: auto;
+  margin-left: 6px;
+  vertical-align: middle;
+  object-fit: contain;
+  display: block; /* makes sure the image is treated like a block element */
 }
 
 
