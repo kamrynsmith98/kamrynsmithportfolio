@@ -317,30 +317,16 @@ section {
   padding: 2rem;
   gap: 2rem;
 }
-/* Profile Picture Container */
-.section__pic-container {
-  width: 200px; /* Adjust width as needed */
-  height: 200px; /* Maintain aspect ratio for the circle */
-  border-radius: 50%; /* Makes the container circular */
-  overflow: hidden; /* Ensures the image fits nicely inside */
-  border: 5px solid #ffffff; /* Optional: border to make the image stand out */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: subtle shadow for depth */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f8f8f8; /* Light background for the container */
-}
 
 
+/* About Section */
 #about .about__wrapper {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 3rem;
   gap: 2rem;
-  align-items: flex-start;
-  justify-content: center;
-  padding: 2rem 0;
+  align-items: center;
 }
-
 .details-container h2,h3{
   text-align: center;
   font-size:46px;
@@ -360,10 +346,12 @@ section {
   align-items: flex-start;
 }
 
+
 #about .section__pic-container {
   flex: 1 1 300px;
   display: flex;
   justify-content: center;
+  margin: auto;
 }
 .details-container {
   flex: 1 1 300px;
@@ -375,30 +363,36 @@ section {
   overflow: hidden;
   position: relative;
 }
-  .about-pic {
-    width: 40%;
-  height: 40%;
-  object-fit: cover;
-  }
 #about .about-details-container {
-  flex: 2 1 500px;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-#about .about-details-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 0;
+  width: 100%;
+  max-width: 1200px;
 }
 
+
 #about .details-container {
+  background-color: transparent; /* No background color */
   flex: 1 1 250px;
-  background-color: #95b1ba;
-  padding: 1.5rem;
-  border-radius: 1rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  min-height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0; /* Removed padding */
+  text-align: center;
+}
+
+#about .about-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
 }
 
 #about .details-container img.icon {
@@ -407,11 +401,10 @@ section {
 }
 
 #about .text-container p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.6;
-  color: var(--text-primary, #333);
+  color: var(--text-primary, #333333);
 }
-
 #about .arrow-container {
   margin-top: 2rem;
   text-align: center;
