@@ -305,179 +305,70 @@ section {
 .btn-color-1:hover {
   background: green solid;
 }
+#about {
+  padding: 40px 20px;
+  background-color: #89a8b2;
+  color: #333;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
 .about__wrapper {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  padding: 4rem;
-  gap: 2rem;
-}
-
-
-/* About Section */
-#about .about__wrapper {
-  display: flex;
-  justify-content: space-between;
-  padding: 5rem;
-  gap: 5rem;
   align-items: center;
 }
-.details-container h2,h3{
-  text-align: center;
-  font-size:46px;
-  color:#fbffc1;
-  font-style: italic;
-  font-weight: bold;
-}
-.details-container .icon {
-  display: block;
-  margin: 0 auto;
-  width: 60px; /* adjust as needed */
-}
-#about .about-details-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  align-items: flex-start;
-}
 
-
-#about .section__pic-container {
-  flex: 1 1 300px;
-  display: flex;
-  justify-content: center;
-  margin: auto;
-}
-
-.details-container {
- 
-  margin-bottom: 30px; /* Space between containers */
-}
-#about .about-details-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  padding: 0;
-  width: 100%;
-  max-width: 1200px;
-}
-
-
-#about .details-container {
-  background-color: transparent; /* No background color */
-  flex: 1 1 250px;
-  min-height: 450px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0; /* Removed padding */
-  text-align: center;
-}
-
-#about .about-pic {
-  width: 60%;
-  height: 60%;
-  object-fit: cover;
+.section__pic-container img.about-pic {
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
-  transition: transform 0.3s ease;
+  margin-bottom: 20px;
 }
 
-#about .details-container img.icon {
-  width: 40px;
-  margin-bottom: 0.5rem;
-}
-
-#about .text-container p {
-  font-size: 1rem;
-  line-height: 2.6;
-  color: var(--text-primary, #333333);
-}
-
-#about .arrow-container {
-  margin-top: 2rem;
-  text-align: center;
-}
-h1 {
-  font-size: 4rem;
-  margin-top: 1rem;
-  color: black;
-  text-align: center;
-}
-/* ========== ABOUT SECTION INTERACTIVITY ========== */
-
-.details-toggle {
-  margin-bottom: 1rem;
-}
-
-
-/* Toggle Header Button */
-.toggle-header {
-  background-color: #8ea29a;
-  color: #fbffc1;
-  font-size: 1.7rem;
-  font-weight: bold;
-  font-family: "Cormorant", serif;
-  border: none;
-  padding: 1.5rem 2rem;
-  text-align: left;
+.accordion-container {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  max-width: 600px;
+}
+
+.accordion-item {
+  background: white;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.accordion-header {
+  width: 100%;
+  padding: 15px 20px;
+  text-align: left;
+  font-size: 1.2rem;
+  background: #e0f0ff;
+  border: none;
+  outline: none;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background 0.3s ease;
 }
 
-.toggle-header:hover {
-  background-color: #b3c8cf;
-  color: black;
+.accordion-header:hover {
+  background: #cfe7fc;
 }
 
-.toggle-content {
+.accordion-content {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.5s ease, padding 0.3s ease;
-  padding: 0 2rem;
-  background-color: #b3c8cf;
-  color: #333;
+  transition: max-height 0.4s ease;
+  padding: 0 20px;
 }
 
-/* When open, allow scroll without expanding layout */
-.toggle-content.open {
-  max-height: 400px; /* set based on your largest content */
-  overflow-y: auto;
-  padding: 1.5rem 2rem;
-}
-
-/* Arrow rotation */
-.arrow-icon {
-  transition: transform 0.3s ease;
-  font-size: 1.5rem;
-  color: #fbffc1;
-}
-
-.toggle-header.open .arrow-icon {
-  transform: rotate(180deg);
-}
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-  .toggle-header {
-    font-size: 1.3rem;
-    padding: 1.2rem;
-  }
-
-  .arrow-icon {
-    font-size: 1.2rem;
-  }
-
-  .toggle-content.open {
-    padding: 1rem 1.2rem;
-  }
+.accordion-content p {
+  margin: 15px 0;
+  text-align: left;
 }
 
 

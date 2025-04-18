@@ -50,3 +50,23 @@ document.querySelectorAll(".toggle-header").forEach(button => {
     icon.classList.toggle("rotate");
   });
 });
+document.querySelectorAll(".accordion-header").forEach((header) => {
+  header.addEventListener("click", () => {
+    const accordion = header.parentElement;
+    const content = accordion.querySelector(".accordion-content");
+
+    // Close other open items
+    document.querySelectorAll(".accordion-item").forEach((item) => {
+      if (item !== accordion) {
+        item.querySelector(".accordion-content").style.maxHeight = null;
+      }
+    });
+
+    // Toggle current
+    if (content.style.maxHeight) {
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+});

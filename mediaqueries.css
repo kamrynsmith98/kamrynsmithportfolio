@@ -118,6 +118,60 @@
     line-height: 1.8; /* Adjust line height for mobile */
     padding: 0 15px; /* Add some padding for better spacing */
   }
+}* Mobile view adjustments */
+@media (max-width: 768px) {
+  /* Adjust the details container to stack */
+  .about-details-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Add space between the sections */
+  }
+
+  .details-container {
+    margin-bottom: 20px; /* Reduce space between details containers */
+  }
+
+  .details-toggle {
+    flex-direction: column;
+    align-items: flex-start; /* Align toggle header elements */
+    gap: 5px; /* Space between title and arrow */
+  }
+
+  /* Improve the layout of the profile picture and other sections */
+  .about__wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section__pic-container {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* Adjust the toggle content padding for mobile */
+  .toggle-content {
+    padding: 10px;
+  }
+
+  .toggle-content .text-container {
+    padding: 10px 0;
+  }
+
+  .toggle-header {
+    font-size: 1.2rem; /* Make the text more readable */
+  }
+}
+@media (max-width: 600px) {
+  .accordion-header {
+    font-size: 1rem;
+    padding: 12px 16px;
+  }
+
+  .accordion-content p {
+    font-size: 0.95rem;
+  }
 }
 
  /* Image size and centering */
