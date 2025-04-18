@@ -37,3 +37,16 @@ document.querySelectorAll('.toggle-header').forEach(header => {
     icon.classList.toggle('rotate');
   });
 });
+// Add toggle functionality for the About section details
+document.querySelectorAll(".toggle-header").forEach(button => {
+  button.addEventListener("click", () => {
+    // Toggle the active class on the header and the details container
+    button.classList.toggle("active");
+    const detailsContainer = button.nextElementSibling;
+    detailsContainer.classList.toggle("active");
+
+    // Optional: You can also toggle the arrow icon or other elements here
+    const icon = button.querySelector(".arrow-icon");
+    icon.classList.toggle("rotate");
+  });
+});

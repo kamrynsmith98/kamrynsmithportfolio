@@ -176,11 +176,15 @@ section {
   margin: 20px;
   background-color: #8ea29a;
 }
-.about-details-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.5rem;
+
+
+#about .about-pic {
+  width: 25%;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
 }
+
 .section__pic-container {
   width: 375px; /* Adjusted size */
   height: 375px;
