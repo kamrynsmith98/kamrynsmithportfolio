@@ -16,6 +16,8 @@ html {
 
 p {
   color: black;
+  
+  
 }
 span {
   display: flex;
@@ -322,43 +324,7 @@ button {
   font-size: 2.5rem;
   margin-bottom: 30px;
 }
-.about-gradient-bar {
-  width: 50vw;
-  height: 100px;
-  margin: 30px auto;
-  background: linear-gradient(90deg, #a3d5ff, #89a8b2, #a3d5ff);
-  border-radius: 32px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  opacity: 0.9;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
 
-.about-gradient-bar:hover {
-  transform: scale(1.02);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
-}
-
-.gradient-bar-text {
-  color: #1a1a1a;
-  font-size: 2rem;
-  font-weight: 600;
-  letter-spacing: 1px;
-  margin: 0;
-  padding: 0;
-}
-.about-gradient-bar {
-  background-size: 200% 200%;
-  animation: gradientShift 6s ease infinite;
-}
-
-@keyframes gradientShift {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
 
 
 .about__wrapper {
@@ -366,7 +332,9 @@ button {
   flex-direction: column;
   align-items: center;
 }
-
+.accordion-container p{
+  font-size:10px;
+}
 .section__pic-container img.about-pic {
   width: 150px;
   height: 150px;
@@ -384,12 +352,10 @@ button {
 }
 
 .accordion-content p {
-  text-align: left;
-  margin: 8px 0; /* reduce vertical spacing between items */
-  color: #555656;
-  font-size: 0.95rem;
+  text-align: center;
+  margin-top: 10px; /* Adds space between the icon and text */
+  font-size:15px;
 }
-
 .accordion-container {
   width: 100%;
   max-width: 700px;
@@ -487,6 +453,11 @@ img.work-logo {
   cursor: pointer;
   transition: transform 0.3s ease;
 }
+.icon.work-logo {
+  display: block;
+  margin: 0 auto;
+}
+
 
 .icon.arrow:hover {
   transform: translateY(5px);
