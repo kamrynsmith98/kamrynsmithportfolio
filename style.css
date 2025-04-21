@@ -158,6 +158,8 @@ a:hover {
 
 /*SECTIONS*/
 
+/*ABOUT SECTION BEGINS */
+
 section {
   padding-top: 4vh;
   height: 96vh;
@@ -306,6 +308,8 @@ button{
 .btn-color-1:hover {
   background: green solid;
 }
+/*ABOUT SECTION*/
+
 #about {
   padding: 40px 20px;
   background-color: #89a8b2;
