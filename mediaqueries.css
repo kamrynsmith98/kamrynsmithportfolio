@@ -209,3 +209,27 @@
     background-color: #89a8b2;
   }
 }
+@media (max-width: 768px) {
+  .section__text {
+    font-size: 1rem; /* Adjust font size for readability */
+    padding: 0 15px; /* Add some padding */
+  }
+
+  .section__text__p1 {
+    font-size: 2.5rem; /* Adjust large text for mobile */
+    margin-top: 1.5rem; /* Reduce top margin */
+  }
+
+  .section__text__p2 {
+    font-size: 1.4rem; /* Smaller paragraph text on mobile */
+  }}
+@media (max-width: 768px) {
+  #profile {
+    flex-direction: column; /* Stack elements */
+    text-align: center;
+  }
+
+  .section__text {
+    max-width: 100%; /* Full width on mobile */
+  }
+}

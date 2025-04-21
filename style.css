@@ -188,6 +188,16 @@ section {
   margin: 20px;
   background-color: #8ea29a;
 }
+#profile .section__text__p1 {
+    max-width: 400px; /* Ensures text doesn't stretch too wide */
+  color: #e5e1da;
+  align-self: center;
+  text-align: center; /* Centers the text */
+  display: block; /* Ensures it takes up full width */
+  width: 100%; /* Optional, ensures full width */
+  font-size:100px;
+
+}
 
 .section__pic-container {
   width: 375px; /* Adjusted size */
@@ -218,11 +228,22 @@ section {
   font-weight: 600;
 }
 
-.section__text__p1 {
-  font-size: 5rem;
-  margin-top: 2rem;
-  color: #fbffc1;
-  text-align: center;
+#about .section__text__p1 {
+    font-size: 4rem;  /* Larger text size */
+ font-family: 'Poppins', sans-serif;  /* Apply the Poppins font */
+    font-weight: bold;  /* Make it bold */
+    text-transform: lowercase;  /* Capitalize the text */
+    color:  #f1f1f1;  /* Dark color for contrast */
+    background-color:#6a7f8c;    
+    padding: 10px 20px;  /* Add some padding around the text */
+    border-radius: 5px;  /* Rounded corners for a modern look */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Subtle shadow for a "floating" effect */
+    text-align: center;  /* Center the text */
+    transition: transform 0.3s ease, color 0.3s ease;  /* Smooth transition on hover */
+}
+
+#about .section__text__p1:hover {
+    color: #007BFF;  /* Change color on hover */
 }
 
 .section__text__p2 {
@@ -324,7 +345,6 @@ button {
   font-size: 2.5rem;
   margin-bottom: 30px;
 }
-
 
 
 .about__wrapper {
@@ -431,18 +451,7 @@ img.work-logo {
   object-fit: contain;
   display: block; /* ensures image is treated as a block element */
 }
-.video-background-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 50vw; /* adjust this for narrower or wider look */
-  height: auto;
-  z-index: 0;
-  overflow: hidden;
-  opacity: 0.35; /* subtle overlay */
-  pointer-events: none; /* allows interactions through video */
-}
+
 
 .icon.arrow {
   position: fixed; /* Keeps it in place */
