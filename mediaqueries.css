@@ -193,3 +193,19 @@
     width: 50px; /* or whatever size works */
   }
 }
+@media (max-width: 768px) {
+  .video-background-container {
+    width: 90vw;
+    top: auto;
+    transform: none;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+  }
+
+  #about {
+    backdrop-filter: none;
+    background-color: #89a8b2;
+  }
+}

@@ -187,8 +187,6 @@ section {
   background-color: #8ea29a;
 }
 
-
-
 .section__pic-container {
   width: 375px; /* Adjusted size */
   height: 375px;
@@ -204,7 +202,6 @@ section {
 #socials-container img {
   width: 10%;
 }
-
 
 .section__text {
   max-width: 400px; /* Ensures text doesn't stretch too wide */
@@ -250,9 +247,8 @@ section {
 /*ICONS*/
 .icon {
   transition: transform 0.3s, filter 0.3s;
-    cursor: pointer;
-    width: 4rem;
-
+  cursor: pointer;
+  width: 4rem;
 }
 .icon:hover {
   transform: scale(1.1);
@@ -279,8 +275,8 @@ section {
   width: 8rem;
   border-radius: 2rem;
 }
-button{
-  font-weight:600;
+button {
+  font-weight: 600;
 }
 .btn-container {
   display: flex;
@@ -313,7 +309,7 @@ button{
 #about {
   padding: 40px 20px;
   background-color: #89a8b2;
-  color: #333;
+  color: blue;
   text-align: center;
 }
 .sub-role {
@@ -326,6 +322,44 @@ button{
   font-size: 2.5rem;
   margin-bottom: 30px;
 }
+.about-gradient-bar {
+  width: 50vw;
+  height: 100px;
+  margin: 30px auto;
+  background: linear-gradient(90deg, #a3d5ff, #89a8b2, #a3d5ff);
+  border-radius: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  opacity: 0.9;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-gradient-bar:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.gradient-bar-text {
+  color: #1a1a1a;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 0;
+}
+.about-gradient-bar {
+  background-size: 200% 200%;
+  animation: gradientShift 6s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
 
 .about__wrapper {
   display: flex;
@@ -366,7 +400,6 @@ button{
   max-height: 500px; /* Adjust height based on your content length */
 }
 
-
 .accordion-item {
   background: #ffffff;
   border-radius: 12px;
@@ -380,7 +413,8 @@ button{
   transform: translateY(-2px);
 }
 button.accordion-header {
-  color:darkgrey;}
+  color: darkgrey;
+}
 
 .accordion-header {
   width: 100%;
@@ -388,13 +422,13 @@ button.accordion-header {
   color: #333333;
   padding: 18px 24px;
   text-align: center;
-  letter-spacing:1px;
+  letter-spacing: 1px;
   font-size: 1.4rem;
   font-weight: bold;
   cursor: pointer;
   border: none;
   outline: none;
-  display:center;
+  display: center;
   justify-content: space-between;
   align-items: center;
   transition: background 0.3s ease;
@@ -404,7 +438,7 @@ button.accordion-header {
 }
 
 .accordion-header::after {
-  content: '▼';
+  content: "▼";
   font-size: 1rem;
   transition: transform 0.3s ease;
 }
@@ -431,11 +465,23 @@ img.work-logo {
   object-fit: contain;
   display: block; /* ensures image is treated as a block element */
 }
+.video-background-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50vw; /* adjust this for narrower or wider look */
+  height: auto;
+  z-index: 0;
+  overflow: hidden;
+  opacity: 0.35; /* subtle overlay */
+  pointer-events: none; /* allows interactions through video */
+}
 
 .icon.arrow {
   position: fixed; /* Keeps it in place */
   bottom: 2rem; /* Distance from the bottom of the screen */
-  right: 2rem;  /* Distance from the right edge */
+  right: 2rem; /* Distance from the right edge */
   width: 40px;
   z-index: 1000;
   cursor: pointer;
