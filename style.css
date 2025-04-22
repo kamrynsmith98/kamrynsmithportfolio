@@ -259,8 +259,8 @@ nav {
   font-size: 6rem;
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
-  text-transform: lowercase;
-  color: #f1f1f1;
+  font-variant: small-caps;
+  color: #EEF7FF;
   background-color: #6a7f8c;
   padding: 20px 30px;
   border-radius: 5px;
@@ -269,7 +269,7 @@ nav {
   transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
 #about .section__text__p1:hover {
-  color: #EEF7FF;
+  color: #CDE8E5;
   transform: scale(1.1); /* Scale on hover */
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* More shadow effect */
 }
@@ -286,7 +286,7 @@ nav {
 .accordion-content p {
   text-align: center;
   margin-top: 15px;
-  font-size: 15px;
+  font-size: 25px;
 }
 
 .accordion-container {
@@ -305,9 +305,9 @@ nav {
 .accordion-item {
   width: 100%;
   max-width: 800px; /* Max width for individual items */
-  background-color: #f7f7f7;
-  border-radius: 5px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #789DBC;
+  border-radius: 15px;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1);
 }
 
 .accordion-item:hover {
@@ -316,18 +316,19 @@ nav {
 }
 
 button.accordion-header {
-  color: darkgrey;
-  padding:20px;
+  color: #606C5D;
+  padding:40px;
+ 
 }
 
 .accordion-header {
   width: 100%;
   background: linear-gradient(to right, #e0f7fa, #e3f2fd);
   color: #333333;
-  padding: 18px 24px;
+  padding: 8px 24px;
   text-align: center;
   letter-spacing: 1px;
-  font-size: 1.4rem;
+  font-size: 2.4rem;
   font-weight: bold;
   cursor: pointer;
   border: none;
@@ -344,7 +345,7 @@ button.accordion-header {
 
 .accordion-header::after {
   content: "▼";
-  font-size: 1rem;
+  font-size: 2rem;
   transition: transform 0.3s ease;
 }
 
@@ -368,16 +369,12 @@ button.accordion-header {
   font-size: 2.5rem;
   font-family: 'Poppins', sans-serif;
   text-align: center;
-  color: #333;
+  color: grey;
   margin-top: 20px;
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
-
-
-
-
 
 
 /* Center the icon inside the span */
@@ -388,16 +385,12 @@ button.accordion-header {
   margin: 0 auto;  /* Center the image within its span */
 }
 
-
-  .icon.work-logo {
-    display: block;
-    margin: 20 auto;
-    
-    max-width: 100px; /* Adjust as needed */
-    height: auto;
-  }
-
-
+.icon.work-logo {
+  display: block;
+  margin: 20px auto; /* ✅ Add 'px' to both values */
+  max-width: 100px;
+  height: auto;
+}
 .icon.arrow {
   position: fixed;
   bottom: 2rem;
