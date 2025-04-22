@@ -55,7 +55,7 @@ nav {
 
 .logo {
   font-size: 3.8rem;
-  letter-spacing: 1.3px;
+  letter-spacing: 1px;
   font-weight: bold;
   color: #fbffc1;
   font-variant-caps: all-small-caps;
@@ -79,6 +79,8 @@ nav {
   height: 24px;
   width: 30px;
   cursor: pointer;
+    margin-bottom: 15px; /* <-- adds space between icon and dropdown */
+
 }
 
 .hamburger-icon span {
@@ -117,12 +119,6 @@ nav {
   flex-wrap: nowrap;
 }
 
-.section__pic-container {
-  flex: 1 1 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 .section__pic-container img {
   max-width: 50%;
@@ -222,23 +218,7 @@ nav {
   font-weight: 600;
 }
 
-#about .section__text__p1 {
-  font-size: 4rem;
-  font-family: 'Poppins', sans-serif;
-  font-weight: bold;
-  text-transform: lowercase;
-  color: #f1f1f1;
-  background-color: #6a7f8c;
-  padding: 10px 20px;
-  border-radius: 5px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  transition: transform 0.3s ease, color 0.3s ease;
-}
 
-#about .section__text__p1:hover {
-  color: #007BFF;
-}
 
 
 
@@ -256,11 +236,41 @@ nav {
   margin-bottom: 3rem;
 }
 
-#about {
-  padding: 60px 20px;
-  background-color: #89a8b2;
-  text-align: center;
+.about__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
 }
+.section__pic-container {
+  width: 100%;
+  max-width: 900px; /* Max width for accordion */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* About Title Text */
+#about .section__text__p1 {
+  font-size: 4rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  text-transform: lowercase;
+  color: #f1f1f1;
+  background-color: #6a7f8c;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+#about .section__text__p1:hover {
+  color: #007BFF;
+  transform: scale(1.1); /* Scale on hover */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* More shadow effect */
+}
+
 
 .sub-role {
   margin-left: 24px;
@@ -268,10 +278,17 @@ nav {
   color: #666666;
 }
 
-.title {
+#about .title {
   font-size: 2.5rem;
-  margin-bottom: 30px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  color: #333;
+  margin-top: 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
+
 
 .about__wrapper {
   display: flex;
@@ -304,22 +321,23 @@ nav {
 
 .accordion-container {
   width: 100%;
-  max-width: 700px;
-  margin: 0 auto;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the accordion items */
+  gap: 15px; /* Add space between accordion items */
 }
-
 .accordion-item.active .accordion-content {
   padding: 16px 24px;
   max-height: 500px;
 }
 
 .accordion-item {
-  background: #ffffff;
-  border-radius: 12px;
-  margin-bottom: 20px;
-  overflow: hidden;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  width: 100%;
+  max-width: 800px; /* Max width for individual items */
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .accordion-item:hover {
@@ -362,15 +380,21 @@ button.accordion-header {
 .accordion-item.active .accordion-header::after {
   transform: rotate(-180deg);
 }
-
-.work-logo {
-  height: 2em;
-  max-height: 24px;
-  width: auto;
-  margin-left: 6px;
-  vertical-align: middle;
-  object-fit: contain;
+.accordion-content span {
+  display: inline-flex;
+  align-items: center;  /* Center vertically */
+  justify-content: center;  /* Center horizontally */
+  width: 100%;  /* Make the span take full width of the parent if needed */
 }
+
+/* Center the icon inside the span */
+.work-logo {
+  display: block;  /* Ensures the image is a block-level element */
+  max-width: 100px;  /* You can adjust this size if needed */
+  max-height: 50px;  /* You can adjust this size if needed */
+  margin: 0 auto;  /* Center the image within its span */
+}
+
 
   .icon.work-logo {
     display: block;
@@ -396,7 +420,7 @@ button.accordion-header {
 }
 
 /* 📱 Responsive Rules */
-@media (max-width: 768px) {
+@media (max-width: 868px) {
   nav {
     display: none;
   }
@@ -426,5 +450,23 @@ button.accordion-header {
   .btn {
     width: 100%;
     max-width: 300px;
+  }
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  #about .section__text__p1 {
+    font-size: 3rem; /* Adjust for smaller screens */
+  }
+  #about .title {
+    font-size: 2rem; /* Adjust for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  #about .section__text__p1 {
+    font-size: 2.5rem;
+  }
+  #about .title {
+    font-size: 1.5rem;
   }
 }
