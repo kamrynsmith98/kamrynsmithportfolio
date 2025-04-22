@@ -386,18 +386,16 @@ button.accordion-header {
   height: auto;
 }
 .logo-role-block {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   text-align: center;
-  margin: 2rem 0; /* spacing between entries */
+  margin: 30px 0;
 }
 
-.logo-role-block p {
-  margin-top: 1rem; /* spacing between logo and text */
-  font-size: 25px;
+.logo-role-block img {
+  display: block;
+  margin: 0 auto 10px;
+  max-width: 160px;
+  height: auto;
 }
-
 .icon.arrow {
   position: fixed;
   bottom: 2rem;
