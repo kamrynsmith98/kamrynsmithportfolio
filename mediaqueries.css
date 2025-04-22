@@ -8,6 +8,9 @@
   #desktop-nav {
     display: none;
   }
+  .nav-links {
+    
+  }
 
   #hamburger-nav {
     display: flex;
