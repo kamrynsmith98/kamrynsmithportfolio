@@ -277,7 +277,7 @@ nav {
   max-height: 0;
   overflow: hidden;
   padding: 0 24px;
-  background-color: #fafafa;
+  background-color: #ECF9FF;
   transition: max-height 0.4s ease, padding 0.4s ease;
   font-size: 2.95rem;
   line-height: 1.3;
@@ -353,12 +353,12 @@ button.accordion-header {
   transform: rotate(-180deg);
 }
 .accordion-content span {
-  display: inline-flex;
-  align-items: center;  /* Center vertically */
-  justify-content: center;  /* Center horizontally */
-  width: 100%;  /* Make the span take full width of the parent if needed */
+  display: flex; /* ← changed from inline-flex */
+  justify-content: center; /* ← centers horizontally */
+  align-items: center;      /* ← keeps vertical centering */
+  width: 100%;
+  margin: 1rem 0;            /* optional spacing */
 }
-
 .sub-role {
   margin-left: 24px;
   font-size: 0.95rem;
@@ -378,19 +378,26 @@ button.accordion-header {
 
 
 /* Center the icon inside the span */
-.work-logo {
-  display: block;  /* Ensures the image is a block-level element */
-  max-width: 100px;  /* You can adjust this size if needed */
-  max-height: 50px;  /* You can adjust this size if needed */
-  margin: 0 auto;  /* Center the image within its span */
-}
 
-.icon.work-logo {
+.work-logo {
   display: block;
-  margin: 20px auto; /* ✅ Add 'px' to both values */
-  max-width: 100px;
+  margin: 20px auto;
+  width: 160px;
   height: auto;
 }
+.logo-role-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 2rem 0; /* spacing between entries */
+}
+
+.logo-role-block p {
+  margin-top: 1rem; /* spacing between logo and text */
+  font-size: 25px;
+}
+
 .icon.arrow {
   position: fixed;
   bottom: 2rem;
