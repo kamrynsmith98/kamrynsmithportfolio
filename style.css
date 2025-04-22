@@ -250,6 +250,7 @@ a:hover {
   gap: 1rem;
 }
 
+
 /* ICONS */
 .icon {
   transition: transform 0.3s, filter 0.3s;
@@ -395,7 +396,7 @@ button.accordion-header {
 
   .icon.work-logo {
     display: block;
-    margin: 0 auto;
+    margin: 20 auto;
     max-width: 100px; /* Adjust as needed */
     height: auto;
   }
@@ -552,15 +553,6 @@ button.accordion-header {
     max-width: 100%;
   }
 
-  .video-background-container {
-    width: 90vw;
-    top: auto;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    transform: none;
-    margin: 0 auto;
-  }
 
   #about .details-container img.icon,
   .accordion-content .icon {
