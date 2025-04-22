@@ -138,16 +138,11 @@ nav {
   text-align: center;
 }
 
-.section__text__p1 {
-  font-size: 3rem;
-  color: #fbffc1;
 
-}
 
 .section__text__p2 {
   font-size: 3.4rem;
-   color: #fbffc1;
-}
+  color: white;}
 
 .section__text h6{
     font-size: 2.4rem;
