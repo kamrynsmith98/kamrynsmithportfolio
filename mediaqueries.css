@@ -23,3 +23,15 @@
     max-width: 100%;
   }
 }
+/* 📱 Mobile responsiveness */
+@media (max-width: 600px) {
+  .btn-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn {
+    width: 80%;
+    max-width: 300px;
+  }
+}

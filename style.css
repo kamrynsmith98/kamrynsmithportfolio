@@ -154,6 +154,57 @@ a:hover {
 .hamburger-icon.open span:last-child {
   transform: rotate(-45deg) translate(10px, -5px);
 }
+.section__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  letter-spacing: 0.5px;
+}
+
+.btn-color-1 {
+  background-color: #4ecca3;
+  color: #ffffff;
+}
+
+.btn-color-1:hover {
+  background-color: #3bbf95;
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(78, 204, 163, 0.4);
+}
+
+.btn-color-2 {
+  background-color: #ffffff;
+  color: #4ecca3;
+  border: 2px solid #4ecca3;
+}
+
+.btn-color-2:hover {
+  background-color: #4ecca3;
+  color: #ffffff;
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(78, 204, 163, 0.4);
+}
 
 /*ABOUT SECTION*/
 #profile {
