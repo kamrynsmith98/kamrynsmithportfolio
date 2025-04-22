@@ -393,16 +393,13 @@ button.accordion-header {
   object-fit: contain;
 }
 
-img.work-logo {
-  height: 3em;
-  max-height: 50px;
-  width: auto;
-  margin-left: 6px;
-  padding-top: 6px;
-  vertical-align: middle;
-  object-fit: contain;
-  display: block;
-}
+  .icon.work-logo {
+    display: block;
+    margin: 0 auto;
+    max-width: 100px; /* Adjust as needed */
+    height: auto;
+  }
+
 
 .icon.arrow {
   position: fixed;
@@ -418,24 +415,92 @@ img.work-logo {
   transform: translateY(5px);
 }
 
-/* Responsive Styles */
-@media (max-width: 1200px) {
-  .nav-links {
-    font-size: 1.3rem;
-  }
-}
-
+/* Base responsive adjustments for mobile screens */
 @media (max-width: 768px) {
+  /* Section margin & padding */
+  section {
+    margin: 0 2rem;
+  }
+
+  #about {
+    padding: 20px;
+    backdrop-filter: none;
+    background-color: #89a8b2;
+  }
+
+  .about__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+  }
+
+  .section__pic-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+  .section__pic-container img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  /* About text container and text */
+  .text-container {
+    padding: 15px;
+    max-width: 100%;
+  }
+
+  .text-container p,
+  #about .text-container p {
+    font-size: 0.9rem;
+    line-height: 1.8;
+    text-align: left;
+    padding: 0 15px;
+  }
+
+  .section__text {
+    font-size: 1rem;
+    padding: 0 15px;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .section__text__p1 {
+    font-size: 2rem;
+    margin-top: 1.5rem;
+  }
+
+  .section__text__p2 {
+    font-size: 1.4rem;
+  }
+
+  /* Title styling */
+  .title {
+    font-size: 2rem;
+  }
+
+  /* Nav */
+  #desktop-nav,
   .nav-links {
     display: none;
   }
 
-  #hamburger-nav {
-    display: block;
+  #hamburger-nav,
+  .hamburger-menu {
+    display: flex;
   }
 
-  .hamburger-menu {
-    display: block;
+  .nav-links {
+    font-size: 1.3rem;
+  }
+
+  /* Profile section */
+  #profile {
+    flex-direction: column;
+    text-align: center;
   }
 
   .section-container {
@@ -443,28 +508,111 @@ img.work-logo {
     align-items: center;
   }
 
-  #profile {
-    flex-direction: column;
-  }
-
-  .section__pic-container {
-    width: 80%;
-    height: 80%;
-  }
-
-  .section__text__p1 {
-    font-size: 2rem;
-  }
-
-  #about {
-    padding: 20px;
-  }
-
-  .title {
-    font-size: 2rem;
+  /* Accordion / Toggle content */
+  .accordion-header,
+  .toggle-header {
+    font-size: 1.2rem;
+    padding: 12px 16px;
   }
 
   .accordion-content {
     font-size: 1rem;
+    padding: 10px;
+  }
+
+  .accordion-content p {
+    font-size: 0.95rem;
+  }
+
+  .toggle-content {
+    padding: 10px;
+  }
+
+  .toggle-content .text-container {
+    padding: 10px 0;
+  }
+
+  .details-container {
+    margin-bottom: 20px;
+    padding: 0 10px;
+  }
+
+  .details-toggle {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    margin-bottom: 10px;
+  }
+
+  .about-details-grid,
+  .about-details-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 100%;
+  }
+
+  .video-background-container {
+    width: 90vw;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: none;
+    margin: 0 auto;
+  }
+
+  #about .details-container img.icon,
+  .accordion-content .icon {
+    width: 32px;
+    height: auto;
+  }
+
+  .arrow-icon {
+    font-size: 1.2rem;
+  }
+
+  .work-logo {
+    height: 24px;
+    max-height: 32px;
+    margin: 6px auto;
+  }
+
+  .icon.arrow {
+    width: 30px;
+    bottom: 1rem;
+    right: 1rem;
+  }
+}
+
+/* Slightly smaller screens (phones) */
+@media (max-width: 600px) {
+  .accordion-header {
+    font-size: 1rem;
+    padding: 12px 16px;
+  }
+
+  .accordion-content p {
+    font-size: 0.95rem;
+  }
+
+  .accordion-content .icon {
+    width: 50px;
+    height: auto;
+  }
+}
+
+/* Tablet styles for nav */
+@media (max-width: 1200px) {
+  .nav-links {
+    font-size: 1.3rem;
+  }
+}
+
+/* Desktop-specific layout */
+@media screen and (min-width: 768px) {
+  .about-details-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
