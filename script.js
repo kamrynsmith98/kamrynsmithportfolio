@@ -76,3 +76,20 @@ buttons.forEach(btn => {
     btn.style.backgroundColor = '#fff9c4'; // example style
   }
 });
+
+// Accordion functionality
+document.querySelectorAll('.accordion').forEach((button) => {
+  button.addEventListener('click', () => {
+    const panel = button.nextElementSibling;
+
+    // Toggle "active" class for the accordion header
+    button.classList.toggle('active');
+
+    // Toggle visibility of the panel
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+});
