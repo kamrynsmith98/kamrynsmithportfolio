@@ -102,3 +102,40 @@ projects.forEach((project) => {
     moreInfo.classList.toggle('show');
   });
 });
+document.addEventListener("DOMContentLoaded", function () {
+  const projects = document.querySelectorAll('.project');
+  let currentProjectIndex = 0;
+
+  // Initially display the first project
+  showProject(currentProjectIndex);
+
+  // Show the project at the given index
+  function showProject(index) {
+    // Hide all projects
+    projects.forEach(project => {
+      project.style.display = 'none';
+      const more = project.querySelector('.project-more');
+      more.classList.remove('show');
+    });
+
+    // Show the project at the given index
+    const currentProject = projects[index];
+    currentProject.style.display = 'block';
+    const more = currentProject.querySelector('.project-more');
+    more.classList.add('show');
+  }
+
+  // Previous Button
+  const prevButton = document.getElementById('prev-button');
+  prevButton.addEventListener('click', function () {
+    currentProjectIndex = (currentProjectIndex === 0) ? projects.length - 1 : currentProjectIndex - 1;
+    showProject(currentProjectIndex);
+  });
+
+  // Next Button
+  const nextButton = document.getElementById('next-button');
+  nextButton.addEventListener('click', function () {
+    currentProjectIndex = (currentProjectIndex === projects.length - 1) ? 0 : currentProjectIndex + 1;
+    showProject(currentProjectIndex);
+  });
+});

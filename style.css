@@ -79,8 +79,7 @@ nav {
   height: 24px;
   width: 30px;
   cursor: pointer;
-    margin-bottom: 15px; /* <-- adds space between icon and dropdown */
-
+  margin-bottom: 15px; /* <-- adds space between icon and dropdown */
 }
 
 .hamburger-icon span {
@@ -135,33 +134,29 @@ nav {
 .section__pic-container img {
   max-width: 50%;
   height: auto;
-  margin-left:30px;
+  margin-left: 30px;
   border-radius: 50px;
-
 }
 
 .section__text {
   flex: 1 1 300px;
   display: flex;
-  background-color:#B3C8CF;
-  padding:20px;
-  border-radius:10%;
+  background-color: #b3c8cf;
+  padding: 20px;
+  border-radius: 10%;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
 
-
-.section__text h6{
-    font-size: 1.8rem;
-    color: #fbffc1;
-  
+.section__text h6 {
+  font-size: 1.8rem;
+  color: #fbffc1;
 }
 ._title {
   font-size: 6.8rem;
   font-weight: bold;
-   color: #fbffc1;
-  
+  color: #fbffc1;
 }
 .btn-container {
   display: flex;
@@ -223,10 +218,9 @@ nav {
   width: 100%;
 }
 
-
 .section__text p {
   font-weight: 600;
-  font-size:34px;
+  font-size: 34px;
 }
 
 .icon:hover {
@@ -243,26 +237,22 @@ nav {
   margin-bottom: 3rem;
 }
 
-
 .about__wrapper {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
-  background-color: #B3C8CF;
-
-  
+  background-color: #b3c8cf;
 }
-
 
 /* About Title Text */
 #about .section__text__p1 {
   font-size: 6rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: bold;
   font-variant: small-caps;
-  color: #EEF7FF;
+  color: #eef7ff;
   background-color: #6a7f8c;
   padding: 20px 30px;
   border-radius: 5px;
@@ -271,7 +261,7 @@ nav {
   transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
 #about .section__text__p1:hover {
-  color: #CDE8E5;
+  color: #cde8e5;
   transform: scale(1.1); /* Scale on hover */
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* More shadow effect */
 }
@@ -279,7 +269,7 @@ nav {
   max-height: 0;
   overflow: hidden;
   padding: 0 24px;
-  background-color: #ECF9FF;
+  background-color: #ecf9ff;
   transition: max-height 0.4s ease, padding 0.4s ease;
   font-size: 2.95rem;
   line-height: 1.3;
@@ -307,7 +297,7 @@ nav {
 .accordion-item {
   width: 100%;
   max-width: 800px; /* Max width for individual items */
-  background-color: #789DBC;
+  background-color: #789dbc;
   border-radius: 15px;
   box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1);
 }
@@ -318,9 +308,8 @@ nav {
 }
 
 button.accordion-header {
-  color: #606C5D;
-  padding:40px;
- 
+  color: #606c5d;
+  padding: 40px;
 }
 
 .accordion-header {
@@ -357,9 +346,9 @@ button.accordion-header {
 .accordion-content span {
   display: flex; /* ← changed from inline-flex */
   justify-content: center; /* ← centers horizontally */
-  align-items: center;      /* ← keeps vertical centering */
+  align-items: center; /* ← keeps vertical centering */
   width: 100%;
-  margin: 1rem 0;            /* optional spacing */
+  margin: 1rem 0; /* optional spacing */
 }
 .sub-role {
   margin-left: 24px;
@@ -369,7 +358,7 @@ button.accordion-header {
 
 #about .title {
   font-size: 2.5rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   text-align: center;
   color: grey;
   margin-top: 20px;
@@ -377,7 +366,6 @@ button.accordion-header {
   transform: translateY(20px);
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
-
 
 /* Center the icon inside the span */
 
@@ -471,17 +459,17 @@ button.accordion-header {
   display: flex;
   justify-content: space-around;
   gap: 2rem;
-  background-color:#B3C8CF;
+  background-color: #b3c8cf;
   flex-wrap: wrap;
   padding: 2rem 0;
-  padding-top:50px;
+  padding-top: 50px;
 }
 
 .skill-category {
   flex: 1;
   min-width: 250px;
   padding: 1rem;
-  background-color: #EEF7FF;
+  background-color: #eef7ff;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 2rem;
@@ -548,7 +536,7 @@ button.accordion-header {
 }
 
 .skill-level.dv360 {
-  background-color:#3bbf95;
+  background-color: #3bbf95;
   width: 60%; /* 60% experience */
 }
 
@@ -568,7 +556,7 @@ button.accordion-header {
 }
 
 .skill-level.dw {
-  background-color: #3bbf95;/* Light Green */
+  background-color: #3bbf95; /* Light Green */
   width: 90%; /* 90% experience */
 }
 
@@ -582,7 +570,6 @@ button.accordion-header {
   width: 60%; /* 60% experience */
 }
 
-
 /* Media Query for Responsiveness */
 @media (max-width: 768px) {
   .skills-wrapper {
@@ -593,30 +580,58 @@ button.accordion-header {
     width: 100%;
   }
 }
+/*PROJECTS*/
+#projects .section__text__p1 {
+  font-size: 6rem;
+    margin-bottom: 3rem; /* Adds space between the heading and the projects */
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-variant: small-caps;
+  color: #eef7ff;
+  background-color: #6a7f8c;
+  padding: 20px 30px;
+  gap:20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+#projects {
+  position: relative; /* Keeps the section in place without affecting other sections */
+  margin-top: 4rem; /* Adds space above the projects section, adjust as needed */
+}
 
 .projects-container {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 1rem;
-  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Distributes the projects evenly */
+  gap: 2rem; /* Space between the project cards */
+  padding: 2rem 0; /* Adds padding inside the project container */
+  position: relative; /* Keeps it fixed in place without affecting the rest of the layout */
 }
+
 
 .project {
+  display: none;
+  flex: 1;
+  max-width: 300px; /* Ensure the project cards are not too large */
+  transition: all 0.5s ease-in-out;
+  padding: 2rem;
   background-color: #eef7ff;
   border-radius: 10px;
-  overflow: hidden;
-  position: relative;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
-.project-card {
-  padding: 20px;
-}
-
-.project-front img {
+.project img {
   width: 100%;
   height: auto;
-  border-radius: 5px;
+  border-radius: 10px;
+}
+
+.project h3 {
+  margin-top: 5rem;
 }
 
 .project-more {
@@ -632,15 +647,25 @@ button.accordion-header {
   transition: opacity 0.3s ease;
 }
 
-/* Responsive Design */
-@media (max-width: 1200px) {
-  .projects-container {
-    grid-template-columns: repeat(3, 1fr);
-  }
+/* Center the navigation buttons */
+.navigation-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 20px;
+  width: 100%;
 }
 
-@media (max-width: 768px) {
-  .projects-container {
-    grid-template-columns: 1fr;
-  }
+button {
+  padding: 0.5rem 1.5rem;
+  background-color: #4ecca3;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #3bbf95;
 }
