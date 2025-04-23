@@ -518,62 +518,62 @@ button.accordion-header {
 
 /* Skill Level Colors */
 .skill-level.html {
-  background-color: yellow;
-  width: 90%; /* 90% experience */
+  background-color: #3bbf95;
+  width: 95%; /* 90% experience */
 }
 
 .skill-level.css {
-  background-color: #fbffc1;
-  width: 90%; /* 90% experience */
+  background-color: #3bbf95;
+  width: 95%; /* 90% experience */
 }
 
 .skill-level.js {
-  background-color: #fbffc1;
+  background-color: #3bbf95;
   width: 60%; /* 60% experience */
 }
 
 .skill-level.python {
-  background-color: #fbffc1;
-  width: 60%; /* 60% experience */
+  background-color: #3bbf95;
+  width: 50%; /* 50% experience */
 }
 
 .skill-level.cm360 {
-  background-color: #fbffc1;
+  background-color: #3bbf95;
   width: 90%; /* 90% experience */
 }
 
 .skill-level.dv360 {
-  background-color:#fbffc1;
-  width: 90%; /* 90% experience */
+  background-color:#3bbf95;
+  width: 60%; /* 60% experience */
 }
 
 .skill-level.dv {
-  background-color: #fbffc1;
-  width: 50%; /* 50% experience */
+  background-color: #3bbf95;
+  width: 60%; /* 50% experience */
 }
 
 .skill-level.tealium {
-  background-color: #fbffc1;
+  background-color: #3bbf95;
   width: 50%; /* 50% experience */
 }
 
 .skill-level.ai {
-  background-color: #fbffc1;
-  width: 90%; /* 90% experience */
+  background-color: #3bbf95;
+  width: 80%; /* 80% experience */
 }
 
 .skill-level.dw {
-  background-color: #fbffc1;/* Light Green */
+  background-color: #3bbf95;/* Light Green */
   width: 90%; /* 90% experience */
 }
 
 .skill-level.ps {
-  background-color: #fbffc1;
-  width: 60%; /* 60% experience */
+  background-color: #3bbf95;
+  width: 70%; /* 70% experience */
 }
 
 .skill-level.id {
-  background-color: #fbffc1;
+  background-color: #3bbf95;
   width: 60%; /* 60% experience */
 }
 
