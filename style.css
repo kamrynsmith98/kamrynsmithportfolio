@@ -458,3 +458,129 @@ button.accordion-header {
     border-radius: 12px;
   }
 }
+/* Wrapper for all skill categories */
+
+.skills-wrapper {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+  padding-top:50px;
+}
+
+.skill-category {
+  flex: 1;
+  min-width: 250px;
+  padding: 1rem;
+  background-color: #f4f9fc;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  transition: all 0.3s ease;
+}
+
+.skill-category:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.skill-category h3 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  color: grey;
+  text-align: center;
+}
+
+.skill-name {
+  font-size: 2.0rem;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.skill-bar {
+  width: 100%;
+  background-color: #ddd;
+  border-radius: 5px;
+  height: 10px;
+  margin-top: 5px;
+}
+
+.skill-level {
+  height: 100%;
+  width: 0;
+  border-radius: 5px;
+  transition: width 1s ease-in-out;
+}
+
+/* Skill Level Colors */
+.skill-level.html {
+  background-color: #f44336; /* Red */
+  width: 90%; /* 90% experience */
+}
+
+.skill-level.css {
+  background-color: #2196f3; /* Blue */
+  width: 90%; /* 90% experience */
+}
+
+.skill-level.js {
+  background-color: #ffeb3b; /* Yellow */
+  width: 60%; /* 60% experience */
+}
+
+.skill-level.python {
+  background-color: #4caf50; /* Green */
+  width: 60%; /* 60% experience */
+}
+
+.skill-level.cm360 {
+  background-color: #9c27b0; /* Purple */
+  width: 90%; /* 90% experience */
+}
+
+.skill-level.dv360 {
+  background-color: #3f51b5; /* Indigo */
+  width: 90%; /* 90% experience */
+}
+
+.skill-level.dv {
+  background-color: #ff5722; /* Deep Orange */
+  width: 50%; /* 50% experience */
+}
+
+.skill-level.tealium {
+  background-color: #607d8b; /* Blue Grey */
+  width: 50%; /* 50% experience */
+}
+
+.skill-level.ai {
+  background-color: #ff5722; /* Deep Orange */
+  width: 90%; /* 90% experience */
+}
+
+.skill-level.dw {
+  background-color: #8bc34a; /* Light Green */
+  width: 90%; /* 90% experience */
+}
+
+.skill-level.ps {
+  background-color: #3f51b5; /* Indigo */
+  width: 60%; /* 60% experience */
+}
+
+.skill-level.id {
+  background-color: #009688; /* Teal */
+  width: 60%; /* 60% experience */
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+  .skills-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .skill-category {
+    width: 100%;
+  }
+}
