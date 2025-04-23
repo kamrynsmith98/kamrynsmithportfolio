@@ -243,7 +243,7 @@ nav {
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
-  background-color: #b3c8cf;
+  background-color: #89a8b2;
 }
 
 /* About Title Text */
@@ -459,7 +459,7 @@ button.accordion-header {
   display: flex;
   justify-content: space-around;
   gap: 2rem;
-  background-color: #b3c8cf;
+  background-color: #89a8b2;
   flex-wrap: wrap;
   padding: 2rem 0;
   padding-top: 50px;
@@ -587,7 +587,7 @@ button.accordion-header {
   font-weight: bold;
   font-variant: small-caps;
   color: #eef7ff;
-  background-color: #6a7f8c;
+  background-color:#6a7f8c;
   padding: 20px 30px;
   gap:20px;
   border-radius: 15px;
@@ -605,7 +605,7 @@ button.accordion-header {
   padding: 5rem 1rem;
   min-height: 100vh; /* full viewport height */
   box-sizing: border-box;
-  background-color: lightblue;
+  background-color: #89a8b2;
 }
 /* Centering the projects section */
 .project {
@@ -642,16 +642,17 @@ button.accordion-header {
 }
 
 .project-more {
-  display: none;
-  font-size:30px;
+  display: none; /* Hidden initially */
   padding: 10px;
+  font-size:25px;
   background-color: #ffffff;
-  border-top: 1px solid #dddddd;
+  border-top: 1px solid #ddd;
 }
 
 .project-more.show {
-  display: block;
+  display: block; /* Becomes visible when the class is toggled */
   opacity: 1;
+  font-size:25px;
   transition: opacity 0.3s ease;
 }
 
@@ -679,9 +680,9 @@ button:hover {
   background-color: #3bbf95;
 }
 .dropdown-hint {
-  font-size: 1.2rem;
-  color: #666;
-  margin-top: 0.3rem;
+  font-size: 1.3rem;
+  color: #666666;
+  margin-top: 1.3rem;
   transition: transform 0.3s ease;
   cursor: pointer;
   font-style: italic;

@@ -1,3 +1,4 @@
+// Toggle menu for hamburger icon
 function toggleMenu() {
   const menu = document.querySelector(".menu-links");
   const icon = document.querySelector(".hamburger-icon");
@@ -6,79 +7,58 @@ function toggleMenu() {
   icon.classList.toggle("open");  // Animate the hamburger icon
 }
 
-
 window.addEventListener('DOMContentLoaded', () => {
+  // Set skill bars based on data-percent attribute
   const skills = document.querySelectorAll('.skill');
-
   skills.forEach(skill => {
     const skillFill = skill.querySelector('.skill-fill');
     const percent = skill.getAttribute('data-percent');
-    skillFill.style.width = percent; // Set width based on data-percent attribute
+    skillFill.style.width = percent;
   });
-});
 
-
+  // Toggle content visibility and rotate arrow icon
   document.querySelectorAll(".toggle-header").forEach(button => {
     button.addEventListener("click", () => {
       const content = button.nextElementSibling;
       content.classList.toggle("open");
+
+      const icon = button.querySelector('.arrow-icon');
+      icon.classList.toggle("rotate");
     });
   });
-document.querySelectorAll('.toggle-header').forEach(header => {
-  header.addEventListener('click', () => {
-    const toggleContainer = header.parentElement;
-    const content = toggleContainer.querySelector('.toggle-content');
-    const icon = header.querySelector('.arrow-icon');
 
-    // Toggle content visibility
-    content.classList.toggle('active');
+  // Accordion functionality
+  document.querySelectorAll(".accordion-header").forEach(header => {
+    header.addEventListener("click", () => {
+      const accordion = header.parentElement;
+      const content = accordion.querySelector(".accordion-content");
 
-    // Rotate icon
-    icon.classList.toggle('rotate');
-  });
-});
-// Add toggle functionality for the About section details
-document.querySelectorAll(".toggle-header").forEach(button => {
-  button.addEventListener("click", () => {
-    // Toggle the active class on the header and the details container
-    button.classList.toggle("active");
-    const detailsContainer = button.nextElementSibling;
-    detailsContainer.classList.toggle("active");
+      // Close other open items
+      document.querySelectorAll(".accordion-item").forEach(item => {
+        if (item !== accordion) {
+          item.querySelector(".accordion-content").style.maxHeight = null;
+        }
+      });
 
-    // Optional: You can also toggle the arrow icon or other elements here
-    const icon = button.querySelector(".arrow-icon");
-    icon.classList.toggle("rotate");
-  });
-});
-document.querySelectorAll(".accordion-header").forEach((header) => {
-  header.addEventListener("click", () => {
-    const accordion = header.parentElement;
-    const content = accordion.querySelector(".accordion-content");
-
-    // Close other open items
-    document.querySelectorAll(".accordion-item").forEach((item) => {
-      if (item !== accordion) {
-        item.querySelector(".accordion-content").style.maxHeight = null;
+      // Toggle current accordion item
+      if (content.style.maxHeight) {
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
       }
     });
+  });
 
-    // Toggle current
-    if (content.style.maxHeight) {
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
+  // Change background color for Education button
+  document.querySelectorAll('.accordion-header').forEach(btn => {
+    if (btn.textContent.trim().startsWith('Education')) {
+      btn.style.backgroundColor = '#fff9c4';
     }
   });
-});
-const buttons = document.querySelectorAll('.accordion-header');
-buttons.forEach(btn => {
-  if (btn.textContent.trim().startsWith('Education')) {
-    btn.style.backgroundColor = '#fff9c4'; // example style
-  }
-});
-const skillAccordions = document.querySelectorAll(".skills-section .accordion");
 
-  skillAccordions.forEach((btn) => {
+  // Skill accordion toggle functionality
+  const skillAccordions = document.querySelectorAll(".skills-section .accordion");
+  skillAccordions.forEach(btn => {
     btn.addEventListener("click", function () {
       this.classList.toggle("active");
       const panel = this.nextElementSibling;
@@ -92,50 +72,56 @@ const skillAccordions = document.querySelectorAll(".skills-section .accordion");
       }
     });
   });
-// Add event listeners to each project
-// Add event listeners to each project
-const projects = document.querySelectorAll('.project');
 
-projects.forEach((project) => {
-  project.addEventListener('click', () => {
-    const moreInfo = project.querySelector('.project-more');
-    moreInfo.classList.toggle('show');
-  });
-});
-document.addEventListener("DOMContentLoaded", function () {
+  // Project carousel navigation
   const projects = document.querySelectorAll('.project');
   let currentProjectIndex = 0;
 
-  // Initially display the first project
-  showProject(currentProjectIndex);
-
-  // Show the project at the given index
   function showProject(index) {
-    // Hide all projects
     projects.forEach(project => {
       project.style.display = 'none';
       const more = project.querySelector('.project-more');
       more.classList.remove('show');
     });
 
-    // Show the project at the given index
     const currentProject = projects[index];
     currentProject.style.display = 'block';
     const more = currentProject.querySelector('.project-more');
     more.classList.add('show');
   }
 
-  // Previous Button
   const prevButton = document.getElementById('prev-button');
   prevButton.addEventListener('click', function () {
     currentProjectIndex = (currentProjectIndex === 0) ? projects.length - 1 : currentProjectIndex - 1;
     showProject(currentProjectIndex);
   });
 
-  // Next Button
   const nextButton = document.getElementById('next-button');
   nextButton.addEventListener('click', function () {
     currentProjectIndex = (currentProjectIndex === projects.length - 1) ? 0 : currentProjectIndex + 1;
     showProject(currentProjectIndex);
   });
+
+  // Dropdown toggle for project details
+  const dropdownHints = document.querySelectorAll('.dropdown-hint');
+  dropdownHints.forEach((hint, index) => {
+    hint.addEventListener('click', () => {
+      const project = document.querySelectorAll('.project')[index];
+      const moreInfo = project.querySelector('.project-more');
+      const hintText = project.querySelector('.dropdown-hint');
+
+      // Toggle the project-more visibility
+      moreInfo.classList.toggle('show');
+
+      // Change the hint text to show the "▲" or "▼" depending on visibility
+      if (moreInfo.classList.contains('show')) {
+        hintText.textContent = '▲ Click to hide';
+      } else {
+        hintText.textContent = '▼ Click to see more';
+      }
+    });
+  });
+
+  // Show the first project initially
+  showProject(currentProjectIndex);
 });
