@@ -597,38 +597,35 @@ button.accordion-header {
 }
 
 #projects {
-  background-color:lightblue;
-}
-/* Centering the projects section */
-#projects {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: center; /* center vertically */
   text-align: center;
   padding: 5rem 1rem;
+  min-height: 100vh; /* full viewport height */
+  box-sizing: border-box;
+  background-color: lightblue;
 }
-
-/* Center the projects container */
+/* Centering the projects section */
+.project {
+  display: none;
+  width: 700px; 
+  padding: 4rem;
+   margin: 3rem; /* space between cards */
+  background-color: #eef7ff;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
 .projects-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 5rem;
-  overflow: hidden;
+  font-size:15px;
   width: 100%;
-  max-width: 1200px; /* Limit the container's width */
-}
-
-.project {
-  display: none;
-  flex: 1;
-  max-width: 300px; /* Ensure the project cards are not too large */
-  transition: all 0.5s ease-in-out;
-  padding: 2rem;
-  background-color: #eef7ff;
-  border-radius: 10px;
-  text-align: center;
+  max-width: 1200px;
+  height: 100%; /* fill the space vertically */
 }
 
 .project img {
@@ -639,13 +636,15 @@ button.accordion-header {
 
 .project h3 {
   margin-top: 5rem;
+  font-size:40px;
 }
 
 .project-more {
   display: none;
+  font-size:30px;
   padding: 10px;
   background-color: #ffffff;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #dddddd;
 }
 
 .project-more.show {
@@ -664,12 +663,13 @@ button.accordion-header {
 }
 
 button {
-  padding: 0.5rem 1.5rem;
+  padding: 1.5rem 2.5rem;
   background-color: #4ecca3;
   color: white;
   border: none;
   border-radius: 25px;
   cursor: pointer;
+  font-size:28px;
   font-weight: bold;
 }
 
