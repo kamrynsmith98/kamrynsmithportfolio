@@ -583,7 +583,6 @@ button.accordion-header {
 /*PROJECTS*/
 #projects .section__text__p1 {
   font-size: 6rem;
-    margin-bottom: 3rem; /* Adds space between the heading and the projects */
   font-family: "Poppins", sans-serif;
   font-weight: bold;
   font-variant: small-caps;
@@ -597,21 +596,29 @@ button.accordion-header {
   transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
 
-
 #projects {
-  position: relative; /* Keeps the section in place without affecting other sections */
-  margin-top: 4rem; /* Adds space above the projects section, adjust as needed */
+  background-color:lightblue;
+}
+/* Centering the projects section */
+#projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 5rem 1rem;
 }
 
+/* Center the projects container */
 .projects-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around; /* Distributes the projects evenly */
-  gap: 2rem; /* Space between the project cards */
-  padding: 2rem 0; /* Adds padding inside the project container */
-  position: relative; /* Keeps it fixed in place without affecting the rest of the layout */
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  overflow: hidden;
+  width: 100%;
+  max-width: 1200px; /* Limit the container's width */
 }
-
 
 .project {
   display: none;
