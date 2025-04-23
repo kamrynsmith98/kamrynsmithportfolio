@@ -398,6 +398,7 @@ button.accordion-header {
   max-width: 160px;
   height: auto;
 }
+/* Arrow Scroll to Projects */
 .icon.arrow {
   position: fixed;
   bottom: 2rem;
@@ -410,6 +411,10 @@ button.accordion-header {
 
 .icon.arrow:hover {
   transform: translateY(5px);
+}
+
+.icon.arrow:active {
+  transform: rotate(180deg);
 }
 
 @media (max-width: 868px) {
@@ -577,6 +582,7 @@ button.accordion-header {
   width: 60%; /* 60% experience */
 }
 
+
 /* Media Query for Responsiveness */
 @media (max-width: 768px) {
   .skills-wrapper {
@@ -585,5 +591,56 @@ button.accordion-header {
   }
   .skill-category {
     width: 100%;
+  }
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.project {
+  background-color: #eef7ff;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-card {
+  padding: 20px;
+}
+
+.project-front img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.project-more {
+  display: none;
+  padding: 10px;
+  background-color: #ffffff;
+  border-top: 1px solid #ddd;
+}
+
+.project-more.show {
+  display: block;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .projects-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-container {
+    grid-template-columns: 1fr;
   }
 }

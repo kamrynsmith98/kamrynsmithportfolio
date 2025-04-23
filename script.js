@@ -92,3 +92,13 @@ const skillAccordions = document.querySelectorAll(".skills-section .accordion");
       }
     });
   });
+// Add event listeners to each project
+// Add event listeners to each project
+const projects = document.querySelectorAll('.project');
+
+projects.forEach((project) => {
+  project.addEventListener('click', () => {
+    const moreInfo = project.querySelector('.project-more');
+    moreInfo.classList.toggle('show');
+  });
+});
