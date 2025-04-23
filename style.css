@@ -610,7 +610,7 @@ button.accordion-header {
 /* Centering the projects section */
 .project {
   display: none;
-  width: 700px; 
+  width: 900px; 
   padding: 4rem;
    margin: 3rem; /* space between cards */
   background-color: #eef7ff;
@@ -628,7 +628,9 @@ button.accordion-header {
   height: 100%; /* fill the space vertically */
 }
 
-.project img {
+.project img ,
+.project-front video {
+
   width: 100%;
   height: auto;
   border-radius: 10px;
@@ -675,4 +677,12 @@ button {
 
 button:hover {
   background-color: #3bbf95;
+}
+.dropdown-hint {
+  font-size: 1.2rem;
+  color: #666;
+  margin-top: 0.3rem;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  font-style: italic;
 }
