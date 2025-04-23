@@ -76,20 +76,19 @@ buttons.forEach(btn => {
     btn.style.backgroundColor = '#fff9c4'; // example style
   }
 });
+const skillAccordions = document.querySelectorAll(".skills-section .accordion");
 
-// Accordion functionality
-document.querySelectorAll('.accordion').forEach((button) => {
-  button.addEventListener('click', () => {
-    const panel = button.nextElementSibling;
+  skillAccordions.forEach((btn) => {
+    btn.addEventListener("click", function () {
+      this.classList.toggle("active");
+      const panel = this.nextElementSibling;
 
-    // Toggle "active" class for the accordion header
-    button.classList.toggle('active');
-
-    // Toggle visibility of the panel
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    }
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+        panel.style.padding = "0 24px";
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+        panel.style.padding = "16px 24px";
+      }
+    });
   });
-});
