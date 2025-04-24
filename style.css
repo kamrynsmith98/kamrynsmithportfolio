@@ -687,3 +687,73 @@ button:hover {
   cursor: pointer;
   font-style: italic;
 }
+
+/*CONTACT*/
+#contact {
+  background-color: #6a7f8c;
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.animated-form {
+  background-color: #eef7ff;
+  padding: 3rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  animation: fadeInUp 1s ease;
+}
+
+.animated-form h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #ccc;
+  padding: 0.5rem 0;
+  transition: border-color 0.3s ease;
+}
+
+.form-group:focus-within {
+  border-color: #4ecca3;
+}
+
+.form-group label {
+  margin-right: 1rem;
+  color: #4ecca3;
+  font-size: 1.2rem;
+}
+
+.form-group input,
+.form-group textarea {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 1.1rem;
+  color: #333;
+  padding: 0.5rem 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
