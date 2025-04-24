@@ -141,7 +141,7 @@ nav {
 .section__text {
   flex: 1 1 300px;
   display: flex;
-  background-color: #b3c8cf;
+  
   padding: 20px;
   border-radius: 10%;
   flex-direction: column;
@@ -316,10 +316,10 @@ button.accordion-header {
   width: 100%;
   background: linear-gradient(to right, #e0f7fa, #e3f2fd);
   color: #333333;
-  padding: 8px 24px;
+  padding: 6px 20px;
   text-align: center;
   letter-spacing: 1px;
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-weight: bold;
   cursor: pointer;
   border: none;
