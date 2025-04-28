@@ -311,25 +311,15 @@ button.accordion-header {
   width: 100%;
   margin: 1rem 0; /* optional spacing */
 }
-.sub-role {
-  margin-left: 24px;
-  font-size: 0.95rem;
-  color: #666666;
-}
-
 #about .title {
   font-size: 2.5rem;
   font-family: "Poppins", sans-serif;
   text-align: center;
   color: grey;
-  margin-top: 20px;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
+  margin-top: 50px;
+  margin-bottom:50px;
+  padding:10px;
 }
-
-/* Center the icon inside the span */
-
 .work-logo {
   display: block;
   margin: 20px auto;
@@ -340,7 +330,6 @@ button.accordion-header {
   text-align: center;
   margin: 30px 0;
 }
-
 .logo-role-block img {
   display: block;
   margin: 0 auto 10px;
@@ -357,34 +346,28 @@ button.accordion-header {
   cursor: pointer;
   transition: transform 0.3s ease;
 }
-
 .icon.arrow:hover {
   transform: translateY(5px);
 }
-
 .icon.arrow:active {
   transform: rotate(180deg);
 }
-
 @media (max-width: 868px) {
   #desktop-nav {
     display: none;
   }
-
   #hamburger-nav {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    background-color: #92A8D1;
+    background-color: #8ea29a;
     z-index: 10;
   }
-
   .hamburger-icon {
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
-
   .menu-links {
     display: none;
     flex-direction: column;
@@ -395,9 +378,9 @@ button.accordion-header {
     position: relative; /* ⬅️ Keep it in the flow */
     z-index: 1; /* no need to float above anything */
   }
-
   .menu-links.open {
     display: flex;
+  
   }
 
   #profile {
