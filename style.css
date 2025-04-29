@@ -6,7 +6,8 @@
 }
 body {
   font-family: "Cormorant", serif;
-  background-color:#D9E4E0;}
+  background-color:#D9E4E0;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -37,6 +38,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   height: 17vh;
+  
 }
 .nav-links {
   gap: 2rem;
@@ -128,6 +130,7 @@ nav {
   position: relative;
   z-index: 1;
   color: #3F4E4F; /* Ensure contrast */
+  
 }
 .section__text h6 {
   font-size: 2.8rem;
@@ -214,10 +217,7 @@ nav {
   justify-content: center;
   gap: 2rem;
   background-color: #D9E4E0;
-   background-image: url('https://cdn.glitch.global/d402c5b4-f98f-4f65-8c2e-312f01f955f3/water.png?v=1745949922901');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+ 
 }
 /* About Title Text */
 #about .section__text__p1 {
@@ -602,6 +602,10 @@ button:hover {
   padding: 4rem 2rem;
   display: flex;
   justify-content: center;
+    background-image: url('https://cdn.glitch.global/d402c5b4-f98f-4f65-8c2e-312f01f955f3/Screenshot%202025-04-29%20at%201.57.49%E2%80%AFPM.png?v=1745949492713');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .animated-form {
