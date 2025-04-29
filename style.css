@@ -201,13 +201,13 @@ nav {
   margin-bottom: 3rem;
 }
 /*ABOUT SECTION*/
+
 .about__wrapper {
-  margin-top:20px;
-  margin-bottom:25px;
-  padding:20px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  padding:20px;
+  margin-bottom:30px;
   justify-content: center;
   gap: 2rem;
   background-color: #D9E4E0;
@@ -221,7 +221,7 @@ nav {
   font-variant: small-caps;
   color: #eef7ff;
   background-color: #6a7f8c;
-  padding: 20px 30px;
+  padding: 30px 30px;
   border-radius: 5px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -248,7 +248,7 @@ nav {
 }
 .accordion-container {
   width: 100%;
-  margin-top: 20px;
+  margin-top: 30px;
   display: flex;
   background-color:#ECF0F1;
   flex-direction: column;
@@ -279,7 +279,7 @@ button.accordion-header {
   width: 100%;
   background: linear-gradient(to right, #e0f7fa, #e3f2fd);
   color: #333333;
-  padding: 6px 20px;
+  padding: 60px 20px;
   text-align: center;
   letter-spacing: 2px;
     font-variant-caps: all-small-caps;
@@ -317,8 +317,8 @@ button.accordion-header {
   font-family: "Poppins", sans-serif;
   text-align: center;
   color: grey;
-  margin-top: 50px;
-  margin-bottom:50px;
+  margin-top: 30px;
+  margin-bottom:30px;
   padding:10px;
 }
 .work-logo {
