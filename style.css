@@ -210,13 +210,14 @@ nav {
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
-  background-color: #F0F4F8;
+  background-color: #D9E4E0;
 }
 /* About Title Text */
 #about .section__text__p1 {
   font-size: 6rem;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
+  letter-spacing: 2px;
   font-variant: small-caps;
   color: #eef7ff;
   background-color: #6a7f8c;
@@ -235,7 +236,7 @@ nav {
   max-height: 0;
   overflow: hidden;
   padding: 0 24px;
-  background-color: #7F8C8D;
+  background-color: #6a7f8c;
   color:#ECF0F1;
   transition: max-height 0.4s ease, padding 0.4s ease;
   line-height: 2.3;
@@ -243,7 +244,7 @@ nav {
 .accordion-content p {
   text-align: center;
   margin-top: 15px;
-  font-size: 35px;
+  font-size: 32px;
 }
 .accordion-container {
   width: 100%;
@@ -259,7 +260,6 @@ nav {
   padding: 16px 24px;
   max-height: 500px;
 }
-
 .accordion-item {
   width: 100%;
   max-width: 800px; /* Max width for individual items */
@@ -281,8 +281,9 @@ button.accordion-header {
   color: #333333;
   padding: 6px 20px;
   text-align: center;
-  letter-spacing: 1px;
-  font-size: 2rem;
+  letter-spacing: 2px;
+    font-variant-caps: all-small-caps;
+  font-size: 3rem;
   font-weight: bold;
   cursor: pointer;
   border: none;
@@ -297,7 +298,7 @@ button.accordion-header {
 }
 .accordion-header::after {
   content: "▼";
-  font-size: 2.3rem;
+  font-size: 4rem;
   transition: transform 0.3s ease;
 }
 
@@ -352,51 +353,7 @@ button.accordion-header {
 .icon.arrow:active {
   transform: rotate(180deg);
 }
-@media (max-width: 868px) {
-  #desktop-nav {
-    display: none;
-  }
-  #hamburger-nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    background-color: #8ea29a;
-    z-index: 10;
-  }
-  .hamburger-icon {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
-  .menu-links {
-    display: none;
-    flex-direction: column;
-    background-color: #8ea29a;
-    width: 100%;
-    text-align: center;
-    padding: 1rem 0;
-    position: relative; /* ⬅️ Keep it in the flow */
-    z-index: 1; /* no need to float above anything */
-  }
-  .menu-links.open {
-    display: flex;
-  
-  }
-
-  #profile {
-    flex-direction: column;
-    padding: 2rem 1rem;
-    text-align: center;
-  }
-
-  .section__pic-container img {
-    max-width: 90%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    border-radius: 12px;
-  }
-}
+/* SKILLS SECTION*/
 /* Wrapper for all skill categories */
 
 .skills-wrapper {
@@ -701,7 +658,42 @@ textarea {
     opacity: 1;
   }
 }
+
+
 /*PROFILE*/
+@media screen and (max-width: 868px) {
+  #desktop-nav {
+    display: none; }
+  #hamburger-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+      background-color: #6a7f8c;
+
+    z-index: 10; }
+  .hamburger-icon {
+    margin-top: 1rem;
+    margin-bottom: 1rem; }
+  .menu-links {
+    display: none;
+    flex-direction: column;
+  background-color: #6a7f8c;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative; /* ⬅️ Keep it in the flow */
+    z-index: 1; /* no need to float above anything */}
+  .menu-links.open {
+    display: flex;  }
+  .section__pic-container img {
+    max-width: 90%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 12px;  }
+}
+  /*MEDIA QUERIES*/
 
 @media screen and (max-width: 768px) {
   #profile {
