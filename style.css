@@ -207,7 +207,6 @@ nav {
   margin-bottom: 3rem;
 }
 /*ABOUT SECTION*/
-
 .about__wrapper {
   display: flex;
   flex-direction: row;
@@ -217,7 +216,6 @@ nav {
   justify-content: center;
   gap: 2rem;
   background-color: #D9E4E0;
- 
 }
 /* About Title Text */
 #about .section__text__p1 {
@@ -308,7 +306,6 @@ button.accordion-header {
   font-size: 4rem;
   transition: transform 0.3s ease;
 }
-
 .accordion-item.active .accordion-header::after {
   transform: rotate(-180deg);
 }
@@ -362,7 +359,6 @@ button.accordion-header {
 }
 /* SKILLS SECTION*/
 /* Wrapper for all skill categories */
-
 .skills-wrapper {
   display: flex;
   justify-content: space-around;
@@ -395,6 +391,42 @@ button.accordion-header {
   color: black;
   text-align: center;
 }
+.skill-circle {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin: 1rem;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.progress-ring {
+  transform: rotate(-90deg);
+}
+
+.ring-bg {
+  fill: none;
+  stroke: #cde8e5;
+  stroke-width: 12;
+}
+
+.ring {
+  fill: none;
+  stroke: #3bbf95;
+  stroke-width: 12;
+  stroke-dasharray: 339.292; /* 2πr for r=54 */
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset 1s ease-out;
+}
+
+.skill-label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1rem;
+}
+
 
 .skill-name {
   font-size: 2.1rem;

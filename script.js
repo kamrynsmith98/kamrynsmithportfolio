@@ -56,22 +56,16 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // Skill accordion toggle functionality
-  const skillAccordions = document.querySelectorAll(".skills-section .accordion");
-  skillAccordions.forEach(btn => {
-    btn.addEventListener("click", function () {
-      this.classList.toggle("active");
-      const panel = this.nextElementSibling;
+function setCircleProgress(percent, circle) {
+  const radius = circle.r.baseVal.value;
+  const circumference = 2 * Math.PI * radius;
+  circle.style.strokeDasharray = `${circumference}`;
+  circle.style.strokeDashoffset = circumference - (percent / 100) * circumference;
+}
 
-      if (panel.style.maxHeight) {
-        panel.style.maxHeight = null;
-        panel.style.padding = "0 24px";
-      } else {
-        panel.style.maxHeight = panel.scrollHeight + "px";
-        panel.style.padding = "16px 24px";
-      }
-    });
-  });
+// Example: Animate HTML5 to 95%
+const htmlCircle = document.querySelector('.ring');
+setCircleProgress(95, htmlCircle);
 
   // Project carousel navigation
   const projects = document.querySelectorAll('.project');
