@@ -69,7 +69,22 @@ window.addEventListener('DOMContentLoaded', () => {
       ring.style.strokeDashoffset = offset;
     }, 300); // slight delay for effect
   });
-  
+document.addEventListener("DOMContentLoaded", () => {
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const progress = entry.target.querySelector('.progress');
+        progress.style.width = progress.getAttribute('style').match(/width:\s*(\d+)%/)[1] + '%';
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.5 });
+
+  document.querySelectorAll('.skill-card').forEach(card => {
+    observer.observe(card);
+  });
+});
+
   // Project carousel navigation
   const projects = document.querySelectorAll('.project');
   let currentProjectIndex = 0;

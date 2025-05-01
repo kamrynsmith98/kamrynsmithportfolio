@@ -357,105 +357,94 @@ button.accordion-header {
 .icon.arrow:active {
   transform: rotate(180deg);
 }
-/* Wrapper for all skill categories */
-.skills-wrapper {
-  display: flex;
-  justify-content: space-around;
-  gap: 1.5rem;  /* Reduced gap between categories */
-  background-color: #89a8b2;
-  flex-wrap: wrap;
-  padding: 3rem 0;  /* Reduced padding */
-  padding-top: 30px;  /* Reduced padding-top */
+#skills-modern {
+  padding: 4rem 2rem;
+  background: #f4f7fa;
+  font-family: 'Segoe UI', sans-serif;
 }
 
-/* Skill Category Container */
-.skill-category {
-  padding: 1.5rem;
-  flex: 1 1 250px;
+.section-title {
   text-align: center;
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 3rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.skill-card {
+  background: #ffffff;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  transition: transform 0.3s;
 }
 
-
-/* Other Style Adjustments for Consistency */
-.skill-category h3 {
-  color: #3a4c7c;
-  font-size: 2.8rem;
-  margin-bottom: 1rem;
-  border-bottom: 2px solid #92A8D1;
-  padding-bottom: 0.5rem;
-  text-align: center;
-}
-
-/* Circle Sizes and Labels */
-.skill-circle {
-  position: relative;
-  width: 120px;  /* Circle size */
-  height: 120px;  /* Circle size */
-  margin: 1rem auto;  /* Adjusted margin */
-}
-
-.skill-label {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  font-size: 12px;  /* Adjusted font size */
-  font-weight: bold;
-  transform: translate(-50%, -50%);  /* Center the label inside the circle */
-  text-align: center;
-  display: flex;
-  flex-direction: column;  /* Stack the skill and percentage */
-  justify-content: center;  /* Vertically align the content */
-  align-items: center;  /* Horizontally align the content */
-  width: 100%;
-  height: 100%;
-  overflow: hidden;  /* Hide overflow text */
-}
-.skill-label span {
-  font-size: 10px;  /* Smaller font size for the percentage */
-  font-weight: normal;  /* Less emphasis on percentage */
-}
-
-
-.ring {
-  fill: none;
-  stroke: #3bbf95;
-  stroke-width: 8;  /* Adjusted stroke width */
-  stroke-dasharray: 339.292;
-  stroke-dashoffset: 339.292;
-  transition: stroke-dashoffset 1s ease;
-}
-/* Skill Category Backgrounds */
-.skill-category.coding {
-  background: linear-gradient(135deg, #e3f6f5, #d9f8c4);
-  border: 2px solid #a3d9a5;
-}
-
-.skill-category.advertising {
-  background: linear-gradient(135deg, #d0e8ff, #f0f8ff);
-  border: 2px solid #a5cfff;
-}
-
-.skill-category.design {
-  background: linear-gradient(135deg, #f2f6fc, #e4ebf5);
-  border: 2px solid #b3c3e5;
-}
-
-/* Hover Effects */
-.skill-category:hover {
+.skill-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 8px 20px rgba(91, 163, 106, 0.2);
 }
 
-
-
-/* Ring Background */
-.ring-bg {
-  fill: none;
-  stroke: #e0e0e0;
-  stroke-width: 8;
+.skill-header {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #3a4c7c;
 }
+
+.skill-icon {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+.progress-bar {
+  background: #e0e0e0;
+  height: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background: linear-gradient(90deg, #3bbf95, #0ec8a6);
+  border-radius: 5px;
+  transition: width 1s ease-in-out;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .skill-header {
+    font-size: 1rem;
+  }
+
+  .skill-icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .skill-card {
+    padding: 1rem;
+  }
+
+  .progress-bar {
+    height: 8px;
+  }
+}
+
 /*PROJECTS*/
 #projects .section__text__p1 {
   font-size: 6rem;
