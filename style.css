@@ -375,6 +375,14 @@ button.accordion-header {
   text-align: center;
   border-radius: 12px;
 }
+.ring {
+  fill: none;
+  stroke: #3bbf95;
+  stroke-width: 12;
+  stroke-dasharray: 339.292; /* 2 * π * r (r=54) */
+  stroke-dashoffset: 339.292;
+  transition: stroke-dashoffset 1s ease;
+}
 .skill-category.coding {
   background: linear-gradient(135deg, #e3f6f5, #d9f8c4);
   border: 2px solid #a3d9a5;
@@ -390,7 +398,7 @@ button.accordion-header {
 
 .skill-category.coding h3 {
   color: #215732;
-  font-size: 2.2rem;
+  font-size: 3.8rem;
   margin-bottom: 1.5rem;
   border-bottom: 2px solid #a3d9a5;
   padding-bottom: 0.5rem;
@@ -399,6 +407,10 @@ button.accordion-header {
 
 .skill-category.coding .skill-icon {
   color: #2d8c4c;
+  
+}
+.skill-category.coding.skill-label span {
+  color: #3bbf95;
 }
 
 .skill-category.advertising {
@@ -416,7 +428,7 @@ button.accordion-header {
 
 .skill-category.advertising h3 {
   color: #174ea6;
-  font-size: 2.2rem;
+  font-size: 3.8rem;
   margin-bottom: 1.5rem;
   border-bottom: 2px solid #a5cfff;
   display: inline-block;
@@ -451,7 +463,7 @@ button.accordion-header {
 
 .skill-category.design h3 {
   color: #3a4c7c;
-  font-size: 2.2rem;
+  font-size: 3.8rem;
   margin-bottom: 1.5rem;
   border-bottom: 2px solid #92A8D1;
   padding-bottom: 0.5rem;
@@ -468,6 +480,10 @@ button.accordion-header {
   display: flex;
   align-items: center;
   margin-bottom: 1.5rem;
+}
+.skill-category.design .skill-label span {
+  color: #3a4c7c;
+  font-size:22px;
 }
 
 .skill-circle {
@@ -487,14 +503,7 @@ button.accordion-header {
   stroke-width: 12;
 }
 
-.ring {
-  fill: none;
-  stroke: #3bbf95;
-  stroke-width: 12;
-  stroke-dasharray: 339.292; /* 2 * π * r (r=54) */
-  stroke-dashoffset: 339.292;
-  transition: stroke-dashoffset 1s ease;
-}
+
 
 .skill-label {
   position: absolute;
