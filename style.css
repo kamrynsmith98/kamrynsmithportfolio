@@ -396,27 +396,27 @@ button.accordion-header {
   align-items: center;
   gap: 0.6rem;
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   margin-bottom: 1rem;
   color: #3a4c7c;
 }
 
 .skill-icon {
-  width: 22px;
-  height: 22px;
+  width: 24px;
+  height: 24px;
   object-fit: contain;
 }
 
 .progress-bar {
   background: #e0e0e0;
-  height: 10px;
+  height: 12px;
   border-radius: 5px;
   overflow: hidden;
 }
 
 .progress {
   height: 100%;
-  background: linear-gradient(90deg, #3bbf95, #0ec8a6);
+  background:  #92A8D1;
   border-radius: 5px;
   transition: width 1s ease-in-out;
 }
