@@ -55,18 +55,21 @@ window.addEventListener('DOMContentLoaded', () => {
       btn.style.backgroundColor = '#fff9c4';
     }
   });
+// SKILLS SECTION //
+ document.querySelectorAll('.skill-circle').forEach(circle => {
+    const percent = circle.getAttribute('data-percent');
+    const ring = circle.querySelector('.ring');
+    const radius = ring.r.baseVal.value;
+    const circumference = 2 * Math.PI * radius;
+    ring.style.strokeDasharray = `${circumference}`;
+    ring.style.strokeDashoffset = circumference;
 
-function setCircleProgress(percent, circle) {
-  const radius = circle.r.baseVal.value;
-  const circumference = 2 * Math.PI * radius;
-  circle.style.strokeDasharray = `${circumference}`;
-  circle.style.strokeDashoffset = circumference - (percent / 100) * circumference;
-}
-
-// Example: Animate HTML5 to 95%
-const htmlCircle = document.querySelector('.ring');
-setCircleProgress(95, htmlCircle);
-
+    const offset = circumference - (percent / 100) * circumference;
+    setTimeout(() => {
+      ring.style.strokeDashoffset = offset;
+    }, 300); // slight delay for effect
+  });
+  
   // Project carousel navigation
   const projects = document.querySelectorAll('.project');
   let currentProjectIndex = 0;

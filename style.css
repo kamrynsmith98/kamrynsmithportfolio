@@ -370,34 +370,111 @@ button.accordion-header {
 }
 
 .skill-category {
-  flex: 1;
-  min-width: 250px;
-  padding: 1rem;
-  background-color:#ebf5fb;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 2rem;
-  transition: all 0.3s ease;
+  padding: 2rem;
+  flex: 1 1 300px;
+  text-align: center;
+  border-radius: 12px;
+}
+.skill-category.coding {
+  background: linear-gradient(135deg, #e3f6f5, #d9f8c4);
+  border: 2px solid #a3d9a5;
+  border-radius: 16px;
+  box-shadow: 0 4px 14px rgba(91, 163, 106, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.skill-category:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+.skill-category.coding:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(91, 163, 106, 0.35);
 }
 
-.skill-category h3 {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  color: black;
+.skill-category.coding h3 {
+  color: #215732;
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #a3d9a5;
+  padding-bottom: 0.5rem;
   text-align: center;
 }
+
+.skill-category.coding .skill-icon {
+  color: #2d8c4c;
+}
+
+.skill-category.advertising {
+  background: linear-gradient(135deg, #d0e8ff, #f0f8ff);
+  border: 2px solid #a5cfff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(100, 160, 220, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-category.advertising:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(100, 160, 220, 0.4);
+}
+
+.skill-category.advertising h3 {
+  color: #174ea6;
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #a5cfff;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+.skill-category.advertising .skill-circle .ring {
+  stroke: #4388ff;
+}
+
+.skill-category.advertising .skill-label span {
+  color: #174ea6;
+}
+
+/* Distinct background colors per section */
+.coding { background-color: #e4f7f2; }
+.advertising { background-color: #e3efff; }
+.design { background-color: #f5eaff; }
+
+.skill-category.design {
+  background: linear-gradient(135deg, #f2f6fc, #e4ebf5);
+  border: 2px solid #b3c3e5;
+  border-radius: 16px;
+  box-shadow: 0 4px 14px rgba(146, 168, 209, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-category.design:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(146, 168, 209, 0.45);
+}
+
+.skill-category.design h3 {
+  color: #3a4c7c;
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #92A8D1;
+  padding-bottom: 0.5rem;
+  text-align: center;
+}
+
+.skill-category.design .skill-icon {
+  color: #5a6fa5;
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+.skill-category.design li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
 .skill-circle {
   position: relative;
   width: 120px;
   height: 120px;
-  margin: 1rem;
-  text-align: center;
-  font-family: sans-serif;
+  margin: 2rem auto;
 }
 
 .progress-ring {
@@ -406,7 +483,7 @@ button.accordion-header {
 
 .ring-bg {
   fill: none;
-  stroke: #cde8e5;
+  stroke: #e0e0e0;
   stroke-width: 12;
 }
 
@@ -414,9 +491,9 @@ button.accordion-header {
   fill: none;
   stroke: #3bbf95;
   stroke-width: 12;
-  stroke-dasharray: 339.292; /* 2πr for r=54 */
-  stroke-dashoffset: 0;
-  transition: stroke-dashoffset 1s ease-out;
+  stroke-dasharray: 339.292; /* 2 * π * r (r=54) */
+  stroke-dashoffset: 339.292;
+  transition: stroke-dashoffset 1s ease;
 }
 
 .skill-label {
@@ -424,102 +501,12 @@ button.accordion-header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  font-weight: bold;
   font-size: 1rem;
+  text-align: center;
+  width: 100px;
 }
 
-
-.skill-name {
-  font-size: 2.1rem;
-  display: inline-block;
-  margin-right: 10px;
-}
-
-.skill-bar {
-  width: 100%;
-  background-color: #cde8e5;
-  border-radius: 5px;
-  height: 10px;
-  margin-top: 5px;
-}
-
-.skill-level {
-  height: 100%;
-  width: 0;
-  border-radius: 5px;
-  transition: width 1s ease-in-out;
-}
-
-/* Skill Level Colors */
-.skill-level.html {
-  background-color: #3bbf95;
-  width: 95%; /* 90% experience */
-}
-
-.skill-level.css {
-  background-color: #3bbf95;
-  width: 95%; /* 90% experience */
-}
-
-.skill-level.js {
-  background-color: #3bbf95;
-  width: 60%; /* 60% experience */
-}
-
-.skill-level.python {
-  background-color: #3bbf95;
-  width: 50%; /* 50% experience */
-}
-
-.skill-level.cm360 {
-  background-color: #3bbf95;
-  width: 90%; /* 90% experience */
-}
-
-.skill-level.dv360 {
-  background-color: #3bbf95;
-  width: 60%; /* 60% experience */
-}
-
-.skill-level.dv {
-  background-color: #3bbf95;
-  width: 60%; /* 50% experience */
-}
-
-.skill-level.tealium {
-  background-color: #3bbf95;
-  width: 50%; /* 50% experience */
-}
-
-.skill-level.ai {
-  background-color: #3bbf95;
-  width: 80%; /* 80% experience */
-}
-
-.skill-level.dw {
-  background-color: #3bbf95; /* Light Green */
-  width: 90%; /* 90% experience */
-}
-
-.skill-level.ps {
-  background-color: #3bbf95;
-  width: 70%; /* 70% experience */
-}
-
-.skill-level.id {
-  background-color: #3bbf95;
-  width: 60%; /* 60% experience */
-}
-
-/* Media Query for Responsiveness */
-@media (max-width: 768px) {
-  .skills-wrapper {
-    flex-direction: column;
-    align-items: center;
-  }
-  .skill-category {
-    width: 100%;
-  }
-}
 /*PROJECTS*/
 #projects .section__text__p1 {
   font-size: 6rem;
