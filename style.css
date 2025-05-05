@@ -276,6 +276,36 @@ nav {
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
   transform: translateY(-2px);
 }
+.role-details {
+  list-style: none;
+  padding-left: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.role-details li {
+  position: relative;
+  margin-bottom: 0.5rem;
+  padding-left: 1.2em;
+  color: #2d2d2d;
+  font-weight: 700;
+  font-size:1.5rem;
+  transition: all 0.2s ease;
+}
+
+/* Custom bullet */
+.role-details li::before {
+  content: '▹'; /* arrowhead-style bullet */
+  position: absolute;
+  left: 0;
+  color: lightyellow; /* or your theme color */
+  font-size: 1.3rem;
+}
+
+/* Hover effect */
+.role-details li:hover {
+  color: lightyellow;
+  transform: translateX(5px);
+}
 button.accordion-header {
   color: #606c5d;
   padding: 40px;
