@@ -225,8 +225,9 @@ nav {
   letter-spacing: 2px;
   font-variant: small-caps;
   color: #eef7ff;
+  margin-top:10rem;
   background-color: #6a7f8c;
-  padding: 30px 30px;
+  padding: 50px 50px;
   border-radius: 5px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -248,17 +249,17 @@ nav {
 }
 .accordion-content p {
   text-align: center;
-  margin-top: 15px;
+  margin-top: 5px;
   font-size: 32px;
 }
 .accordion-container {
   width: 100%;
-  margin-top: 30px;
+  margin-top: 50px;
   display: flex;
   background-color:#ECF0F1;
   flex-direction: column;
   align-items: center; /* Center the accordion items */
-  gap: 15px;
+  gap: 10px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25); 
 }
 .accordion-item.active .accordion-content {
@@ -288,7 +289,7 @@ nav {
   padding-left: 1em;
   color: #eef7ff;
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   transition: all 0.2s ease;
 }
 
@@ -309,21 +310,24 @@ nav {
 /* Flexbox layout for logo and content */
 .logo-role-flex {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   gap: 1rem;
-  align-items: flex-start;
 }
 
 .work-logo {
-  max-width: 100px;
+  max-width: 120px;
   height: auto;
-  flex-shrink: 0;
-}
+  flex-shrink: 0;}
 
-.role-text {
+.role-text p {
   flex: 1;
+  font-size:3rem;
   min-width: 200px;
 }
+
+
 button.accordion-header {
   color: #606c5d;
   padding: 40px;
@@ -801,10 +805,20 @@ textarea {
     display: block;
     margin: 0 auto;
   }
-
+.role-text > p {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-top: 1rem;
+  text-align: center;
+}
+  .role-details li {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
 
   .section__text__p1 {
-    font-size: 3rem;
+    font-size: 5rem;
     padding: 15px 20px;
   }
 
