@@ -120,21 +120,19 @@ nav {
   border-radius: 50px;
 }
 .section__text {
-  flex: 1 1 300px;
   display: flex;
+  flex-direction: column;
+  justify-content: center; /* center content vertically inside the box */
+  align-items: center;     /* center horizontally */
+  text-align: center;
   padding: 20px;
   border-radius: 10%;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  position: relative;
+  color: #3F4E4F;
   z-index: 1;
-  color: #3F4E4F; /* Ensure contrast */
-  
 }
 .section__text h6 {
   font-size: 2.8rem;
-  color: #92A8D1;
+  color:#ffff91;
 }
 ._title {
   font-size: 8.8rem;
@@ -220,9 +218,9 @@ nav {
   left: 0;
   width: 100%;
   height: 100%;
+  opacity:50%;
   object-fit: cover; /* Keeps the aspect ratio intact */
   z-index: -1; /* Pushed behind content */
-  opacity: 0.25; /* Optional for visual effect */
   pointer-events: none;
 }
 

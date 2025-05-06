@@ -15,7 +15,9 @@ window.addEventListener('DOMContentLoaded', () => {
     const percent = skill.getAttribute('data-percent');
     skillFill.style.width = percent;
   });
-
+const video = document.getElementById('myVideo');
+  video.playbackRate = 0.5; // Set to half speed
+  
   // Toggle content visibility and rotate arrow icon
   document.querySelectorAll(".toggle-header").forEach(button => {
     button.addEventListener("click", () => {
