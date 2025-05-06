@@ -101,7 +101,8 @@ nav {
   flex-wrap: nowrap;
 }
 #profile .section__pic-container {
-  width: 100%;
+   width: 100%; /* take full width of the parent */
+  margin-bottom: 1.5rem;
   max-width: 900px; /* Max width for accordion */
   margin: 0 auto;
   display: flex;
@@ -113,11 +114,11 @@ nav {
 .section__text h6 {
   margin-top: 0.55rem;
 }
+
 .section__pic-container img {
-  max-width: 60%;
+  max-width: 500px; /* smaller image */
   height: auto;
-  margin-left: 50px;
-  border-radius: 50px;
+  border-radius: 10px; /* optional: rounded corners */
 }
 .section__text {
   display: flex;
@@ -125,19 +126,24 @@ nav {
   justify-content: center; /* center content vertically inside the box */
   align-items: center;     /* center horizontally */
   text-align: center;
-  padding: 20px;
-  border-radius: 10%;
-  color: #3F4E4F;
+  background-color:#6F8FAF;
+  width:100%;
+  
   z-index: 1;
 }
 .section__text h6 {
   font-size: 2.8rem;
   color:#ffff91;
 }
+.section__text p {
+  font-weight: 600;
+  font-size: 64px;
+  color: #ffff91;
+}
 ._title {
   font-size: 8.8rem;
   font-weight: bold;
-  color: #92A8D1;
+  color: #ffff91;
 }
 .btn-container {
   display: flex;
@@ -188,11 +194,7 @@ nav {
   display: block;
   width: 100%;
 }
-.section__text p {
-  font-weight: 600;
-  font-size: 64px;
-  color: #A5C8D6;
-}
+
 .icon:hover {
   transform: scale(1.1);
   filter: drop-shadow(0 0 5px #888888);
@@ -235,7 +237,7 @@ nav {
   font-size: 6rem;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
-  color: #eef7ff;
+  color: #6F8FAF;
   margin-top: 5rem;
   text-align: center;
   padding: 30px;
@@ -246,11 +248,10 @@ nav {
 .accordion-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  width: 100%;
-  margin-top: 3rem;
+  align-items: center; /* center contents horizontally */
+  text-align: center;
 }
+
 
 .accordion-item {
   width: 80%; /* Makes the accordion smaller */
