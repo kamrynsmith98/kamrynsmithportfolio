@@ -29,34 +29,38 @@ const video = document.getElementById('myVideo');
     });
   });
 
-  // Accordion functionality
-  document.querySelectorAll(".accordion-header").forEach(header => {
-    header.addEventListener("click", () => {
-      const accordion = header.parentElement;
-      const content = accordion.querySelector(".accordion-content");
 
-      // Close other open items
-      document.querySelectorAll(".accordion-item").forEach(item => {
-        if (item !== accordion) {
-          item.querySelector(".accordion-content").style.maxHeight = null;
+document.addEventListener("DOMContentLoaded", function () {
+  const accordionHeaders = document.querySelectorAll(".accordion-header");
+
+  accordionHeaders.forEach(header => {
+    header.addEventListener("click", () => {
+      const content = header.nextElementSibling;
+
+      // Close other open accordions
+      document.querySelectorAll(".accordion-content").forEach(section => {
+        if (section !== content) {
+          section.style.maxHeight = null;
+          section.style.paddingTop = 0;
+          section.style.paddingBottom = 0;
         }
       });
 
-      // Toggle current accordion item
+      // Toggle current accordion
       if (content.style.maxHeight) {
         content.style.maxHeight = null;
+        content.style.paddingTop = 0;
+        content.style.paddingBottom = 0;
       } else {
         content.style.maxHeight = content.scrollHeight + "px";
+        content.style.paddingTop = "20px";
+        content.style.paddingBottom = "20px";
       }
     });
   });
+});
 
-  // Change background color for Education button
-  document.querySelectorAll('.accordion-header').forEach(btn => {
-    if (btn.textContent.trim().startsWith('Education')) {
-      btn.style.backgroundColor = '#fff9c4';
-    }
-  });
+
 // SKILLS SECTION //
  document.querySelectorAll('.skill-circle').forEach(circle => {
     const percent = circle.getAttribute('data-percent');

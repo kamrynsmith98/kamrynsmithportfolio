@@ -152,6 +152,7 @@ nav {
   font-weight: bold;
   color: #FFFDD0;
   font-variant-caps: all-small-caps;
+  letter-spacing:1px;
 }
 .btn-container {
   display: flex;
@@ -219,8 +220,10 @@ nav {
 #about {
   position: relative;
   overflow: hidden;
-  z-index: 0; /* Ensures stacking context */
+  z-index: 0;
+  margin-top: 20rem; /* Push it down from the profile section */
 }
+
 
 .about-bg-video {
   position: absolute;
@@ -292,14 +295,13 @@ nav {
   padding: 0 20px;
   background-color: #6a7f8c;
   color: #ecf0f1;
-  transition: max-height 0.4s ease, padding 0.4s ease;
-  font-size: 2rem; /* Increased font size for the content */
+  transition: max-height 0.4s ease-out, padding 0.4s ease-out;
+}
+.accordion-item.active .accordion-content {
+  padding: 20px;
 }
 
-.accordion-item.active .accordion-content {
-  padding: 16px 24px;
-  max-height: 500px;
-}
+
 
 .accordion-item:hover {
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
