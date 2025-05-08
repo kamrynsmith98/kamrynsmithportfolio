@@ -288,7 +288,6 @@ nav {
   align-items: center;
   width: 100%;
 }
-
 .accordion-content {
   max-height: 0;
   overflow: hidden;
@@ -297,6 +296,7 @@ nav {
   color: #ecf0f1;
   transition: max-height 0.4s ease-out, padding 0.4s ease-out;
 }
+
 .accordion-item.active .accordion-content {
   padding: 20px;
 }

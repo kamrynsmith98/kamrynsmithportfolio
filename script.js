@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
     header.addEventListener("click", () => {
       const content = header.nextElementSibling;
 
-      // Close other open accordions
+      // Close all other accordion sections
       document.querySelectorAll(".accordion-content").forEach(section => {
         if (section !== content) {
           section.style.maxHeight = null;
@@ -46,13 +46,13 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       });
 
-      // Toggle current accordion
+      // Toggle the current section
       if (content.style.maxHeight) {
         content.style.maxHeight = null;
         content.style.paddingTop = 0;
         content.style.paddingBottom = 0;
       } else {
-        content.style.maxHeight = content.scrollHeight + "px";
+        content.style.maxHeight = content.scrollHeight + "px";  // Set to content's scrollHeight
         content.style.paddingTop = "20px";
         content.style.paddingBottom = "20px";
       }
