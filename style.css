@@ -669,27 +669,37 @@ textarea {
   border-radius: 12px;
 }
 
-  .section__text {
-    padding: 1rem;
-    border-radius: 0;
-  }
+ .section__text {
+  width: 100%;
+  max-width: 95%;
+  margin: 0 auto;
+  background-color: #a3cef1;
+  padding: 1.5rem 1rem;
+  box-shadow: none;
+  border-radius: 8px;
+  text-align: center;
+}
+.section__text h6 {
+  font-size: 1.2rem;
+}
 
-  .section__text h6 {
-    font-size: 1.8rem;
-  }
+._title {
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
 
-  ._title {
-    font-size: 3rem;
-  }
+.section__text p {
+  font-size: 1.3rem;
+  line-height: 1.4;
+}
 
-  .section__text p {
-    font-size: 1.5rem;
-  }
 
-  .btn-container {
-    flex-direction: column;
-    gap: 1rem;
-  }
+ .btn-container {
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+  
 
   #socials-container {
     flex-wrap: wrap;
