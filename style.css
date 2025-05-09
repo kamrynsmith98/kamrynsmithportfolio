@@ -135,6 +135,7 @@ nav {
   background-color:#a3cef1;
   width:60%;
   z-index: 1;
+  border-radius:10rem;
    padding-bottom: 2rem;
 }
 .section__text h6 {
@@ -655,29 +656,24 @@ textarea {
 @media screen and (max-width: 768px) {
   #profile {
     flex-direction: column;
-    padding: 2rem 1rem;
+    padding: 5rem 1rem 4rem; /* Top, sides, and bottom */
     gap: 2rem;
-    margin: 10px;
+    margin: 10px 0;
+    align-items: center;
   }
 
- .section__pic-container img,
-.profilepicture {
-  max-width: 90%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  border-radius: 12px;
-}
+  
 
- .section__text {
-  width: 100%;
-  max-width: 95%;
-  margin: 0 auto;
-  background-color: #a3cef1;
-  padding: 1.5rem 1rem;
-  box-shadow: none;
-  border-radius: 8px;
-  text-align: center;
+  .section__text {
+    width: 100%;
+    max-width: 95%;
+    margin: 2rem auto;
+    background-color: #a3cef1;
+    padding: 1.5rem 1rem;
+    box-shadow: none;
+    border-radius: 8px;
+    text-align: center;
+  }
 }
 .section__text h6 {
   font-size: 1.2rem;
