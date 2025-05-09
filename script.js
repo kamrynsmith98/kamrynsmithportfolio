@@ -1,10 +1,9 @@
-// Toggle menu for hamburger icon
 function toggleMenu() {
   const menu = document.querySelector(".menu-links");
   const icon = document.querySelector(".hamburger-icon");
 
   menu.classList.toggle("open");  // Show/hide the menu
-  icon.classList.toggle("open");  // Animate the hamburger icon
+  icon.classList.toggle("open");  // Animate the hamburger icon (optional)
 }
 
 window.addEventListener('DOMContentLoaded', () => {

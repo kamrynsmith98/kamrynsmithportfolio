@@ -617,36 +617,71 @@ button:hover {
 /*PROFILE*/
 @media screen and (max-width: 868px) {
   #desktop-nav {
-    display: none; }
+    display: none; }}
+/* Mobile view: Hamburger menu horizontal */
+@media screen and (max-width: 768px) {
+  /* Adjust the position of the #hamburger-nav container */
   #hamburger-nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-      background-color: #6a7f8c;
+    background-color: #6a7f8c;
+    z-index: 10;
+    position: relative; /* Ensure it has context for absolute children */
+  }
 
-    z-index: 10; }
+  /* Hamburger icon: Make sure 3 lines are visible and aligned horizontally */
   .hamburger-icon {
-    margin-top: 1rem;
-    margin-bottom: 1rem; }
+    display: flex;
+    flex-direction: column; /* Keep the 3 lines stacked vertically */
+    justify-content: space-between;
+    height: 24px; /* Adjust height for spacing */
+    width: 30px; /* Width for the hamburger */
+    cursor: pointer;
+    margin-bottom: 15px;
+  }
+
+  /* Hamburger icon lines */
+  .hamburger-icon span {
+    width: 100%;
+    height: 4px; /* Thicker lines */
+    background-color: #FFF; /* White color for the hamburger lines */
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* Menu links (open horizontally) */
   .menu-links {
     display: none;
-    flex-direction: column;
-  background-color: #6a7f8c;
+    flex-direction: row; /* Align the menu items horizontally */
+    justify-content: center; /* Center the items horizontally */
     width: 100%;
-    text-align: center;
+    background-color: #6a7f8c;
     padding: 1rem 0;
-    position: relative; /* ⬅️ Keep it in the flow */
-    z-index: 1; /* no need to float above anything */}
+    position: absolute; /* Menu appears above content */
+    top: 80px; /* Position below the hamburger (adjust this as needed) */
+    left: 0;
+    z-index: 1;
+  }
+
   .menu-links.open {
-    display: flex;  }
-  .section__pic-container img {
-    max-width: 90%;
-    height: auto;
+    display: flex; /* Make the menu visible when opened */
+  }
+
+  /* Menu items */
+  .menu-links a {
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
     display: block;
-    margin: 0 auto;
-    border-radius: 12px;  }
+  }
+
+  /* Optional: Hover effect on menu items */
+  .menu-links a:hover {
+    background-color: #4ecca3;
+  }
 }
+
   /*MEDIA QUERIES*/
 
 @media screen and (max-width: 768px) {
@@ -656,8 +691,6 @@ button:hover {
     margin: 10px 0;
     align-items: center;
 }
-
-
 .section__text {
   width: 100%;
   max-width: 95%;
