@@ -192,27 +192,28 @@ a:focus {
 }
 
 .section__text__p2 {
-  font-size: 4.2rem;
-  font-weight: 200;
-  margin-bottom: 0.5rem;
+  font-size: 3.8rem;
+  font-weight: 700;
+   font-family: 'Cormorant', serif;
+  color:#E5E4E2;
 }
 
 ._title {
   font-family: 'Cormorant', serif;
   font-size: 3.5rem;
-  margin-bottom: 0.25rem;
-  color: #fff;
+  color:#E5E4E2;
 }
 
 h6 {
   font-weight: 400;
-  margin-bottom: 1.5rem;
-  font-size: 1rem;
-  color: #e0e0e0;
+  margin-bottom: .5rem;
+  font-size: 2rem;
+   font-family: 'Cormorant', serif;
+  color: #E5E4E2;
 }
 
 .btn-container {
-  margin-top: 1.5rem;
+  margin-top: .5rem;
   display: flex;
   gap: 1rem;
   justify-content: center;
@@ -312,7 +313,7 @@ h6 {
   transform: translate(-50%, -50%);
   object-fit: cover;
   z-index: -1;
-  opacity:90%;
+  opacity:80%;
   transition: filter 0.5s ease;
 }
 
