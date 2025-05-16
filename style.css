@@ -15,13 +15,13 @@ body {
 
 /* LINKS */
 a {
-  color: #56CCF2;
+  color: #5A9CF9;
   text-decoration: none;
   transition: color 0.25s ease;
 }
 a:hover,
 a:focus {
-  color: #2A9DF4;
+  color:#8CBDFB;
   outline: none;
   text-decoration: underline;
 }
@@ -161,13 +161,14 @@ a:focus {
   overflow: hidden;
   color: #1A1A1A;
   text-align: center;
-  background-color: #56CCF2;
+  background-color:#AFD3E2;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 1rem;
   box-shadow: inset 0 0 100px rgba(255 255 255 / 0.3);
 }
+
 
 .about-bg-video {
   position: absolute;
@@ -191,8 +192,8 @@ a:focus {
 }
 
 .section__text__p2 {
-  font-size: 1.2rem;
-  font-weight: 300;
+  font-size: 4.2rem;
+  font-weight: 200;
   margin-bottom: 0.5rem;
 }
 
@@ -282,6 +283,14 @@ h6 {
   filter: drop-shadow(0 4px 8px rgba(86 204 242, 0.8));
   outline: none;
 }
+#portfolio::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(230, 240, 250, 0.4); /* light translucent blue */
+  pointer-events: none;
+  z-index: 0;
+}
 #portfolio {
   position: relative;
   overflow: hidden;
@@ -347,20 +356,28 @@ h6 {
 .accordion-item {
   border-bottom: 1px solid #ddd;
 }
+
 .accordion-header {
-  background-color: #D0E6FF;
-  color: #1A2C4D;
-  border: 1px solid #B9D6FB;
-  transition: background-color 0.3s ease;
-}
-.accordion-header:hover {
-  background-color: #8CBDFB;
-  color: white;
+  background-color:#D0E6FF;
+  color: #1A1A1A;
+  cursor: pointer;
+  padding: 1rem 1.5rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
 }
 
 .accordion-header:hover,
 .accordion-header:focus {
-  background-color: #2A9DF4;
+  background-color: #8CBDFB;
   color: #fff;
   outline: none;
 }
