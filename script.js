@@ -20,6 +20,32 @@ const video = document.getElementById('myVideo');
     });
   });
 
+// Accordion functionality
+document.addEventListener("DOMContentLoaded", () => {
+  const headers = document.querySelectorAll(".accordion-header");
+
+  headers.forEach((header) => {
+    header.addEventListener("click", () => {
+      const content = header.nextElementSibling;
+
+      // Toggle "active" class for header (optional for styling)
+      header.classList.toggle("active");
+
+      // Toggle display
+      if (content.style.maxHeight) {
+        content.style.maxHeight = null;
+      } else {
+        // Close all other accordions
+        document.querySelectorAll(".accordion-content").forEach((el) => {
+          el.style.maxHeight = null;
+          el.previousElementSibling.classList.remove("active");
+        });
+
+        content.style.maxHeight = content.scrollHeight + "px";
+      }
+    });
+  });
+});
 
 
   const form = document.getElementById("contact-form");
