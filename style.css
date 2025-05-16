@@ -193,15 +193,15 @@ a:focus {
 
 .section__text__p2 {
   font-size: 3.8rem;
-  font-weight: 700;
-   font-family: 'Cormorant', serif;
-  color:#E5E4E2;
+  font-family: 'Cormorant', serif;
+  color:#708090;
+
 }
 
 ._title {
   font-family: 'Cormorant', serif;
   font-size: 3.5rem;
-  color:#E5E4E2;
+  color:#708090;
 }
 
 h6 {
@@ -209,7 +209,7 @@ h6 {
   margin-bottom: .5rem;
   font-size: 2rem;
    font-family: 'Cormorant', serif;
-  color: #E5E4E2;
+  color: #708090;
 }
 
 .btn-container {
@@ -313,7 +313,7 @@ h6 {
   transform: translate(-50%, -50%);
   object-fit: cover;
   z-index: -1;
-  opacity:80%;
+  opacity: 0.5; 
   transition: filter 0.5s ease;
 }
 
@@ -549,3 +549,4 @@ button[type='submit'] {
   align-items: center;
   justify-content: center;
   gap: 0
+    
