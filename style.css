@@ -7,7 +7,8 @@
 
 body {
   font-family: 'AmstelvarAlpha', serif;
-  background: #EAF6FF; /* light sky blue bg */
+  background-color: #E6F0FA; /* very light sky blue */
+
   color: #1A1A1A;
   line-height: 1.6;
 }
@@ -33,7 +34,7 @@ a:focus {
   align-items: center;
   justify-content: space-between;
   padding: 0.75rem 2rem;
-  background-color: #2A9DF4;
+  background-color: #B9D6FB; /* soft blue */
   color: #fff;
   position: sticky;
   top: 0;
@@ -41,6 +42,7 @@ a:focus {
   font-weight: 600;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
+
 
 #desktop-nav .logo,
 #hamburger-nav .logo {
@@ -106,7 +108,7 @@ a:focus {
 /* Mobile menu links */
 .menu-links {
   list-style: none;
-  background-color: #2A9DF4;
+  background-color: #E6F0FA;
   position: absolute;
   top: 60px;
   right: 2rem;
@@ -227,9 +229,13 @@ h6 {
 }
 
 .btn-color-1 {
-  background-color: #fff;
-  color: #2A9DF4;
-  box-shadow: 0 4px 12px rgb(86 204 242 / 0.4);
+  background-color: #8CBDFB;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+.btn-color-1:hover {
+  background-color: #5A9CF9;
 }
 
 .btn-color-1:hover,
@@ -283,7 +289,7 @@ h6 {
   padding: 3rem 1rem;
   /* Optional: set a min-height or height */
   min-height: 60vh;
-  background-color: #EAF6FF; /* fallback bg */
+  background-color: #E6F0FA;
 }
 
 .portfolio-bg-video {
@@ -297,7 +303,7 @@ h6 {
   transform: translate(-50%, -50%);
   object-fit: cover;
   z-index: -1;
-  filter: brightness(0.6);
+  opacity:90%;
   transition: filter 0.5s ease;
 }
 
@@ -341,23 +347,15 @@ h6 {
 .accordion-item {
   border-bottom: 1px solid #ddd;
 }
-
 .accordion-header {
-  background-color: #56CCF2;
-  color: #1A1A1A;
-  cursor: pointer;
-  padding: 1rem 1.5rem;
-  font-weight: 600;
-  font-size: 1.2rem;
-  width: 100%;
-  text-align: left;
-  border: none;
-  outline: none;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  user-select: none;
+  background-color: #D0E6FF;
+  color: #1A2C4D;
+  border: 1px solid #B9D6FB;
+  transition: background-color 0.3s ease;
+}
+.accordion-header:hover {
+  background-color: #8CBDFB;
+  color: white;
 }
 
 .accordion-header:hover,
