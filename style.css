@@ -43,6 +43,7 @@ nav {
 .nav-links {
   gap: 2rem;
   font-size: 2.7rem;
+  91C8E4
   
 }
 .logo {
@@ -70,6 +71,7 @@ nav {
   cursor: pointer;
   margin-bottom: 15px; /* <-- adds space between icon and dropdown */
 }
+
 .hamburger-icon span {
   width: 100%;
   height: 2px;
@@ -84,6 +86,8 @@ nav {
 }
 .menu-links.open {
   display: flex;
+  background-color: #91C8E4;
+
 }
 .menu-links a {
   padding: 10px;
@@ -96,10 +100,11 @@ nav {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: 4rem;
-  margin:20px;
   gap: 2rem;
   flex-wrap: nowrap;
+  margin-top: 250px; /* Increased from 150px */
+  position: relative;
+  z-index: 1;
 }
 .section__pic-container {
   margin: 1.5rem 0;
@@ -135,7 +140,12 @@ nav {
   background-color:#a3cef1;
   width:60%;
   z-index: 1;
+    padding-top: 160px; /* Increased from 120px */
+  position: relative;
+  margin-top: 60px; /* Add this to push the whole section down */
+
  }
+
 .section__text h6 {
   font-size: 2.8rem;
   color:#FFFDD0;
@@ -201,6 +211,8 @@ nav {
   text-align: center;
   display: block;
   width: 100%;
+  margin-top: 20px; /* Adjust value as needed */
+
 }
 
 .icon:hover {
@@ -356,18 +368,15 @@ nav {
   }
 
   /* Menu links (open horizontally) */
-  .menu-links {
-    display: none;
-    flex-direction: row; /* Align the menu items horizontally */
-    justify-content: center; /* Center the items horizontally */
-    width: 100%;
-    background-color: #6a7f8c;
-    padding: 1rem 0;
-    position: absolute; /* Menu appears above content */
-    top: 80px; /* Position below the hamburger (adjust this as needed) */
-    left: 0;
-    z-index: 1;
-  }
+.menu-links {
+  position: absolute;
+  top: 80px; /* adjust based on your nav height */
+  right: 0;
+  background-color: #000000e0;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1000; /* ensures it's above everything else */
+}
 
   .menu-links.open {
     display: flex; /* Make the menu visible when opened */
