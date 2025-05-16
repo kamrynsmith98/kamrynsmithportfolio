@@ -1,200 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kamryn Smith Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Cormorant"
-      rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=AmstelvarAlpha:opsz@16..144&display=swap"
-      rel="stylesheet" />
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Kamryn Smith</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Kamryn Smith</div>
-      <div class="hamburger-menu"></div>
-      <div class="hamburger-icon" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <ul class="menu-links">
-        <ul>
-          <li><a href="#home" onclick="toggleMenu()">Home</a></li>
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kamryn Smith Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Cormorant" rel="stylesheet" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=AmstelvarAlpha:opsz@16..144&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+</head>
+<body>
+  <!-- Desktop Navigation -->
+  <nav id="desktop-nav">
+    <div class="logo">Kamryn Smith</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
-    </nav>
-    <br /><br />
-    <!-- HOME PAGE PROFILE-->
-    <section id="profile">
-       <video class="about-bg-video" autoplay muted loop playsinline>
-    <source src="https://cdn.glitch.me/d402c5b4-f98f-4f65-8c2e-312f01f955f3/landingpagevid.mp4?v=1746547601438" type="video/mp4">
-    Your browser does not support the video tag.
+    </div>
+  </nav>
+
+  <!-- Hamburger Navigation -->
+  <nav id="hamburger-nav">
+    <div class="logo">Kamryn Smith</div>
+    <div class="hamburger-menu"></div>
+    <div class="hamburger-icon" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="menu-links">
+      <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+      <li><a href="#about" onclick="toggleMenu()">About</a></li>
+      <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+      <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+    </ul>
+  </nav>
+
+  <br /><br />
+
+  <!-- HOME PAGE PROFILE -->
+  <section id="profile">
+    <video autoplay muted loop playsinline class="portfolio-bg-video">
+    <source src="https://cdn.glitch.me/d402c5b4-f98f-4f65-8c2e-312f01f955f3/landingpagevid.mp4?v=1746547601438" type="video/mp4" />
+    <!-- fallback here -->
   </video>
-      <div class="section__text">
-        <p class="section__text__p2">Welcome to my Portfolio!</p>
-        <h1 class="_title"> I'm Kamryn</h1>
-        <p class="section__text__p2">
-         | Ad Tech Specialist &amp; Creative Web Designer |
-        </p>
-        <h6>Based in Tampa, Florida</h6>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('https://cdn.glitch.global/d402c5b4-f98f-4f65-8c2e-312f01f955f3/resume.png?v=1744315772970')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='#contact'">
-            Contact Info
-          </button>
-        </div>
-    <div id="socials-container">
-  <img
-    src="https://cdn.glitch.global/d402c5b4-f98f-4f65-8c2e-312f01f955f3/LinkedIn_icon_circle.svg.webp?v=1744333160545"
-    alt="My LinkedIn Profile"
-    class="icon"
-    onclick="window.open('https://www.linkedin.com/in/kamryn-smith-888b48157/', '_blank')"
-  />
-  <img
-    src="https://cdn.glitch.global/d402c5b4-f98f-4f65-8c2e-312f01f955f3/Google_Drive_icon_(2020).svg.png?v=1744397559243"
-    alt="My Google Drive"
-    class="icon"
-    onclick="window.open('https://drive.google.com/drive/folders/YOUR_FOLDER_ID_HERE', '_blank')"
-  />
- <img
-  src="https://cdn.glitch.global/d402c5b4-f98f-4f65-8c2e-312f01f955f3/google-mail-gmail-icon-logo-symbol-free-png.webp?v=1744397930796"
-  alt="Send me an Email"
-  class="icon"
-  onclick="window.location.href='mailto:kamrysmith098@gmail.com'"
-/>
-</div>
-      </div>
-    </section>
-    <!-- HOME PAGE PROFILE ENDS-->
 
- 
-  <!-- About Wrapper -->
-      <section id="about">
-  <div class="about__wrapper">
-    
-    <!-- About Title -->
-    
-
-    <!-- Accordion Container -->
-    <div class="accordion-container">
-      
-            <p class="section__text__p1">About Me</p>
- <div class="section__pic-container">
-      
+  <!-- Your portfolio content here -->
+  <div class="portfolio-content">
+    <div class="section__text">
+      <p class="section__text__p2">Welcome to my Portfolio!</p>
+      <h1 class="_title">I'm Kamryn</h1>
+      <p class="section__text__p2">| Ad Tech Specialist &amp; Creative Web Designer |</p>
+      <h6>Based in Tampa, Florida</h6>
+      <div class="btn-container">
+        <button
+          class="btn btn-color-2"
+          onclick="window.open('https://cdn.glitch.global/d402c5b4-f98f-4f65-8c2e-312f01f955f3/resume.png?v=1744315772970')"
+        >
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='#contact'">
+          Contact Info
+        </button>
       </div>
+      <div id="socials-container">
+        <img
+          src="https://cdn.glitch.global/d402c5b4-f98f-4f65-8c2e-312f01f955f3/LinkedIn_icon_circle.svg.webp?v=1744333160545"
+          alt="My LinkedIn Profile"
+          class="icon"
+          onclick="window.open('https://www.linkedin.com/in/kamryn-smith-888b48157/', '_blank')"
+        />
+        <img
+          src="https://cdn.glitch.global/d402c5b4-f98f-4f65-8c2e-312f01f955f3/Google_Drive_icon_(2020).svg.png?v=1744397559243"
+          alt="My Google Drive"
+          class="icon"
+          onclick="window.open('https://drive.google.com/drive/folders/YOUR_FOLDER_ID_HERE', '_blank')"
+        />
+        <img
+          src="https://cdn.glitch.global/d402c5b4-f98f-4f65-8c2e-312f01f955f3/google-mail-gmail-icon-logo-symbol-free-png.webp?v=1744397930796"
+          alt="Send me an Email"
+          class="icon"
+          onclick="window.location.href='mailto:kamrysmith098@gmail.com'"
+        />
+      </div>
+    </div>
+     </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about">
+    <div class="about__wrapper">
+      <p class="section__text__p1">About Me</p>
+      <div class="section__pic-container"></div>
+
       <!-- Accordion Item: Work Experience -->
-      <div class="accordion-item">
-        <button class="accordion-header">Work Experience</button>
-        <div class="accordion-content">
-          <div class="logo-role-block">
-            <img src="https://cdn.glitch.global/d402c5b4-f98f-4f65-8c2e-312f01f955f3/22squared.jpg?v=1743531779827" alt="22squared logo" class="icon work-logo" />
-            <div class="role-text">
-              <p>Ad Tech Specialist | Mar 2024 – Present</p>
-              <ul class="role-details">
-                <li>Led trafficking across Social, Digital Video, Radio, META, and DTVE for Publix</li>
-                <li>Co-led design and delivery of Publix Onboarding</li>
-                <li>Responsible for weekly reporting for Acxiom R-Tags</li>
-              </ul>
+      <div class="accordion-container">
+        <div class="accordion-item">
+          <button class="accordion-header">Work Experience</button>
+          <div class="accordion-content">
+            <div class="logo-role-block">
+              <img
+                src="https://cdn.glitch.global/d402c5b4-f98f-4f65-8c2e-312f01f955f3/22squared.jpg?v=1743531779827"
+                alt="22squared logo"
+                class="icon work-logo"
+              />
+              <div class="role-text">
+                <p>Ad Tech Specialist | Mar 2024 – Present</p>
+                <ul class="role-details">
+                  <li>Led trafficking across Social, Digital Video, Radio, META, and DTVE for Publix</li>
+                  <li>Co-led design and delivery of Publix Onboarding</li>
+                  <li>Responsible for weekly reporting for Acxiom R-Tags</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- Accordion Item: Education -->
-      <div class="accordion-item">
-        <button class="accordion-header">Education</button>
-        <div class="accordion-content">
-          <div class="logo-role-block">
-            <img src="https://cdn.glitch.global/d402c5b4-f98f-4f65-8c2e-312f01f955f3/Tampa_Spartans.svg.png?v=1744394442372" alt="UTampa logo" class="icon work-logo" />
-            <p>UTampa | M.A | Social & Emerging Media | '22</p>
-            <p>UTampa | B.A. | New Media & Graphic Design | '21</p>
+        <!-- Accordion Item: Education -->
+        <div class="accordion-item">
+          <button class="accordion-header">Education</button>
+          <div class="accordion-content">
+            <div class="logo-role-block">
+              <img
+                src="https://cdn.glitch.global/d402c5b4-f98f-4f65-8c2e-312f01f955f3/Tampa_Spartans.svg.png?v=1744394442372"
+                alt="UTampa logo"
+                class="icon work-logo"
+              />
+              <p>UTampa | M.A | Social & Emerging Media | '22</p>
+              <p>UTampa | B.A. | New Media & Graphic Design | '21</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Accordion Item: Personal Interests -->
+        <div class="accordion-item">
+          <button class="accordion-header">Personal Interests</button>
+          <div class="accordion-content">
+            <p>Ft DeSoto Triathlon (2025)</p>
+            <p>Cocoa Beach Half Marathon (2023)</p>
+            <p>New York Marathon (2019)</p>
+            <p>Acoustic Guitar</p>
+            <p>Music Connoisseur</p>
+            <p>Creative Web Design</p>
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- Accordion Item: Personal Interests -->
-      <div class="accordion-item">
-        <button class="accordion-header">Personal Interests</button>
-        <div class="accordion-content">
-          <p>Ft DeSoto Triathlon (2025)</p>
-          <p>Cocoa Beach Half Marathon (2023)</p>
-          <p>New York Marathon (2019)</p>
-          <p>Acoustic Guitar</p>
-          <p>Music Connoisseur</p>
-          <p>Creative Web Design</p>
-        </div>
+    <!-- Scroll Arrow -->
+    <div class="arrow-container">
+      <img
+        src="https://cdn.glitch.global/d402c5b4-f98f-4f65-8c2e-312f01f955f3/double-arrow.png"
+        alt="Scroll Down Arrow"
+        class="icon arrow"
+        onclick="location.href='#projects'"
+      />
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact">
+    <form id="contact-form" class="animated-form">
+      <h2>Contact Me</h2>
+
+      <div class="form-group">
+        <label for="name"><i class="fas fa-user"></i></label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required />
       </div>
-    </div>
-  </div>
 
-  <!-- Scroll Arrow -->
-  <div class="arrow-container">
-    <img src="https://cdn.glitch.global/d402c5b4-f98f-4f65-8c2e-312f01f955f3/double-arrow.png" alt="Scroll Down Arrow" class="icon arrow" onclick="location.href='#projects'" />
-  </div>
-</section>
+      <div class="form-group">
+        <label for="email"><i class="fas fa-envelope"></i></label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required />
+      </div>
 
+      <div class="form-group">
+        <label for="message"><i class="fas fa-comment-dots"></i></label>
+        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+      </div>
 
-    <!--Skills Section -->
+      <button type="submit" class="btn btn-color-1">
+        <i class="fas fa-paper-plane"></i> Send
+      </button>
+    </form>
+  </section>
 
-
-<!--Projects Section -->
-    
-    <!-- Contact Section -->
-<!-- Add this in your <head> -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-<!-- Form HTML -->
-<section id="contact">
-  <form id="contact-form" class="animated-form">
-    <h2>Contact Me</h2>
-
-    <div class="form-group">
-      <label for="name"><i class="fas fa-user"></i></label>
-      <input type="text" id="name" name="name" placeholder="Your Name" required />
-    </div>
-
-    <div class="form-group">
-      <label for="email"><i class="fas fa-envelope"></i></label>
-      <input type="email" id="email" name="email" placeholder="Your Email" required />
-    </div>
-
-    <div class="form-group">
-      <label for="message"><i class="fas fa-comment-dots"></i></label>
-      <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-    </div>
-
-    <button type="submit" class="btn btn-color-1"><i class="fas fa-paper-plane"></i> Send</button>
-  </form>
-</section>
-
-
-    
-    <script src="script.js"></script>
-  </body>
+  <script src="script.js"></script>
+</body>
 </html>
