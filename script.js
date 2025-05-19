@@ -55,3 +55,25 @@ accordions.forEach((header) => {
   // Make headers focusable for keyboard navigation
   header.setAttribute('tabindex', '0');
 });
+
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  const skillItems = document.querySelectorAll('.skill-item');
+
+  filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const category = button.getAttribute('data-category');
+
+      filterButtons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+
+      skillItems.forEach(item => {
+        const itemCategory = item.getAttribute('data-category');
+        if (category === 'all' || itemCategory === category) {
+          item.classList.remove('hidden');
+        } else {
+          item.classList.add('hidden');
+        }
+      });
+    });
+  });
+
