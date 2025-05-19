@@ -108,7 +108,7 @@ a:focus {
 /* Mobile menu links */
 .menu-links {
   list-style: none;
-  background-color: #E6F0FA;
+  background-color: #B9D6FB;
   position: absolute;
   top: 60px;
   right: 2rem;
@@ -188,20 +188,22 @@ a:focus {
 .section__text {
   max-width: 600px;
   z-index: 10;
-  color: #fff;
+  color: #71797E;
+  font-size:5rem;
 }
 
 .section__text__p2 {
-  font-size: 3.8rem;
+  font-size: 6.8rem;
   font-family: 'Cormorant', serif;
-  color:#708090;
+  color:#71797E;
+  font-weight: 400;
 
 }
 
 ._title {
   font-family: 'Cormorant', serif;
   font-size: 3.5rem;
-  color:#708090;
+  color:#71797E;
 }
 
 h6 {
@@ -550,3 +552,23 @@ button[type='submit'] {
   justify-content: center;
   gap: 0
     
+}
+
+  /*MEDIA QUERIES*/
+/* Media Query for Mobile View */
+@media (max-width: 768px) {
+  #desktop-nav {
+    display: none;
+  }
+
+  #hamburger-nav {
+    display: flex;
+  }
+    .section__text__p2, _title {
+    font-size: 28px; /* or adjust to your desired size */
+  }
+
+    
+  
+
+}
