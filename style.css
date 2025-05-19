@@ -402,9 +402,8 @@ h6 {
   overflow: hidden;
   transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #f9fcff;
-  padding: 0 1.5rem;
+  padding: 0 3.5rem;
   color: #333;
-  font-weight: 400;
   font-size: 1rem;
 }
 
@@ -427,16 +426,16 @@ h6 {
 }
 
 .role-text p {
-  margin-bottom: 0.5rem;
-  font-weight: 500;
+font-size:.8rem;
 }
 
 .role-details {
   margin-left: 1rem;
   list-style-type: disc;
   color: #555;
-  font-weight: 400;
-  font-size: 0.95rem;
+  font-weight: 200;
+  font-size: clamp(0.95rem, 1vw, 1.125rem); /* Slightly smaller than title */
+
 }
 
 
