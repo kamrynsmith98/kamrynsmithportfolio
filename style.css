@@ -426,16 +426,16 @@ h6 {
 }
 
 .role-text p {
-font-size:.8rem;
+font-size:1.3rem;
+  font-weight: bold;
 }
 
 .role-details {
   margin-left: 1rem;
-  list-style-type: disc;
+  list-style-type: square;
   color: #555;
   font-weight: 200;
-  font-size: clamp(0.95rem, 1vw, 1.125rem); /* Slightly smaller than title */
-
+font-size:1.4rem;
 }
 
 
@@ -567,7 +567,13 @@ button[type='submit'] {
     font-size: 28px; /* or adjust to your desired size */
   }
 
-    
+  .role-details{
+    font-size: 16px; 
+  }
   
+  .role-text p {
+        font-size: 16px; 
+
+  }
 
 }
