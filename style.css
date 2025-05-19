@@ -186,7 +186,7 @@ a:focus {
 }
 
 .section__text {
-  color: #71797E;
+  color: white;
   font-size:5rem;
   padding:2rem;
 
@@ -195,7 +195,7 @@ a:focus {
 .section__text__p2 {
   font-size: 4.8rem;
   font-family: 'Cormorant', serif;
-  color:#71797E;
+  color:white;
 
 
 }
@@ -203,7 +203,7 @@ a:focus {
 ._title {
   font-family: 'Cormorant', serif;
   font-size: 1.2rem;
-  color:#71797E;
+  color:white;
 }
 
 h6 {
@@ -405,6 +405,7 @@ h6 {
   padding: 0 3.5rem;
   color: #333;
   font-size: 1rem;
+  text-align:center;
 }
 
 .accordion-item.active .accordion-content {
@@ -535,7 +536,19 @@ font-size:1.4rem;
   font-size: 2rem;
   margin-bottom: 0.5rem;
 }
-
+.skill-icon.adobe-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 14px;
+  color: #fff;
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  margin-bottom: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
 /* Text */
 .skill-name {
   display: block;
@@ -640,6 +653,7 @@ button[type='submit'] {
   gap: 0
     
 }
+
 
   /*MEDIA QUERIES*/
 /* Media Query for Mobile View */
