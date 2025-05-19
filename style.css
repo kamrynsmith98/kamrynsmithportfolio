@@ -186,23 +186,23 @@ a:focus {
 }
 
 .section__text {
-  max-width: 600px;
-  z-index: 10;
   color: #71797E;
   font-size:5rem;
+  padding:2rem;
+
 }
 
 .section__text__p2 {
-  font-size: 6.8rem;
+  font-size: 4.8rem;
   font-family: 'Cormorant', serif;
   color:#71797E;
-  font-weight: 400;
+
 
 }
 
 ._title {
   font-family: 'Cormorant', serif;
-  font-size: 3.5rem;
+  font-size: 1.2rem;
   color:#71797E;
 }
 
