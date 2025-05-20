@@ -602,15 +602,15 @@ font-size:1.4rem;
   margin: 0 auto;
   overflow: visible;    /* Prevents cutting off long video */
 }
-.slide video,
-.slide img {
-  aspect-ratio: 16 / 9;
-  width: 100%;
-  object-fit: cover; /* or use contain to avoid cropping */
+.slide video {
+  width: 100%;           /* Makes it take full width of the container */
+  max-width: 600px;      /* Limits max width to 600px (adjust as needed) */
+  height: auto;          /* Keeps aspect ratio intact */
+  object-fit: contain;   /* Show full video without cropping */
   border-radius: 1rem 1rem 0 0;
-    height: auto;
+  display: block;
+  margin: 0 auto;        /* Center video horizontally */
 }
-
 
 .slide img {
   width: 100%;
@@ -630,6 +630,57 @@ font-size:1.4rem;
   font-size: 1.3rem;
   color: #333;
 }
+
+.slide {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.locked-content video,
+.locked-content img {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 1rem;
+  object-fit: contain;
+}
+
+.passcode-prompt {
+  padding: 1rem;
+  background-color: #f8f8f8;
+  border-radius: 1rem;
+  max-width: 400px;
+  margin: 2rem auto;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.passcode-prompt input {
+  width: 80%;
+  max-width: 300px;
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+  border-radius: 0.3rem;
+  border: 1px solid #ccc;
+}
+
+.passcode-prompt button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 0.3rem;
+  border: none;
+  background-color: #007bff;
+  color: white;
+}
+
+
 
 
 
@@ -749,4 +800,14 @@ button[type='submit'] {
     max-height: 300px; /* smaller max height for smaller screens */
   }
 }
+@media (max-width: 500px) {
+  .passcode-prompt {
+    max-width: 90%;
+    padding: 0.5rem;
+  }
 
+  .passcode-prompt input {
+    width: 100%;
+    max-width: none;
+  }
+}

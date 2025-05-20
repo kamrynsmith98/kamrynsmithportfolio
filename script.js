@@ -106,4 +106,25 @@ prevBtn.addEventListener('click', () => showSlide(currentSlide - 1));
 nextBtn.addEventListener('click', () => showSlide(currentSlide + 1));
 
 // Init
-showSlide(currentSlide);
+function checkPasscode() {
+  const input = document.getElementById('project3-passcode');
+  const errorMsg = document.getElementById('passcode-error');
+  const lockedContent = input.parentElement.previousElementSibling; // the div with the video
+  const video = lockedContent.querySelector('video');
+  const correctPasscode = 'Oliver25';
+
+  if (input.value === correctPasscode) {
+    errorMsg.style.display = 'none';
+    input.parentElement.style.display = 'none';
+    lockedContent.style.display = 'block';
+
+    // Try to play the video now that it’s visible
+    if (video) {
+      video.play().catch(() => {
+        // Autoplay might still be blocked without interaction, so silently fail
+      });
+    }
+  } else {
+    errorMsg.style.display = 'block';
+  }
+}
