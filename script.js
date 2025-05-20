@@ -77,3 +77,33 @@ accordions.forEach((header) => {
     });
   });
 
+const slides = document.querySelectorAll('.slide');
+const prevBtn = document.querySelector('.prev');
+const nextBtn = document.querySelector('.next');
+const dotNav = document.querySelector('.dot-nav');
+
+let currentSlide = 0;
+
+// Create dots
+slides.forEach((_, i) => {
+  const dot = document.createElement('span');
+  dot.addEventListener('click', () => showSlide(i));
+  dotNav.appendChild(dot);
+});
+
+const dots = document.querySelectorAll('.dot-nav span');
+
+function showSlide(index) {
+  slides.forEach(slide => slide.classList.remove('active'));
+  dots.forEach(dot => dot.classList.remove('active'));
+
+  currentSlide = (index + slides.length) % slides.length;
+  slides[currentSlide].classList.add('active');
+  dots[currentSlide].classList.add('active');
+}
+
+prevBtn.addEventListener('click', () => showSlide(currentSlide - 1));
+nextBtn.addEventListener('click', () => showSlide(currentSlide + 1));
+
+// Init
+showSlide(currentSlide);
