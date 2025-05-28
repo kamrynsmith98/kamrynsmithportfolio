@@ -410,7 +410,7 @@ h6 {
 
 .accordion-item.active .accordion-content {
   padding: 1rem 1.5rem;
-  max-height: 500px; /* enough height for content */
+  max-height: 800px; 
 }
 
 .logo-role-block {
@@ -421,9 +421,22 @@ h6 {
 }
 
 .work-logo {
-  width: 83px;
+    width: 100px; /* increased size from 83px */
+  max-width: 25%; /* prevent them from overtaking the row */
+  height: auto; /* keep the aspect ratio */
   border-radius: 8px;
   object-fit: contain;
+  flex-shrink: 0; /* prevent it from shrinking too small */
+
+}
+.education-logo-block {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.education-logo-block .work-logo {
+  margin-bottom: 1rem;
 }
 
 .role-text p {
@@ -798,6 +811,22 @@ button[type='submit'] {
   .slide img,
   .slide video {
     max-height: 300px; /* smaller max height for smaller screens */
+  }
+}
+@media (max-width: 600px) {
+  .logo-role-block {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .role-text {
+    width: 100%;
+  }
+
+  .work-logo {
+    width: 80px;
+    max-width: 100%;
   }
 }
 @media (max-width: 500px) {
