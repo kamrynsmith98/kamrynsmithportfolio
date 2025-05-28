@@ -412,6 +412,17 @@ h6 {
   padding: 1rem 1.5rem;
   max-height: 800px; 
 }
+.accordion-item:last-child .accordion-content p {
+  font-size: 1.1rem;       /* uniform size */
+  margin-bottom: 1rem;     /* consistent spacing */
+  white-space: normal;     /* allow normal wrapping for all except first */
+  overflow-x: visible;     /* default overflow */
+}
+.accordion-item:last-child .accordion-content p:first-child {
+  white-space: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; /* smooth scroll on iOS */
+}
 
 .logo-role-block {
   display: flex;
@@ -825,7 +836,7 @@ button[type='submit'] {
 }
 @media (min-width: 768px) {
   .accordion-item.personal-interests .accordion-content p {
-    font-size: 1.5rem !important;
+    font-size: 1rem 
   }
 }
 @media (max-width: 600px) {
@@ -847,7 +858,11 @@ button[type='submit'] {
     font-size: 1.15rem; /* slightly smaller on small screens */
   }
 }
-
+@media (max-width: 350px) {
+  .accordion-item:last-child .accordion-content p:first-child {
+    font-size: 1rem;
+  }
+}
 
 @media (max-width: 500px) {
   .passcode-prompt {
