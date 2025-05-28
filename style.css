@@ -438,6 +438,11 @@ h6 {
 .education-logo-block .work-logo {
   margin-bottom: 1rem;
 }
+.education-text p {
+  font-size: 1.3rem; /* slightly larger than default */
+  line-height: 1.5;
+  margin: 0.5rem 0;
+}
 
 .role-text p {
 font-size:1.3rem;
@@ -450,6 +455,10 @@ font-size:1.3rem;
   color: #555;
   font-weight: 200;
 font-size:1.4rem;
+}
+.accordion-item:last-child .accordion-content p {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
 }
 
 
@@ -812,6 +821,12 @@ button[type='submit'] {
   .slide video {
     max-height: 300px; /* smaller max height for smaller screens */
   }
+  
+}
+@media (min-width: 768px) {
+  .accordion-item.personal-interests .accordion-content p {
+    font-size: 1.5rem !important;
+  }
 }
 @media (max-width: 600px) {
   .logo-role-block {
@@ -828,7 +843,12 @@ button[type='submit'] {
     width: 80px;
     max-width: 100%;
   }
+    .education-text p {
+    font-size: 1.15rem; /* slightly smaller on small screens */
+  }
 }
+
+
 @media (max-width: 500px) {
   .passcode-prompt {
     max-width: 90%;
