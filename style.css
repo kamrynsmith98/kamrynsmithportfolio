@@ -1106,7 +1106,7 @@ button[type='submit']:hover {
     display: flex;
   }
     .section__text__p2, _title {
-    font-size: 40.5px; /* or adjust to your desired size */
+    font-size: 30.5px; /* or adjust to your desired size */
   }
 
   .role-details{
