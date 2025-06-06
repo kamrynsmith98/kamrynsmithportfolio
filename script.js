@@ -56,75 +56,95 @@ accordions.forEach((header) => {
   header.setAttribute('tabindex', '0');
 });
 
-  const filterButtons = document.querySelectorAll('.filter-btn');
-  const skillItems = document.querySelectorAll('.skill-item');
+ // Select all filter buttons and skill items
+const filterButtons = document.querySelectorAll('.filter-btn');
+const skillItems = document.querySelectorAll('.skill-item');
 
-  filterButtons.forEach(button => {
-    button.addEventListener('click', () => {
-      const category = button.getAttribute('data-category');
+filterButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    // Remove active class from all buttons
+    filterButtons.forEach(btn => btn.classList.remove('active'));
+    // Add active class to clicked button
+    button.classList.add('active');
 
-      filterButtons.forEach(btn => btn.classList.remove('active'));
-      button.classList.add('active');
+    const category = button.getAttribute('data-category');
 
-      skillItems.forEach(item => {
-        const itemCategory = item.getAttribute('data-category');
-        if (category === 'all' || itemCategory === category) {
-          item.classList.remove('hidden');
+    skillItems.forEach(item => {
+      // Show all if category is 'all'
+      if (category === 'all') {
+        item.style.display = 'flex'; // or whatever your layout uses
+      } else {
+        // Show only items matching the category
+        if (item.getAttribute('data-category') === category) {
+          item.style.display = 'flex';
         } else {
-          item.classList.add('hidden');
+          item.style.display = 'none';
         }
-      });
+      }
     });
   });
-
-const slides = document.querySelectorAll('.slide');
-const prevBtn = document.querySelector('.prev');
-const nextBtn = document.querySelector('.next');
-const dotNav = document.querySelector('.dot-nav');
-
-let currentSlide = 0;
-
-// Create dots
-slides.forEach((_, i) => {
-  const dot = document.createElement('span');
-  dot.addEventListener('click', () => showSlide(i));
-  dotNav.appendChild(dot);
 });
 
-const dots = document.querySelectorAll('.dot-nav span');
+const slides = document.querySelectorAll('.slide');
+  const prevBtn = document.querySelector('.nav.prev');
+  const nextBtn = document.querySelector('.nav.next');
+  let currentIndex = 0;
 
-function showSlide(index) {
-  slides.forEach(slide => slide.classList.remove('active'));
-  dots.forEach(dot => dot.classList.remove('active'));
-
-  currentSlide = (index + slides.length) % slides.length;
-  slides[currentSlide].classList.add('active');
-  dots[currentSlide].classList.add('active');
-}
-
-prevBtn.addEventListener('click', () => showSlide(currentSlide - 1));
-nextBtn.addEventListener('click', () => showSlide(currentSlide + 1));
-
-// Init
-function checkPasscode() {
-  const input = document.getElementById('project3-passcode');
-  const errorMsg = document.getElementById('passcode-error');
-  const lockedContent = input.parentElement.previousElementSibling; // the div with the video
-  const video = lockedContent.querySelector('video');
-  const correctPasscode = 'Oliver25';
-
-  if (input.value === correctPasscode) {
-    errorMsg.style.display = 'none';
-    input.parentElement.style.display = 'none';
-    lockedContent.style.display = 'block';
-
-    // Try to play the video now that it’s visible
-    if (video) {
-      video.play().catch(() => {
-        // Autoplay might still be blocked without interaction, so silently fail
-      });
-    }
-  } else {
-    errorMsg.style.display = 'block';
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.toggle('active', i === index);
+    });
   }
-}
+
+  prevBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+    showSlide(currentIndex);
+  });
+
+  nextBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % slides.length;
+    showSlide(currentIndex);
+  });
+
+   function checkPasscode() {
+    const input = document.getElementById("project-passcode").value;
+    const correctPasscode = "Oliver25"; // Replace with your actual passcode
+    const lockedContent = document.querySelector(".locked-content");
+    const errorMsg = document.getElementById("passcode-error");
+
+    if (input === correctPasscode) {
+      // Hide the passcode prompt
+      document.querySelector(".passcode-prompt").style.display = "none";
+
+      // Display and animate the content
+      lockedContent.style.display = "block"; // First, make it visible
+      // Allow a moment for reflow before adding the transition class
+      setTimeout(() => {
+        lockedContent.classList.add("show");
+      }, 50);
+    } else {
+      errorMsg.style.display = "block";
+    }
+  }
+
+// Contact
+
+const form = document.getElementById("contact-form");
+    const status = document.getElementById("form-status");
+
+    form.addEventListener("submit", async function (e) {
+      e.preventDefault();
+      const data = new FormData(form);
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (response.ok) {
+        status.innerHTML = "Thanks! Your message was sent.";
+        form.reset();
+      } else {
+        status.innerHTML = "Oops! Something went wrong. Please try again.";
+      }
+    });
